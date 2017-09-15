@@ -1,0 +1,152 @@
+
+
+body {
+  background-color: #faf8f7;
+  margin:10%;
+}
+
+.infoCard {
+  background: #fff;
+  box-shadow: 0 0 10px 2px lightgrey;
+  /*padding:5px;*/
+  margin: 15px;
+  overflow: hidden;
+  width: 13vmax;
+  min-width: 300px;
+  height: 13vmax;
+  min-height: 300px;
+  float: left;
+  position: relative;
+
+}
+.cardText {
+  padding-bottom: 3%;
+  padding-top: 3%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  bottom: 0;
+  color: white;
+  width: 100%;
+  height: 30%;
+  font-size: 1.5em;
+  text-align: center;
+}
+.infoCard:hover hr {
+  width:90%;
+  border-color: rgba( 255, 242, 117, 0.7);
+}
+hr{
+    width:70%;
+    border-color: rgba( 255, 242, 117, 0.7);
+}
+#nameText {
+  color: rgba(255, 255, 255, 0.7);
+}
+.content {
+  width: 70%;
+  margin: 0 auto;
+}
+.bgrImg {
+  width: 100%;
+}
+.infocard hr {
+  width: 70%;
+  transition: .3s;
+  border-color: rgba( 155, 197, 61, 0.7);
+}
+.filterBox{
+    font-size:2em;
+    font-family: 'Roboto', sans-serif;
+}
+
+.selectArea{
+  outline: none;
+  border: 0;
+  border-bottom: 2px solid lightgreen;
+  width: 250px;
+  font-family: inherit;
+  font-size: inherit;
+  appearance:none;
+  -webkit-appearance: none;
+  background:inherit;
+}
+.selectArea:focus{
+  outline: none;
+}
+
+/* ============ EXPANDED ================ */
+.infoCard_expanded {
+  background: #fff;
+  box-shadow: 0 0 10px 2px lightgrey;
+  transition:width 1s, height 1s;
+  /*padding:5px;*/
+  margin: 15px;
+  /*overflow: hidden;*/
+  width: 60vw;
+  min-width: 300px;
+  height: 80vh;
+  min-height: 300px;
+  float:top;
+  clear:left;
+  position: relative;
+}
+.bgrImg_expanded{
+    width:10vw;
+    border-radius:50%;
+    position:relative;
+    transition:border-radius 0.5s;
+    float:left;
+    margin:10px;
+}
+.biographyText{
+    position:relative;
+    width:50%;
+    margin:10px;
+    margin-top:2%;
+    font-family: 'Roboto', sans-serif;
+    float:left;
+    color:#686868;
+
+}
+
+.biographyName{
+    position:relative;
+    font-family: 'Roboto', sans-serif;
+    float:left;
+    width:50%;
+    margin:10px;
+    color:#686868;
+    font-size:2em;
+}
+
+@media screen and (max-width: 600px) {
+  .infoCard {
+    width: 100vw;
+    height: 70vw;
+    margin: 0 0 30px 0;
+    transition:width 0.5s, height 0.5s;
+  }
+  .bgrImg{
+    width: 100vw;
+
+  }
+  .content {
+    width: 100%;
+    margin: 0;
+  }
+  body {
+    margin: 0;
+  }
+  #element::-webkit-scrollbar {
+    display: none;
+  }
+
+  .bgrImg_expanded{
+      width:25vw;
+      transition:width 0.5s, height 0.5s,  border-radius 0.5s;
+  }
+  .infoCard_expanded {
+    margin: 0 0 30px 0;
+    width: 100vw;
+  }
+}
