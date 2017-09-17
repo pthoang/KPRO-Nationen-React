@@ -28,6 +28,7 @@ public class MainApp extends Application {
 				
 		ViewController viewController = new ViewController();
 		viewController.setRootLayout(rootLayout);
+		viewController.setMainApp(this);
 		
 		viewController.showStartMenu();
 
@@ -53,7 +54,9 @@ public class MainApp extends Application {
 		}
 	}
 	
-	
+	public Stage getStage() {
+		return this.primaryStage;
+	}
 		
 	public static void main(String[] args) {
 		launch(args);

@@ -7,13 +7,14 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.stage.FileChooser;
+import javafx.stage.Stage;
 
 public class AddDatabaseController {
 	
 	@FXML
 	private Button createOutputButton;
 	@FXML
-	private FileChooser fileChooserButton;
+	private Button fileChooserButton;
 	@FXML
 	private TextField loadedFileNameField;
 	
@@ -25,6 +26,7 @@ public class AddDatabaseController {
 	
 	public void setMainApp(MainApp mainApp) {
 		this.mainApp = mainApp;
+		System.out.println("setMainApp is called");
 	}
 	
 	public void setViewController(ViewController viewController) {
@@ -50,7 +52,17 @@ public class AddDatabaseController {
 	 */
 	@FXML
 	private void fileChooser() {
-		private Desktop desktop = Desktop.getDesktop();
+		
+		FileChooser fileChooser = new FileChooser();
+		Desktop desktop = Desktop.getDesktop();
+
+			
+		System.out.println("MainApp: " + mainApp);
+
+		System.out.println("fileChooser: "+ fileChooser);
+		
+		Stage stage = mainApp.getStage();
+		System.out.println("Stage: " + stage);
 		fileChooser.showOpenDialog(stage);
 		
 	}

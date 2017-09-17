@@ -10,7 +10,7 @@
    <children>
       <Label layoutX="57.0" layoutY="74.0" text="Rolleregister" />
       <Button fx:id="createOutputButton" layoutX="488.0" layoutY="340.0" mnemonicParsing="false" onAction="#createOutput" text="Lag fil" />
-      <FileChooser fx:id="chooseFileButton" layoutX="404.0" layoutY="104.0" mnemonicParsing="false" onAction="chooseFile" text="Last inn" />
+      <Button fx:id="chooseFileButton" layoutX="404.0" layoutY="104.0" mnemonicParsing="false" onAction="#fileChooser" text="Last inn" />
       <TextField fx:id="loadedFileNameField" layoutX="99.0" layoutY="102.0" />
    </children>
 </AnchorPane>
