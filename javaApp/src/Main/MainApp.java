@@ -3,6 +3,7 @@ package Main;
 
 import java.io.IOException;
 
+import controllers.ViewController;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -14,16 +15,22 @@ public class MainApp extends Application {
 	
 	private Stage primaryStage;
 	private BorderPane rootLayout;
+	
+	private ViewController viewController;
 
 	
 	@Override
 	public void start(Stage primaryStage) {
 		this.primaryStage = primaryStage;
-		this.primaryStage.setTitle("JavaApplication");
+		this.primaryStage.setTitle("Nationen - Landbruksmakt");
 		
 		initRootLayout();
+				
+		ViewController viewController = new ViewController();
+		viewController.setRootLayout(rootLayout);
 		
-		showStartScreen();
+		viewController.showStartMenu();
+
 	}
 	
 	/**
@@ -34,7 +41,7 @@ public class MainApp extends Application {
 		try {
 			// Load root layout from fxml file.
 			FXMLLoader loader = new FXMLLoader();
-			loader.setLocation(MainApp.class.getResource("view/RootLayout.fxml"));
+			loader.setLocation(MainApp.class.getResource("../view/RootLayout.fxml"));
 			rootLayout = (BorderPane) loader.load();
 			
 			// Show the scene containing the root layout.
@@ -46,23 +53,10 @@ public class MainApp extends Application {
 		}
 	}
 	
-	public void showStartScreen() {
-		try {
-			// Load start screen
-			FXMLLoader loader = new FXMLLoader();
-			loader.setLocation(MainApp.class.getResource("view/StartScreen.fxml"));
-			AnchorPane startScreen = (AnchorPane) loader.load();
-			
-			// Set startscreen in the center of root layout.
-			rootLayout.setCenter(startScreen);
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-	}
+	
 		
 	public static void main(String[] args) {
 		launch(args);
-
 	}
 
 }
