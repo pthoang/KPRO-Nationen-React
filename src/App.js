@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 
+
 var show = ["m", "f", "none"];
 
 var bioText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tincidunt, orci et sollicitudin vestibulum, nibh tellus placerat mauris, sed gravida est urna vitae ex. Donec odio lorem, luctus et purus at, consectetur malesuada nunc. Proin lacus justo, varius luctus pulvinar aliquam, consequat vitae dui. Suspendisse eu est id turpis bibendum vestibulum. Sed varius, est quis dictum egestas, libero elit condimentum ligula, ut placerat dolor urna eget massa. Pellentesque eget est nec est congue aliquet nec sed lacus. Nulla vel ultrices metus. Aliquam eget ex eu nisl fringilla ornare. Nullam a mauris sit amet lectus hendrerit suscipit eget vel est. Maecenas dapibus metus metus, lacinia feugiat ipsum placerat id. Nulla congue pretium elit, eu pellentesque nunc placerat ac. Aenean ut est vitae leo fermentum maximus. Nunc bibendum sodales risus, id ultrices est viverra ac."
@@ -63,10 +64,16 @@ class Card extends Component{
                 <CardText info={this.props.info} id ={this.props.id}/>
                 </div>)
         }else{
-            return( <div className="infoCard_expanded" id={this.props.id} onClick={this.clickHandler}>
+            return(<div className="infoCard_expanded_bgr">
+                <div className="infoCard_expanded anim" id={this.props.id} onClick={this.clickHandler}>
                 <img src={this.props.info.img} className="bgrImg_expanded" />
                 <div className = "biographyName"> {this.props.id} - {this.props.info.firstName} {this.props.info.lastName}  </div>
                 <div className="biographyText">{bioText} </div>
+                <ul className="bioList">
+                    <li><i className="material-icons">work</i> Politiker</li>
+                    <li><i className="material-icons">home</i> Oslo</li>
+                </ul>
+                </div>
                 </div>)
         }
     }
