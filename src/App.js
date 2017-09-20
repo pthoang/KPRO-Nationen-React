@@ -92,12 +92,16 @@ class CardText extends Component{
 class ExpandedCardContent extends Component{
     render()
     {
-        return(
+        return(<span>
         <section className="infoCardExpandedColumn">
-        <img src={this.props.info.img} className="bgrImgExpanded" />
-        <div className = "biographyName"> {this.props.id} - {this.props.info.firstName} {this.props.info.lastName}  </div>
-        <div className="biographyText">{this.props.info.bio} </div>
+            <div className = "biographyName"> {this.props.id} - {this.props.info.firstName} {this.props.info.lastName}  </div>
         </section>
+        <section className="infoCardExpandedColumn">
+            <img src={this.props.info.img} className="bgrImgExpanded" />
+            <div className="biographyText">{this.props.info.bio} </div>
+        </section>
+        <hr/>
+        </span>
         );
     }
 }
