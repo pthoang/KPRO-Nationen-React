@@ -3,10 +3,12 @@ import './App.css';
 
 
 var show = ["m", "f", "none"];
+const types = ["alle", "menn", "kvinner"];
+// const areas = ["alt","landbruk", "politikk", "næringsliv"];
+// const counties = ["i hele landet","på Østlandet", "på Vestlandet",
+// "i Nord-Norge", " i Trøndelag", " på Sørlandet"];
 
-var bioText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tincidunt, orci et sollicitudin vestibulum, nibh tellus placerat mauris, sed gravida est urna vitae ex. Donec odio lorem, luctus et purus at, consectetur malesuada nunc. Proin lacus justo, varius luctus pulvinar aliquam, consequat vitae dui. Suspendisse eu est id turpis bibendum vestibulum. Sed varius, est quis dictum egestas, libero elit condimentum ligula, ut placerat dolor urna eget massa. Pellentesque eget est nec est congue aliquet nec sed lacus. Nulla vel ultrices metus. Aliquam eget ex eu nisl fringilla ornare. Nullam a mauris sit amet lectus hendrerit suscipit eget vel est. Maecenas dapibus metus metus, lacinia feugiat ipsum placerat id. Nulla congue pretium elit, eu pellentesque nunc placerat ac. Aenean ut est vitae leo fermentum maximus. Nunc bibendum sodales risus, id ultrices est viverra ac."
-
-export default class App extends Component {
+export default class App extends Component{
     constructor(props)
     {
         super(props);
@@ -34,13 +36,13 @@ export default class App extends Component {
     render()
     {
         return(
-            <div>
+            <div className="content">
                 <FilterBox handleChange={this.handleChange}/>
                 {this.props.names.filter(this.filterGender).map(name =>
                 <Card key={name.key} info={name} id={name.key} />)}
             </div>)
     };
-  }
+}
 
 class Card extends Component{
     constructor(props)
@@ -64,15 +66,9 @@ class Card extends Component{
                 <CardText info={this.props.info} id ={this.props.id}/>
                 </div>)
         }else{
-            return(<div className="infoCard_expanded_bgr">
-                <div className="infoCard_expanded anim" id={this.props.id} onClick={this.clickHandler}>
-                <img src={this.props.info.img} className="bgrImg_expanded" />
-                <div className = "biographyName"> {this.props.id} - {this.props.info.firstName} {this.props.info.lastName}  </div>
-                <div className="biographyText">{bioText} </div>
-                <ul className="bioList">
-                    <li><i className="material-icons">work</i> Politiker</li>
-                    <li><i className="material-icons">home</i> Oslo</li>
-                </ul>
+            return(<div className="infoCardExpandedBgr">
+                <div className="infoCardExpanded" id={this.props.id} onClick={this.clickHandler}>
+                <ExpandedCardContent id={this.props.id} info={this.props.info} />
                 </div>
                 </div>)
         }
@@ -87,15 +83,24 @@ class CardText extends Component{
                     <span id="nameText">
                     <hr />
                     {/*this.props.info.firstName*/} {/*this.props.info.lastName*/}
-                    Stillingstittel, Bosted
+                    {this.props.info.profession}
                     </span>
                 </div>);
     }
 }
 
-const types = ["alle", "menn", "kvinner"];
-const areas = ["alt","landbruk", "politikk", "næringsliv"];
-const counties = ["i hele landet","på Østlandet", "på Vestlandet", "i Nord-Norge", " i Trøndelag", " på Sørlandet"];
+class ExpandedCardContent extends Component{
+    render()
+    {
+        return(
+        <section className="infoCardExpandedColumn">
+        <img src={this.props.info.img} className="bgrImgExpanded" />
+        <div className = "biographyName"> {this.props.id} - {this.props.info.firstName} {this.props.info.lastName}  </div>
+        <div className="biographyText">{this.props.info.bio} </div>
+        </section>
+        );
+    }
+}
 
 class FilterBox extends React.Component{
     render()
