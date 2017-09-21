@@ -11,6 +11,8 @@ public class StartMenuController {
 	private Button addDatabaseButton;
 	@FXML 
 	private Button addCandidateButton;
+	@FXML 
+	private Button listCandidatesButton;
 	
 	
 	private MainApp mainApp;
@@ -42,5 +44,10 @@ public class StartMenuController {
 	@FXML
 	private void addCandidate() {
 		viewController.showAddCandidateView();
+	}
+	
+	@FXML
+	private void listCandidates() {
+		viewController.showListCandidatesView();
 	}
 }

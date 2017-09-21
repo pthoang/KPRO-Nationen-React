@@ -80,4 +80,23 @@ public class ViewController {
 			e.printStackTrace();
 		}
 	}
+	
+	/**
+	 * Shows the view for listing candidates.
+	 */
+	public void showListCandidatesView() {
+		try {
+			FXMLLoader loader = new FXMLLoader();
+			loader.setLocation(MainApp.class.getResource("../view/ListCandidatesView.fxml"));
+			AnchorPane listCandidatesView = (AnchorPane) loader.load();
+		
+			rootLayout.setCenter(listCandidatesView);
+			
+			ListCandidatesController controller = loader.getController();
+			controller.setMainApp(mainApp);
+			controller.setViewController(this);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
 }
