@@ -1,8 +1,11 @@
 package controllers;
 
 import Main.MainApp;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import model.Candidate;
@@ -15,6 +18,13 @@ public class AddCandidateController extends SuperController {
 	private Button saveCandidateButton;
 	@FXML
 	private TextArea descriptionField;
+	
+	@FXML
+	private TableView<Candidate> candidateTable;
+	@FXML
+	private TableColumn<Candidate, String> firstNameColumn;
+	@FXML
+	private TableColumn<Candidate, String> lastNameColumn;
 	
 	@FXML
 	private Button cancelButton;
@@ -43,6 +53,20 @@ public class AddCandidateController extends SuperController {
 		}
 	}
 	
+	public void setMainApp(MainApp mainApp) {
+		super.setMainApp(mainApp);
+		
+		ObservableList<Candidate> candidates = mainApp.getCandidates();
+		System.out.println("Candidates: " + candidates);
+		candidateTable.setItems(candidates);
+	}
+	
+	@FXML
+	private void initialize() {
+		firstNameColumn.setCellValueFactory(cellData -> cellData.getValue().firstNameProperty());
+		lastNameColumn.setCellValueFactory(cellData -> cellData.getValue().lastNameProperty());
+	}
+	
 	
 	/*
 	 * Verify the input
@@ -65,4 +89,6 @@ public class AddCandidateController extends SuperController {
 	@FXML
 	private void next() {
 	}
+	
+	
 }

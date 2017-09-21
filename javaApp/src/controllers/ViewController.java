@@ -113,7 +113,7 @@ public class ViewController {
 		
 			rootLayout.setCenter(addDatabaseView);
 			
-			AddDatabaseController controller = loader.getController();
+			AddDatabaseaController controller = loader.getController();
 			controller.setMainApp(mainApp);
 			controller.setViewController(this);
 		} catch (IOException e) {

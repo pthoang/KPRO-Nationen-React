@@ -9,7 +9,7 @@ import javafx.scene.control.TextField;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 
-public class AddDatabaseController {
+public class AddDatabaseaController extends SuperController {
 	
 	@FXML
 	private Button createOutputButton;
@@ -20,18 +20,6 @@ public class AddDatabaseController {
 	
 	FileChooser fileChooser = new FileChooser();
 	
-	
-	private MainApp mainApp;
-	private ViewController viewController;
-	
-	public void setMainApp(MainApp mainApp) {
-		this.mainApp = mainApp;
-		System.out.println("setMainApp is called");
-	}
-	
-	public void setViewController(ViewController viewController) {
-		this.viewController = viewController;
-	}
 	
 	@FXML
 	private void createOutput() {
@@ -56,15 +44,8 @@ public class AddDatabaseController {
 		FileChooser fileChooser = new FileChooser();
 		Desktop desktop = Desktop.getDesktop();
 
-			
-		System.out.println("MainApp: " + mainApp);
-
-		System.out.println("fileChooser: "+ fileChooser);
-		
-		Stage stage = mainApp.getStage();
-		System.out.println("Stage: " + stage);
+		Stage stage = super.mainApp.getStage();
 		fileChooser.showOpenDialog(stage);
-		
 	}
 	
 

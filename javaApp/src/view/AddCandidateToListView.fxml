@@ -16,9 +16,10 @@
             <Label layoutX="38.0" layoutY="60.0" text="Beskrivelse" />
          </children>
       </AnchorPane>
-      <TableView layoutX="1.0" layoutY="196.0" prefHeight="200.0" prefWidth="600.0">
+      <TableView fx:id="candidateTable" layoutX="1.0" layoutY="196.0" prefHeight="200.0" prefWidth="600.0">
         <columns>
-          <TableColumn prefWidth="598.0" text="Kandidat" />
+          <TableColumn fx:id="lastNameColumn" prefWidth="200.0" text="Etternavn" />
+            <TableColumn fx:id="firstNameColumn" prefWidth="200.0" text="Fornavn" />
         </columns>
       </TableView>
       <ToolBar layoutX="404.0" layoutY="415.0" prefHeight="40.0" prefWidth="200.0">

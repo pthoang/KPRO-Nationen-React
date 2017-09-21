@@ -68,8 +68,10 @@ public class MainApp extends Application {
 		launch(args);
 	}
 	
+	// From here and down should be moved to database
 	private void populateDatabase() {
 		populateWithCandidates();
+		populateWithLists();
 	}
 
 	private void populateWithCandidates() {
@@ -77,7 +79,10 @@ public class MainApp extends Application {
 		
 		candidatesData.add(new Candidate("Alfa Al", "apic", "description Alfa"));
 		candidatesData.add(new Candidate("Beta Be", "bpic", "description Beta"));
-		
+	}
+	
+	private void populateWithLists() {
+		// TODO
 	}
 	
 	public void addCandidate(Candidate candidate) {
