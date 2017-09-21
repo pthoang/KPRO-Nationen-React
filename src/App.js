@@ -3,7 +3,6 @@ import './App.css';
 
 
 var show = ["m", "f", "none"];
-const types = ["alle", "menn", "kvinner"];
 // const areas = ["alt","landbruk", "politikk", "næringsliv"];
 // const counties = ["i hele landet","på Østlandet", "på Vestlandet",
 // "i Nord-Norge", " i Trøndelag", " på Sørlandet"];
@@ -13,6 +12,8 @@ export default class App extends Component{
     {
         super(props);
         this.handleChange = this.handleChange.bind(this);
+        console.log("%c👋 Hello! Nice to see you!\n","font-size:2em;",
+    "If you're here to look at the code, feel free to poke around");
     }
 
     handleChange(event)
@@ -24,7 +25,6 @@ export default class App extends Component{
         }else{
             show = ["m", "f", "none"];
         }
-        console.log(event.target.value);
         this.forceUpdate();
     }
 
@@ -54,7 +54,6 @@ class Card extends Component{
 
     clickHandler()
     {
-        console.log(this.state.isExpanded);
         this.setState({isExpanded:!this.state.isExpanded})
     }
 
@@ -62,7 +61,7 @@ class Card extends Component{
     {
         if ( !this.state.isExpanded) {
             return( <div className="infoCard" id={this.props.id} onClick={this.clickHandler}>
-                <img className="bgrImg" src={this.props.info.img} />
+                <img className="bgrImg" src={this.props.info.img} alt={this.props.info.firstName} />
                 <CardText info={this.props.info} id ={this.props.id}/>
                 </div>)
         }else{
@@ -90,15 +89,25 @@ class CardText extends Component{
 }
 
 class ExpandedCardContent extends Component{
+    // constructor(props){
+    //     super(props)
+    // }
     render()
     {
+        const news = this.props.info.newsItems.map(item =>
+            <NewsItem title={item.title} lead={item.lead} key={item.key} />
+        );
         return(<span>
         <section className="infoCardExpandedColumn">
             <div className = "biographyName"> {this.props.id} - {this.props.info.firstName} {this.props.info.lastName}  </div>
         </section>
         <section className="infoCardExpandedColumn">
-            <img src={this.props.info.img} className="bgrImgExpanded" />
+            <img src={this.props.info.img} className="bgrImgExpanded" alt={this.props.info.firstName} />
             <div className="biographyText">{this.props.info.bio} </div>
+        </section>
+        <hr/>
+        <section className="newsFlex">
+            {news}
         </section>
         <hr/>
         </span>
@@ -107,22 +116,42 @@ class ExpandedCardContent extends Component{
 }
 
 class FilterBox extends React.Component{
+    constructor(props){
+        super(props);
+        this.state = {types: [["alle",0], ["menn",1], ["kvinner",2]] };
+    }
     render()
     {
         return(
-            <div className="filterBox">Vis meg <SelectArea items = {types} style={{width: 120}} onChange={this.props.handleChange}/> på lista
+            <div className="filterBox">Vis meg <SelectArea items = {this.state.types} style={{width: 120}} onChange={this.props.handleChange}/> på lista
             {/*innen <SelectArea items={areas} style={{width: 180}}/> som bor
             <SelectArea items = {counties} style={{width: 220}}/>*/}.
             </div>
         );
     }
 };
-
+class NewsItem extends React.Component{
+    // constructor(props){
+    //     super(props);
+    // }
+    render()
+    {
+        return(
+        <div className="newsItem">
+            <img src="http://via.placeholder.com/120x120" alt="placeholder" />
+        <div className="newsColumn">
+            <span className="newsTitle">{this.props.title}</span>
+            <span className="newsIngress">{this.props.lead}</span>
+        </div>
+        </div>
+        );
+    }
+}
 class SelectArea extends React.Component{
   render()
   {
-    const listItems = this.props.items.map((item) =>
-        <option value={item}>{item}</option>
+    const listItems = this.props.items.map((item,key) =>
+        <option value={item[0]} key={key}>{item[0]}</option>
     );
     return(
         <select className="selectArea" onChange={this.props.onChange} style={this.props.style}>

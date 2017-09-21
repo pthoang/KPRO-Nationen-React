@@ -147,6 +147,7 @@ ul {
 
 .infoCardExpandedColumn {
     display:flex;
+    flex-flow: row wrap;
     margin:20px;
 }
 .bgrImgExpanded {
@@ -177,14 +178,33 @@ ul {
     flex-basis: auto;
 }
 
-.bioList {
-    position: relative;
-    width: 10%;
-    margin: 10px;
-    margin-top: 2%;
-    font-family: 'Roboto', sans-serif;
-    float: left;
-    color: #686868;
+.newsFlex{
+    display:flex;
+    flex-flow: row wrap;
+    margin:20px;
+}
+.newsItem{
+    box-shadow: 0 1px 2px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    margin:5px;
+    display:flex;
+    flex-basis:40%;
+    min-width: 300px;
+}
+.newsItem > img {
+    flex-direction: row;
+    display: flex;
+    flex-basis:auto;
+    width:auto;
+    height:auto;
+}
+
+.newsColumn{
+    padding:2px;
+    flex-direction: column;
+    display: flex;
+}
+.newsTitle{
+    font-weight: bold;
 }
 
 
@@ -196,6 +216,7 @@ ul {
     }
     .infoCardExpandedColumn{
         flex-wrap: wrap;
+        justify-content:center;
     }
     .biographyText{
         width:100%;
@@ -221,5 +242,14 @@ ul {
         margin: 0 0 0 0;
         width: 100%;
         height:100%;
+    }
+    .newsItem{
+        flex-basis:100%;
+        margin-left:0;
+        margin-right:0;
+    }
+    .newsFlex{
+        margin:0;
+        justify-content: center;
     }
 }
