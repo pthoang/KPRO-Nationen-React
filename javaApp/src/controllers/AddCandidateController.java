@@ -59,6 +59,7 @@ public class AddCandidateController extends SuperController {
 	 * Verify the input
 	 */
 	private boolean isInputValid() {
+		// TODO
 		return true;
 	}
 	
@@ -91,17 +92,18 @@ public class AddCandidateController extends SuperController {
 	
 	@FXML
 	private void cancel() {
+		super.viewController.showStartMenu();
 		
 	}
 	
 	@FXML
 	private void save() {
-		
-		
+		// TODO: save list
 	}
 	
 	@FXML
 	private void next() {
+		super.viewController.showAddDatabaseView();
 	}
 	
 	

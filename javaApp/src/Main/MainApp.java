@@ -1,6 +1,7 @@
 
 package Main;
 
+import java.awt.List;
 import java.io.IOException;
 
 import controllers.ViewController;
@@ -13,6 +14,7 @@ import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 import model.Candidate;
+import model.ScoringList;
 
 public class MainApp extends Application {
 	
@@ -22,6 +24,7 @@ public class MainApp extends Application {
 	private ViewController viewController;
 	
 	private ObservableList<Candidate> candidatesData;
+	private ObservableList<ScoringList> listsData;
 
 	
 	@Override
@@ -83,6 +86,15 @@ public class MainApp extends Application {
 	
 	private void populateWithLists() {
 		// TODO
+		
+		listsData = FXCollections.observableArrayList();
+		
+		ScoringList scoringList = new ScoringList();
+		scoringList.addCandidate(candidatesData.get(0), 2);
+		scoringList.addCandidate(candidatesData.get(1), 1);
+		
+		listsData.add(scoringList);
+		
 	}
 	
 	public void addCandidate(Candidate candidate) {
