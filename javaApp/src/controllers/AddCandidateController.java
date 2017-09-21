@@ -50,8 +50,27 @@ public class AddCandidateController extends SuperController {
 			Candidate candidate = new Candidate(name, null, description);
 			
 			super.mainApp.addCandidate(candidate);
+			
+			cleanFields();
 		}
 	}
+	
+	/**
+	 * Verify the input
+	 */
+	private boolean isInputValid() {
+		return true;
+	}
+	
+	/**
+	 * Clean fields
+	 */
+	private void cleanFields() {
+		nameField.setText("");
+		descriptionField.setText("");
+	}
+	
+	
 	
 	public void setMainApp(MainApp mainApp) {
 		super.setMainApp(mainApp);
@@ -68,12 +87,7 @@ public class AddCandidateController extends SuperController {
 	}
 	
 	
-	/*
-	 * Verify the input
-	 */
-	private boolean isInputValid() {
-		return true;
-	}
+	
 	
 	@FXML
 	private void cancel() {
