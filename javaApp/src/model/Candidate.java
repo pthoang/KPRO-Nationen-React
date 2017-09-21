@@ -14,13 +14,12 @@ public class Candidate {
 	private SimpleIntegerProperty range;
 	
 	
-	public Candidate(String firstName, String lastName, String imageName, String despcription, int range) {
-		this.firstName = new SimpleStringProperty(firstName);
-		this.lastName = new SimpleStringProperty(lastName);
+	public Candidate(String name, String imageName, String despcription) {
+		// TODO: split up name
+		this.firstName = new SimpleStringProperty(name);
 		this.imageName = new SimpleStringProperty(imageName);
 		// Error
 		this.description = new SimpleStringProperty();
-		this.range = new SimpleIntegerProperty(range);
 	}
 	public String getFirstName() {
 		return firstName.get();

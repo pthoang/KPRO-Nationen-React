@@ -5,15 +5,14 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane prefHeight="456.0" prefWidth="607.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+<AnchorPane prefHeight="456.0" prefWidth="607.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AddCandidateController">
    <children>
       <AnchorPane layoutX="2.0" layoutY="1.0" prefHeight="200.0" prefWidth="600.0">
          <children>
             <Label layoutX="41.0" layoutY="29.0" text="Navn" />
-            <TextField layoutX="88.0" layoutY="23.0" />
-            <Button layoutX="538.0" layoutY="161.0" mnemonicParsing="false" text="Lagre" />
-            <TextArea layoutX="83.0" layoutY="72.0" prefHeight="110.0" prefWidth="364.0" />
+            <TextField fx:id="nameField" layoutX="88.0" layoutY="23.0" />
+            <Button fx:id="saveCandidateButton" layoutX="538.0" layoutY="161.0" mnemonicParsing="false" onAction="#saveCandidate" text="Lagre" />
+            <TextArea fx:id="descriptionField" layoutX="83.0" layoutY="72.0" prefHeight="110.0" prefWidth="364.0" />
             <Label layoutX="38.0" layoutY="60.0" text="Beskrivelse" />
          </children>
       </AnchorPane>
@@ -24,9 +23,9 @@
       </TableView>
       <ToolBar layoutX="404.0" layoutY="415.0" prefHeight="40.0" prefWidth="200.0">
          <items>
-            <Button mnemonicParsing="false" text="Avslutt" />
-            <Button mnemonicParsing="false" text="Lagre" />
-            <Button mnemonicParsing="false" text="Neste" />
+            <Button fx:id="cancelButton" mnemonicParsing="false" text="Avslutt" />
+            <Button fx:id="saveButton" mnemonicParsing="false"text="Lagre" />
+            <Button fx:id="nextButton" mnemonicParsing="false"text="Neste" />
          </items>
       </ToolBar>
       <Label layoutX="313.0" layoutY="408.0" text="34/100 valgt" />

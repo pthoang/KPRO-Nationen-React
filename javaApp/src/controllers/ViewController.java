@@ -43,35 +43,17 @@ public class ViewController {
 			e.printStackTrace();
 		}
 	}
-	/**
-	 * Shows the view for adding database.
-	 */
-	public void showAddDatabaseView() {
-		try {
-			FXMLLoader loader = new FXMLLoader();
-			loader.setLocation(MainApp.class.getResource("../view/AddDatabaseView.fxml"));
-			AnchorPane addDatabaseView = (AnchorPane) loader.load();
-		
-			rootLayout.setCenter(addDatabaseView);
-			
-			AddDatabaseController controller = loader.getController();
-			controller.setMainApp(mainApp);
-			controller.setViewController(this);
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-	}
 	
 	/**
-	 * Shows the view for adding database.
+	 * Shows the view for creating a new list.
 	 */
-	public void showAddCandidateView() {
+	public void showNewListView() {
 		try {
 			FXMLLoader loader = new FXMLLoader();
-			loader.setLocation(MainApp.class.getResource("../view/AddCandidateView.fxml"));
-			AnchorPane addCandidateView = (AnchorPane) loader.load();
+			loader.setLocation(MainApp.class.getResource("../view/AddCandidateToListView.fxml"));
+			AnchorPane addCandidateToListView = (AnchorPane) loader.load();
 		
-			rootLayout.setCenter(addCandidateView);
+			rootLayout.setCenter(addCandidateToListView);
 			
 			AddCandidateController controller = loader.getController();
 			controller.setMainApp(mainApp);
@@ -99,4 +81,44 @@ public class ViewController {
 			e.printStackTrace();
 		}
 	}
+	
+	/**
+	 * Shows the view for listing old lists.
+	 */
+	public void showPreviousListsView() {
+		try {
+			FXMLLoader loader = new FXMLLoader();
+			loader.setLocation(MainApp.class.getResource("../view/ListsView.fxml"));
+			AnchorPane listView = (AnchorPane) loader.load();
+		
+			rootLayout.setCenter(listView);
+			
+			ListCandidatesController controller = loader.getController();
+			controller.setMainApp(mainApp);
+			controller.setViewController(this);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	
+	/**
+	 * Shows the view for adding databases.
+	 */
+	public void showAddDatabaseView() {
+		try {
+			FXMLLoader loader = new FXMLLoader();
+			loader.setLocation(MainApp.class.getResource("../view/AddDatabaseView.fxml"));
+			AnchorPane addDatabaseView = (AnchorPane) loader.load();
+		
+			rootLayout.setCenter(addDatabaseView);
+			
+			AddDatabaseController controller = loader.getController();
+			controller.setMainApp(mainApp);
+			controller.setViewController(this);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+	
 }

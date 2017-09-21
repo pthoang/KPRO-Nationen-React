@@ -68,15 +68,19 @@ public class MainApp extends Application {
 	
 	private void populateDatabase() {
 		populateWithCandidates();
-		
 	}
 
 	private void populateWithCandidates() {
 		candidatesData = FXCollections.observableArrayList();
 		
-		candidatesData.add(new Candidate("Alfa", "Al", "apic", "description Alfa", 1));
-		candidatesData.add(new Candidate("Beta", "Be", "bpic", "description Beta", 1));
+		candidatesData.add(new Candidate("Alfa Al", "apic", "description Alfa"));
+		candidatesData.add(new Candidate("Beta Be", "bpic", "description Beta"));
 		
+	}
+	
+	public void addCandidate(Candidate candidate) {
+		candidatesData.add(candidate);
+		System.out.println("Candidate saved");
 	}
 	
 	public ObservableList<Candidate> getCandidates() {

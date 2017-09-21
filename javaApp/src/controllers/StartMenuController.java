@@ -7,12 +7,13 @@ import javafx.scene.control.Button;
 
 public class StartMenuController {
 	
+	
+	@FXML 
+	private Button newListButton;
 	@FXML
-	private Button addDatabaseButton;
-	@FXML 
-	private Button addCandidateButton;
-	@FXML 
 	private Button listCandidatesButton;
+	@FXML 
+	private Button previousListsButton;
 	
 	
 	private MainApp mainApp;
@@ -37,17 +38,17 @@ public class StartMenuController {
 	}
 	
 	@FXML
-	private void addDatabase() {
-		viewController.showAddDatabaseView();
+	private void showNewList() {
+		viewController.showNewListView();
 	}
 	
 	@FXML
-	private void addCandidate() {
-		viewController.showAddCandidateView();
+	private void showPreviousLists() {
+		viewController.showPreviousListsView();
 	}
 	
 	@FXML
-	private void listCandidates() {
+	private void showListCandidates() {
 		viewController.showListCandidatesView();
 	}
 }

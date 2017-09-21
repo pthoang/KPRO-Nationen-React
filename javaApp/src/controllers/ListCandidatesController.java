@@ -11,6 +11,8 @@ public class ListCandidatesController {
 	@FXML
 	private TableView<Candidate> candidateTable;
 	@FXML
+	private TableColumn,
+	@FXML
 	private TableColumn<Candidate, Integer> rangeColumn;
 	@FXML
 	private TableColumn<Candidate, String> firstNameColumn;
