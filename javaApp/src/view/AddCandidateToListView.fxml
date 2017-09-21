@@ -23,9 +23,9 @@
       </TableView>
       <ToolBar layoutX="404.0" layoutY="415.0" prefHeight="40.0" prefWidth="200.0">
          <items>
-            <Button fx:id="cancelButton" mnemonicParsing="false" text="Avslutt" />
-            <Button fx:id="saveButton" mnemonicParsing="false"text="Lagre" />
-            <Button fx:id="nextButton" mnemonicParsing="false"text="Neste" />
+            <Button fx:id="cancelButton" mnemonicParsing="false" onAction="#cancel" text="Avslutt" />
+            <Button fx:id="saveButton" mnemonicParsing="false" onAction="#save" text="Lagre" />
+            <Button fx:id="nextButton" mnemonicParsing="false" onAction="#next" text="Neste" />
          </items>
       </ToolBar>
       <Label layoutX="313.0" layoutY="408.0" text="34/100 valgt" />

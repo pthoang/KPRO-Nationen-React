@@ -30,6 +30,8 @@ public class MainApp extends Application {
 		this.primaryStage.setTitle("Nationen - Landbruksmakt");
 		
 		initRootLayout();
+		
+		populateDatabase();
 				
 		ViewController viewController = new ViewController();
 		viewController.setRootLayout(rootLayout);

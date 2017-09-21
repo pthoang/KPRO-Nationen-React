@@ -1,6 +1,7 @@
 package controllers;
 
 import Main.MainApp;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
@@ -10,10 +11,6 @@ public class ListCandidatesController {
 	
 	@FXML
 	private TableView<Candidate> candidateTable;
-	@FXML
-	private TableColumn,
-	@FXML
-	private TableColumn<Candidate, Integer> rangeColumn;
 	@FXML
 	private TableColumn<Candidate, String> firstNameColumn;
 	@FXML
@@ -25,7 +22,9 @@ public class ListCandidatesController {
 	public void setMainApp(MainApp mainApp) {
 		this.mainApp = mainApp;
 		
-		candidateTable.setItems(mainApp.getCandidates());
+		ObservableList<Candidate> candidates = mainApp.getCandidates();
+		System.out.println("Candidates: " + candidates);
+		candidateTable.setItems(candidates);
 	}
 	
 	public void setViewController(ViewController viewController) {
@@ -35,7 +34,6 @@ public class ListCandidatesController {
 	
 	@FXML
 	private void initialize() {
-		rangeColumn.setCellValueFactory(cellData -> cellData.getValue().rangeProperty().asObject());
 		firstNameColumn.setCellValueFactory(cellData -> cellData.getValue().firstNameProperty());
 		lastNameColumn.setCellValueFactory(cellData -> cellData.getValue().lastNameProperty());
 	}

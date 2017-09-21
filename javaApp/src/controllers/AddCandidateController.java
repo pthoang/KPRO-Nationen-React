@@ -16,6 +16,13 @@ public class AddCandidateController extends SuperController {
 	@FXML
 	private TextArea descriptionField;
 	
+	@FXML
+	private Button cancelButton;
+	@FXML
+	private Button saveButton;
+	@FXML
+	private Button nextButton;
+	
 	
 	public AddCandidateController() {
 		super();
@@ -44,4 +51,18 @@ public class AddCandidateController extends SuperController {
 		return true;
 	}
 	
+	@FXML
+	private void cancel() {
+		
+	}
+	
+	@FXML
+	private void save() {
+		
+		
+	}
+	
+	@FXML
+	private void next() {
+	}
 }
