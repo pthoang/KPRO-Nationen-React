@@ -19,14 +19,17 @@ const names = [
     newsItems:[{
         title:"Bondetoppar trur KrF vil tøyle Frps reform-iver",
         key:0,
+        img:"http://imengine.tun.ocnetwork.se/imengine/image.php?uuid=2dc0de04-8c39-4eac-9d6f-43ea6dc40fd4&type=preview&source=false&function=cropresize&width=980&height=514&x=97&y=203&crop_w=1463&crop_h=759&z=0.67720685111989",
         lead:"Bremsene på for sentralisering, full stopp i liberaliseringa og håp om nye omkampar. Forventingane til KrF er store i jordbruket etter stortingsvalet."
     },{
         title:"Hedstein ber Dale slutte å demontere landbrukspolitikken",
         key:1,
+        img:"http://imengine.tun.ocnetwork.se/imengine/image.php?uuid=c9b20f98-ff7a-4b3b-93fe-63ab0f1d712b&type=preview&source=false&function=cropresize&width=980&height=514&x=0&y=158&crop_w=1578&crop_h=818&z=0.62836185819071",
         lead:"Samvirketopp Ola Hedstein håper å unngå fire nye år med «opphaldande strid» i landbrukspolitikken. Han ber regjeringa i staden satse på å nytte potensialet både innan jord og skog."
     },{
         title:"Bygger Norges største sauefjøs midt i rovdyrland",
         key:2,
+        img:"http://imengine.tun.ocnetwork.se/imengine/image.php?uuid=44479231-0556-49c4-8216-b2996bfb8e07&type=preview&source=false&function=cropresize&width=980&height=514&x=0&y=117&crop_w=1600&crop_h=829&z=0.62002412545235",
         lead:"I fjor sommer brant alle driftsbygningene ned til grunnen. Ett år senere er Norges største og mest moderne sauefjøs klar til bruk på Hole gård på Rena."
     }]
   },
@@ -43,10 +46,12 @@ const names = [
     newsItems:[{
         title:"Bondetoppar trur KrF vil tøyle Frps reform-iver",
         key:0,
+        img:"http://imengine.tun.ocnetwork.se/imengine/image.php?uuid=44479231-0556-49c4-8216-b2996bfb8e07&type=preview&source=false&function=cropresize&width=980&height=514&x=0&y=117&crop_w=1600&crop_h=829&z=0.62002412545235",
         lead:"Bremsene på for sentralisering, full stopp i liberaliseringa og håp om nye omkampar. Forventingane til KrF er store i jordbruket etter stortingsvalet."
     },{
         title:"Hedstein ber Dale slutte å demontere landbrukspolitikken",
         key:1,
+        img:"http://imengine.tun.ocnetwork.se/imengine/image.php?uuid=44479231-0556-49c4-8216-b2996bfb8e07&type=preview&source=false&function=cropresize&width=980&height=514&x=0&y=117&crop_w=1600&crop_h=829&z=0.62002412545235",
         lead:"Samvirketopp Ola Hedstein håper å unngå fire nye år med «opphaldande strid» i landbrukspolitikken. Han ber regjeringa i staden satse på å nytte potensialet både innan jord og skog."
     }]
   },
@@ -63,10 +68,12 @@ const names = [
     newsItems:[{
         title:"Bondetoppar trur KrF vil tøyle Frps reform-iver",
         key:0,
+        img:"http://imengine.tun.ocnetwork.se/imengine/image.php?uuid=44479231-0556-49c4-8216-b2996bfb8e07&type=preview&source=false&function=cropresize&width=980&height=514&x=0&y=117&crop_w=1600&crop_h=829&z=0.62002412545235",
         lead:"Bremsene på for sentralisering, full stopp i liberaliseringa og håp om nye omkampar. Forventingane til KrF er store i jordbruket etter stortingsvalet."
     },{
         title:"Hedstein ber Dale slutte å demontere landbrukspolitikken",
         key:1,
+        img:"http://imengine.tun.ocnetwork.se/imengine/image.php?uuid=44479231-0556-49c4-8216-b2996bfb8e07&type=preview&source=false&function=cropresize&width=980&height=514&x=0&y=117&crop_w=1600&crop_h=829&z=0.62002412545235",
         lead:"Samvirketopp Ola Hedstein håper å unngå fire nye år med «opphaldande strid» i landbrukspolitikken. Han ber regjeringa i staden satse på å nytte potensialet både innan jord og skog."
     }]
   },
@@ -83,10 +90,12 @@ const names = [
     newsItems:[{
         title:"Bondetoppar trur KrF vil tøyle Frps reform-iver",
         key:0,
+        img:"http://imengine.tun.ocnetwork.se/imengine/image.php?uuid=44479231-0556-49c4-8216-b2996bfb8e07&type=preview&source=false&function=cropresize&width=980&height=514&x=0&y=117&crop_w=1600&crop_h=829&z=0.62002412545235",
         lead:"Bremsene på for sentralisering, full stopp i liberaliseringa og håp om nye omkampar. Forventingane til KrF er store i jordbruket etter stortingsvalet."
     },{
         title:"Hedstein ber Dale slutte å demontere landbrukspolitikken",
         key:1,
+        img:"http://imengine.tun.ocnetwork.se/imengine/image.php?uuid=44479231-0556-49c4-8216-b2996bfb8e07&type=preview&source=false&function=cropresize&width=980&height=514&x=0&y=117&crop_w=1600&crop_h=829&z=0.62002412545235",
         lead:"Samvirketopp Ola Hedstein håper å unngå fire nye år med «opphaldande strid» i landbrukspolitikken. Han ber regjeringa i staden satse på å nytte potensialet både innan jord og skog."
     }]
   },
@@ -103,10 +112,12 @@ const names = [
     newsItems:[{
         title:"Bondetoppar trur KrF vil tøyle Frps reform-iver",
         key:0,
+        img:"http://imengine.tun.ocnetwork.se/imengine/image.php?uuid=44479231-0556-49c4-8216-b2996bfb8e07&type=preview&source=false&function=cropresize&width=980&height=514&x=0&y=117&crop_w=1600&crop_h=829&z=0.62002412545235",
         lead:"Bremsene på for sentralisering, full stopp i liberaliseringa og håp om nye omkampar. Forventingane til KrF er store i jordbruket etter stortingsvalet."
     },{
         title:"Hedstein ber Dale slutte å demontere landbrukspolitikken",
         key:1,
+        img:"http://imengine.tun.ocnetwork.se/imengine/image.php?uuid=44479231-0556-49c4-8216-b2996bfb8e07&type=preview&source=false&function=cropresize&width=980&height=514&x=0&y=117&crop_w=1600&crop_h=829&z=0.62002412545235",
         lead:"Samvirketopp Ola Hedstein håper å unngå fire nye år med «opphaldande strid» i landbrukspolitikken. Han ber regjeringa i staden satse på å nytte potensialet både innan jord og skog."
     }]
   },
@@ -123,10 +134,12 @@ const names = [
     newsItems:[{
         title:"Bondetoppar trur KrF vil tøyle Frps reform-iver",
         key:0,
+        img:"http://imengine.tun.ocnetwork.se/imengine/image.php?uuid=44479231-0556-49c4-8216-b2996bfb8e07&type=preview&source=false&function=cropresize&width=980&height=514&x=0&y=117&crop_w=1600&crop_h=829&z=0.62002412545235",
         lead:"Bremsene på for sentralisering, full stopp i liberaliseringa og håp om nye omkampar. Forventingane til KrF er store i jordbruket etter stortingsvalet."
     },{
         title:"Hedstein ber Dale slutte å demontere landbrukspolitikken",
         key:1,
+        img:"http://imengine.tun.ocnetwork.se/imengine/image.php?uuid=44479231-0556-49c4-8216-b2996bfb8e07&type=preview&source=false&function=cropresize&width=980&height=514&x=0&y=117&crop_w=1600&crop_h=829&z=0.62002412545235",
         lead:"Samvirketopp Ola Hedstein håper å unngå fire nye år med «opphaldande strid» i landbrukspolitikken. Han ber regjeringa i staden satse på å nytte potensialet både innan jord og skog."
     }]
   },
@@ -143,10 +156,12 @@ const names = [
     newsItems:[{
         title:"Bondetoppar trur KrF vil tøyle Frps reform-iver",
         key:0,
+        img:"http://imengine.tun.ocnetwork.se/imengine/image.php?uuid=44479231-0556-49c4-8216-b2996bfb8e07&type=preview&source=false&function=cropresize&width=980&height=514&x=0&y=117&crop_w=1600&crop_h=829&z=0.62002412545235",
         lead:"Bremsene på for sentralisering, full stopp i liberaliseringa og håp om nye omkampar. Forventingane til KrF er store i jordbruket etter stortingsvalet."
     },{
         title:"Hedstein ber Dale slutte å demontere landbrukspolitikken",
         key:1,
+        img:"http://imengine.tun.ocnetwork.se/imengine/image.php?uuid=44479231-0556-49c4-8216-b2996bfb8e07&type=preview&source=false&function=cropresize&width=980&height=514&x=0&y=117&crop_w=1600&crop_h=829&z=0.62002412545235",
         lead:"Samvirketopp Ola Hedstein håper å unngå fire nye år med «opphaldande strid» i landbrukspolitikken. Han ber regjeringa i staden satse på å nytte potensialet både innan jord og skog."
     }]
   },
@@ -163,10 +178,12 @@ const names = [
     newsItems:[{
         title:"Bondetoppar trur KrF vil tøyle Frps reform-iver",
         key:0,
+        img:"http://imengine.tun.ocnetwork.se/imengine/image.php?uuid=44479231-0556-49c4-8216-b2996bfb8e07&type=preview&source=false&function=cropresize&width=980&height=514&x=0&y=117&crop_w=1600&crop_h=829&z=0.62002412545235",
         lead:"Bremsene på for sentralisering, full stopp i liberaliseringa og håp om nye omkampar. Forventingane til KrF er store i jordbruket etter stortingsvalet."
     },{
         title:"Hedstein ber Dale slutte å demontere landbrukspolitikken",
         key:1,
+        img:"http://imengine.tun.ocnetwork.se/imengine/image.php?uuid=44479231-0556-49c4-8216-b2996bfb8e07&type=preview&source=false&function=cropresize&width=980&height=514&x=0&y=117&crop_w=1600&crop_h=829&z=0.62002412545235",
         lead:"Samvirketopp Ola Hedstein håper å unngå fire nye år med «opphaldande strid» i landbrukspolitikken. Han ber regjeringa i staden satse på å nytte potensialet både innan jord og skog."
     }]
   },
@@ -183,10 +200,12 @@ const names = [
     newsItems:[{
         title:"Bondetoppar trur KrF vil tøyle Frps reform-iver",
         key:0,
+        img:"http://imengine.tun.ocnetwork.se/imengine/image.php?uuid=44479231-0556-49c4-8216-b2996bfb8e07&type=preview&source=false&function=cropresize&width=980&height=514&x=0&y=117&crop_w=1600&crop_h=829&z=0.62002412545235",
         lead:"Bremsene på for sentralisering, full stopp i liberaliseringa og håp om nye omkampar. Forventingane til KrF er store i jordbruket etter stortingsvalet."
     },{
         title:"Hedstein ber Dale slutte å demontere landbrukspolitikken",
         key:1,
+        img:"http://imengine.tun.ocnetwork.se/imengine/image.php?uuid=44479231-0556-49c4-8216-b2996bfb8e07&type=preview&source=false&function=cropresize&width=980&height=514&x=0&y=117&crop_w=1600&crop_h=829&z=0.62002412545235",
         lead:"Samvirketopp Ola Hedstein håper å unngå fire nye år med «opphaldande strid» i landbrukspolitikken. Han ber regjeringa i staden satse på å nytte potensialet både innan jord og skog."
     }]
   },
@@ -203,10 +222,12 @@ const names = [
     newsItems:[{
         title:"Bondetoppar trur KrF vil tøyle Frps reform-iver",
         key:0,
+        img:"http://imengine.tun.ocnetwork.se/imengine/image.php?uuid=44479231-0556-49c4-8216-b2996bfb8e07&type=preview&source=false&function=cropresize&width=980&height=514&x=0&y=117&crop_w=1600&crop_h=829&z=0.62002412545235",
         lead:"Bremsene på for sentralisering, full stopp i liberaliseringa og håp om nye omkampar. Forventingane til KrF er store i jordbruket etter stortingsvalet."
     },{
         title:"Hedstein ber Dale slutte å demontere landbrukspolitikken",
         key:1,
+        img:"http://imengine.tun.ocnetwork.se/imengine/image.php?uuid=44479231-0556-49c4-8216-b2996bfb8e07&type=preview&source=false&function=cropresize&width=980&height=514&x=0&y=117&crop_w=1600&crop_h=829&z=0.62002412545235",
         lead:"Samvirketopp Ola Hedstein håper å unngå fire nye år med «opphaldande strid» i landbrukspolitikken. Han ber regjeringa i staden satse på å nytte potensialet både innan jord og skog."
     }]
   },
@@ -226,10 +247,12 @@ const names = [
     },{
         title:"Hedstein ber Dale slutte å demontere landbrukspolitikken",
         key:0,
+        img:"http://imengine.tun.ocnetwork.se/imengine/image.php?uuid=44479231-0556-49c4-8216-b2996bfb8e07&type=preview&source=false&function=cropresize&width=980&height=514&x=0&y=117&crop_w=1600&crop_h=829&z=0.62002412545235",
         lead:"Samvirketopp Ola Hedstein håper å unngå fire nye år med «opphaldande strid» i landbrukspolitikken. Han ber regjeringa i staden satse på å nytte potensialet både innan jord og skog."
     },{
         title:"Bygger Norges største sauefjøs midt i rovdyrland",
         key:1,
+        img:"http://imengine.tun.ocnetwork.se/imengine/image.php?uuid=44479231-0556-49c4-8216-b2996bfb8e07&type=preview&source=false&function=cropresize&width=980&height=514&x=0&y=117&crop_w=1600&crop_h=829&z=0.62002412545235",
         lead:"I fjor sommer brant alle driftsbygningene ned til grunnen. Ett år senere er Norges største og mest moderne sauefjøs klar til bruk på Hole gård på Rena."
     }]
 },
@@ -246,10 +269,12 @@ const names = [
   newsItems:[{
       title:"Bondetoppar trur KrF vil tøyle Frps reform-iver",
       key:0,
+      img:"http://imengine.tun.ocnetwork.se/imengine/image.php?uuid=44479231-0556-49c4-8216-b2996bfb8e07&type=preview&source=false&function=cropresize&width=980&height=514&x=0&y=117&crop_w=1600&crop_h=829&z=0.62002412545235",
       lead:"Bremsene på for sentralisering, full stopp i liberaliseringa og håp om nye omkampar. Forventingane til KrF er store i jordbruket etter stortingsvalet."
   },{
       title:"Hedstein ber Dale slutte å demontere landbrukspolitikken",
       key:1,
+      img:"http://imengine.tun.ocnetwork.se/imengine/image.php?uuid=44479231-0556-49c4-8216-b2996bfb8e07&type=preview&source=false&function=cropresize&width=980&height=514&x=0&y=117&crop_w=1600&crop_h=829&z=0.62002412545235",
       lead:"Samvirketopp Ola Hedstein håper å unngå fire nye år med «opphaldande strid» i landbrukspolitikken. Han ber regjeringa i staden satse på å nytte potensialet både innan jord og skog."
   }]
 }

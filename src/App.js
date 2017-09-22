@@ -12,8 +12,7 @@ export default class App extends Component{
     {
         super(props);
         this.handleChange = this.handleChange.bind(this);
-        console.log("%c👋 Hello! Nice to see you!\n","font-size:2em;",
-    "If you're here to look at the code, feel free to poke around");
+        console.log("%c👋 Hello!\n","font-size:2em;");
     }
 
     handleChange(event)
@@ -66,7 +65,7 @@ class Card extends Component{
                 </div>)
         }else{
             return(<div className="infoCardExpandedBgr">
-                <div className="infoCardExpanded" id={this.props.id} onClick={this.clickHandler}>
+                <div className="infoCardExpanded" id={this.props.id} onClick={this.clickHandler} >
                 <ExpandedCardContent id={this.props.id} info={this.props.info} />
                 </div>
                 </div>)
@@ -95,7 +94,7 @@ class ExpandedCardContent extends Component{
     render()
     {
         const news = this.props.info.newsItems.map(item =>
-            <NewsItem title={item.title} lead={item.lead} key={item.key} />
+            <NewsItem items={item} key={item.key} />
         );
         return(<span>
         <section className="infoCardExpandedColumn">
@@ -137,12 +136,14 @@ class NewsItem extends React.Component{
     render()
     {
         return(
-        <div className="newsItem">
-            <img src="http://via.placeholder.com/120x120" alt="placeholder" />
-        <div className="newsColumn">
-            <span className="newsTitle">{this.props.title}</span>
-            <span className="newsIngress">{this.props.lead}</span>
+        <div className="newsItem" >
+            <img src={this.props.items.img} alt="placeholder" />
+        <a href="http://www.nationen.no" target="_blank" rel="noopener noreferrer">
+        <div className="newsColumn" >
+            <span className="newsTitle" >{this.props.items.title}</span>
+            <span className="newsIngress">{this.props.items.lead}</span>
         </div>
+        </a>
         </div>
         );
     }
