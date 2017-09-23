@@ -1,0 +1,255 @@
+body {
+    background-color: #faf8f7;
+    margin: 10%;
+}
+
+.infoCard {
+    background: #ffffff;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    /*padding:5px;*/
+    margin: 15px;
+    overflow: hidden;
+    width: 15vmax;
+    min-width: 250px;
+    height: 15vmax;
+    min-height: 250px;
+    float: left;
+    position: relative;
+    border-radius: 5px;
+}
+
+.infoCard:hover{
+    box-shadow: 0 10px 30px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    transition: box-shadow 0.5s, transform 0.5s;
+    transform:scale(1.03);
+}
+.infoCard:hover hr {
+    width: 90%;
+    border-color: rgba( 255, 242, 117, 0.7);
+    transition: width .5s, border-color .5s;
+}
+
+hr {
+    width: 70%;
+    border-color: rgba( 76, 185, 68, 0.7);
+    transition: width .5s, border-color .5s;
+    padding:0;
+    margin-top:3px;
+    margin-bottom:3px;
+
+}
+
+.cardText {
+    padding-bottom: 1%;
+    padding-top: 3%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    bottom: 0;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight:300;
+    width: 100%;
+    height: 32%;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+
+
+#nameText {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.content {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.bgrImg {
+    width: 100%;
+}
+
+.infocard hr {
+    width: 70%;
+    transition: .3s;
+    border-color: rgba( 155, 197, 61, 0.7);
+}
+
+.filterBox {
+    font-size: 2em;
+    font-family: 'Roboto', sans-serif;
+    font-weight:900;
+}
+
+.selectArea {
+    outline: none;
+    border: 0;
+    border-bottom: 2px solid lightgreen;
+    width: 250px;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight:inherit;
+    appearance: none;
+    -webkit-appearance: none;
+    background: inherit;
+}
+
+.selectArea:focus {
+    outline: none;
+}
+
+ul {
+  list-style-type: none;
+  font-size:1em;
+}
+.material-icons{
+    color:green;
+    margin-top:5px;
+}
+/* ============ EXPANDED ================ */
+@keyframes slideInFromLeft {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: translateY(1);
+  }
+}
+.infoCardExpanded {
+    background: #ffffff;
+    transition: width 1s, height 1s;
+    animation: 250ms ease-out 0s 1 slideInFromLeft;
+    /*padding:5px;*/
+    margin: 15px;
+    overflow: auto;
+    width: 68%;
+    height: 90%;
+    min-height: 300px;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+}
+
+.infoCardExpandedBgr {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 9;
+}
+
+.infoCardExpandedColumn {
+    display:flex;
+    flex-flow: row wrap;
+    margin:20px;
+}
+.bgrImgExpanded {
+    width: 150px;
+    height:150px;
+    margin-right:10px;
+    border-radius: 50%;
+    flex-grow:0;
+}
+
+.biographyText {
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    color: #686868;
+    flex-grow:0;
+    margin-left:10px;
+    align-self:center;
+    width:60%;
+    flex-basis: auto;
+}
+
+.biographyName {
+    font-family: 'Roboto', sans-serif;
+    color: Black;
+    font-size: 2em;
+    font-weight:900;
+    flex-grow:1;
+    flex-basis: auto;
+}
+
+.newsFlex{
+    display:flex;
+    flex-flow: row wrap;
+    margin:20px;
+}
+.newsItem{
+    box-shadow: 0 1px 2px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    margin:5px;
+    display:flex;
+    flex-basis:40%;
+    min-width: 300px;
+}
+.newsItem > img {
+    flex-direction: row;
+    display: flex;
+    flex-basis:auto;
+    width:auto;
+    height:auto;
+}
+
+.newsColumn{
+    padding:2px;
+    flex-direction: column;
+    display: flex;
+}
+.newsTitle{
+    font-weight: bold;
+}
+
+
+@media screen and (max-width: 800px) {
+    .infoCard {
+        width: 100vw;
+        height: 70vw;
+        margin: 0 0 30px 0;
+    }
+    .infoCardExpandedColumn{
+        flex-wrap: wrap;
+        justify-content:center;
+    }
+    .biographyText{
+        width:100%;
+    }
+    .bgrImg {
+        width: 100vw;
+    }
+    .content {
+        width: 100%;
+        margin: 0;
+    }
+    body {
+        margin: 0;
+    }
+    #element::-webkit-scrollbar {
+        display: none;
+    }
+    .bgrImgExpanded {
+        margin-bottom:10px;
+        flex-basis: auto;
+    }
+    .infoCardExpanded {
+        margin: 0 0 0 0;
+        width: 100%;
+        height:100%;
+    }
+    .newsItem{
+        flex-basis:100%;
+        margin-left:0;
+        margin-right:0;
+    }
+    .newsFlex{
+        margin:0;
+        justify-content: center;
+    }
+}
