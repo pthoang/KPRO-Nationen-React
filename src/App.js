@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import './App.css';
 
 
-var show = ["m", "f", "none"];
 // const areas = ["alt","landbruk", "politikk", "næringsliv"];
 // const counties = ["i hele landet","på Østlandet", "på Vestlandet",
 // "i Nord-Norge", " i Trøndelag", " på Sørlandet"];
@@ -12,24 +11,43 @@ export default class App extends Component{
     {
         super(props);
         this.handleChange = this.handleChange.bind(this);
+        this.filterGender = this.filterGender.bind(this);
+        this.filterName = this.filterName.bind(this);
+        this.state = {show:["m", "f", "none"],
+                        nameSearch: ""}
         console.log("%c👋 Hello!\n","font-size:2em;");
     }
 
     handleChange(event)
     {
-        if ( event.target.value === "menn") {
-            show = ["m"];
-        }else if ( event.target.value === "kvinner") {
-            show = ["f"];
-        }else{
-            show = ["m", "f", "none"];
+        if ( event.target.name === "genderBox"){
+            if ( event.target.value === "menn") {
+                this.setState({show:["m"]});
+            }else if ( event.target.value === "kvinner") {
+                this.setState({show:["f"]});
+            }else{
+                this.setState({show:["m","f","none"]});
+            }
+            this.forceUpdate();
+        }else if (event.target.name === "nameSearch") {
+            this.setState({nameSearch:event.target.value});
+            console.log(this.state.nameSearch);
         }
-        this.forceUpdate();
     }
 
     filterGender(name)
     {
-        return show.indexOf(name.gender) > -1;
+        return this.state.show.indexOf(name.gender) > -1;
+    }
+
+    filterName(name)
+    {
+        if (this.state.nameSearch.length < 1){
+            return true;
+        }else{
+            return name.firstName.toLowerCase().indexOf(this.state.nameSearch.toLowerCase()) !== -1;
+        }
+
     }
 
     render()
@@ -37,7 +55,9 @@ export default class App extends Component{
         return(
             <div className="content">
                 <FilterBox handleChange={this.handleChange}/>
-                {this.props.names.filter(this.filterGender).map(name =>
+                {this.props.names.filter(this.filterGender)
+                    .filter(this.filterName)
+                    .map(name =>
                 <Card key={name.key} info={name} id={name.key} />)}
             </div>)
     };
@@ -77,7 +97,7 @@ class CardText extends Component{
     render()
     {
         return(<div className="cardText">
-                    {this.props.id} - {this.props.info.firstName} {this.props.info.lastName} <br />
+                    {this.props.id} - {this.props.info.firstName}<br />
                     <span id="nameText">
                     <hr />
                     {/*this.props.info.firstName*/} {/*this.props.info.lastName*/}
@@ -99,7 +119,7 @@ class ExpandedCardContent extends Component{
         );
         return(<span>
         <section className="infoCardExpandedColumn">
-            <div className = "biographyName"> {this.props.id} - {this.props.info.firstName} {this.props.info.lastName}  </div>
+            <div className = "biographyName"> {this.props.id} - {this.props.info.firstName}</div>
         </section>
         <section className="infoCardExpandedColumn">
             <img src={this.props.info.img} className="bgrImgExpanded" alt={this.props.info.firstName} />
@@ -123,12 +143,34 @@ class FilterBox extends React.Component{
     render()
     {
         return(
-            <div className="filterBox">Vis meg <SelectArea items = {this.state.types} style={{width: 120}} onChange={this.props.handleChange}/> på lista
-            {/*innen <SelectArea items={areas} style={{width: 180}}/> som bor
-            <SelectArea items = {counties} style={{width: 220}}/>*/}.
+            <div className="filterBox">Vis meg <SelectArea items = {this.state.types} style={{width: 120}} name="genderBox" onChange={this.props.handleChange}/> på lista.
+            <br/>Søk: <SearchArea onChange={this.props.handleChange} name={"nameSearch"}/>
+            {/*som bor<SelectArea items = {counties} style={{width: 220}}/>*/}
             </div>
         );
     }
+};
+
+class SelectArea extends React.Component{
+  render()
+  {
+    const listItems = this.props.items.map((item,key) =>
+        <option value={item[0]} key={key}>{item[0]}</option>
+    );
+    return(
+        <select className="selectArea" onChange={this.props.onChange} style={this.props.style} name={this.props.name}>
+        {listItems}
+        </select>
+    );
+  }
+};
+
+class SearchArea extends React.Component{
+  render(){
+    return(
+      <input className="searchArea" type="text" name={this.props.name}  onChange={this.props.onChange} defaultValue="" />
+      );
+  }
 };
 class NewsItem extends React.Component{
     // constructor(props){
@@ -149,16 +191,3 @@ class NewsItem extends React.Component{
         );
     }
 }
-class SelectArea extends React.Component{
-  render()
-  {
-    const listItems = this.props.items.map((item,key) =>
-        <option value={item[0]} key={key}>{item[0]}</option>
-    );
-    return(
-        <select className="selectArea" onChange={this.props.onChange} style={this.props.style}>
-        {listItems}
-        </select>
-    );
-  }
-};
