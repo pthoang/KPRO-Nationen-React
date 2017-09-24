@@ -91,6 +91,7 @@ class ExpandedCardContent extends Component{
     // constructor(props){
     //     super(props)
     // }
+
     render()
     {
         const news = this.props.info.newsItems.map(item =>

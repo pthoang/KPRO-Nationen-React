@@ -199,7 +199,6 @@ ul {
     transform:scale(1.03);
 }
 .newsItem > img {
-    flex-basis:auto;
     width:130px;
     height:140px;
     object-fit: cover;
