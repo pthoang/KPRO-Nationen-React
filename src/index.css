@@ -9,9 +9,11 @@ body {
     /*padding:5px;*/
     margin: 15px;
     overflow: hidden;
-    width: 15vmax;
+    width: 25vw;
     min-width: 250px;
-    height: 15vmax;
+    height: 22vw;
+    max-height:320px;
+    max-width:320px;
     float: left;
     position: relative;
     border-radius: 5px;
@@ -60,8 +62,9 @@ hr {
 }
 
 .content {
-    width: 85%;
+    width: 80%;
     margin: 0 auto;
+    max-width:1398px;
 }
 
 .bgrImg {
@@ -117,6 +120,10 @@ ul {
 .material-icons{
     color:green;
     margin-top:5px;
+}
+
+.foundNothing{
+    font-size:2em;
 }
 /* ============ EXPANDED ================ */
 @keyframes slideInFromLeft {
@@ -260,14 +267,22 @@ a {
         height:100px;
     }
 }
-
-@media screen and (max-width: 800px) {
+@media screen and (max-width:900px){
+    .content{
+        width:90%;
+    }
+    .cardText{
+        height:40%;
+    }
+}
+@media screen and (max-width: 650px) {
     .infoCard {
         width: 100%;
         height: 52vw;
         margin: 15px 0 15px 0;
         border-radius: 0;
         border-left:6px solid lightgreen;
+        max-width:none;
     }
     .infoCardExpandedColumn{
         flex-wrap: wrap;
@@ -297,6 +312,10 @@ a {
         margin: 0 0 0 0;
         width: 100%;
         height:100%;
+    }
+
+    .cardText{
+        height:35%;
     }
 
 }
