@@ -69,10 +69,17 @@ class Card extends Component {
         super( props );
         this.state = {'isExpanded':false};
         this.clickHandler = this.clickHandler.bind( this );
+        this.handleKeyPress = this.handleKeyPress.bind( this );
     }
 
     clickHandler() {
         this.setState( {'isExpanded':!this.state.isExpanded} );
+    }
+
+    handleKeyPress( e ) {
+        if ( e.key === 'Escape' ) {
+            this.setState( {'isExpanded':!this.state.isExpanded} );
+        }
     }
 
     render() {
@@ -83,8 +90,8 @@ class Card extends Component {
             </div> );
         } else {
             return ( <div className="infoCardExpandedBgr">
-                <div className="infoCardExpanded" id={this.props.id} onClick={this.clickHandler} >
-                    <ExpandedCardContent id={this.props.id} info={this.props.info} />
+                <div className="infoCardExpanded" id={this.props.id} tabIndex="0" onKeyDown={this.handleKeyPress}>
+                    <ExpandedCardContent id={this.props.id} info={this.props.info} onClick={this.clickHandler} />
                 </div>
             </div> );
         }
@@ -112,9 +119,9 @@ class ExpandedCardContent extends Component {
 
     getMove() {
         if ( this.props.id > this.props.info.lastYear ) {
-            return <i className="material-icons" style={{'color': '#9EBA7F', 'fontSize':'1.2em', 'verticalAlign': 'middle'}}>trending_up</i>;
-        } else if ( this.props.id < this.props.info.lastYear ) {
             return <i className="material-icons" style={{'color': '#FF8686', 'fontSize':'1.2em', 'verticalAlign': 'middle'}}>trending_down</i>;
+        } else if ( this.props.id < this.props.info.lastYear ) {
+            return <i className="material-icons" style={{'color': '#9EBA7F', 'fontSize':'1.2em', 'verticalAlign': 'middle'}}>trending_up</i>;
         } else {
             return <i className="material-icons" style={{'color': '#FCD367', 'fontSize':'1.2em', 'verticalAlign': 'middle'}}>trending_flat</i>;
         }
@@ -126,9 +133,11 @@ class ExpandedCardContent extends Component {
         );
         return ( <span>
             <section className="infoCardExpandedColumn">
-                <div className = "biographyName"> {this.props.id} - {this.props.info.firstName} <br/>
+                <div className = "biographyName"> {this.props.id} - {this.props.info.firstName}<br/>
+                    <span style={{'color': 'lightgrey', 'fontSize':'0.8em' }}>{this.props.info.profession}</span> <br/>
                     <span style={{'color': 'lightgrey', 'fontSize':'0.8em' }}>Plassering i fjor: {this.getMove()} {this.props.info.lastYear}</span>
                 </div>
+                <i className="material-icons closeButton" onClick={this.props.onClick}>close</i>
             </section>
             <section className="infoCardExpandedColumn">
                 <img src={this.props.info.img} className="bgrImgExpanded" alt={this.props.info.firstName} />

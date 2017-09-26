@@ -19,20 +19,9 @@ body {
     border-radius: 5px;
 }
 
-.infoCard:hover{
-    box-shadow: 0 10px 30px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-    transition: box-shadow 0.5s, transform 0.5s;
-    transform:scale(1.03);
-}
-.infoCard:hover hr {
-    width: 90%;
-    border-color: rgba( 255, 242, 117, 0.7);
-    transition: width .5s, border-color .5s;
-}
-
 hr {
     width: 70%;
-    border-color: rgba( 76, 185, 68, 0.7);
+    border-color: #679436;
     transition: width .5s, border-color .5s;
     padding:0;
     margin-top:3px;
@@ -55,8 +44,6 @@ hr {
     text-align: center;
 }
 
-
-
 #nameText {
     color: rgba(255, 255, 255, 0.7);
 }
@@ -77,7 +64,7 @@ hr {
 .infocard hr {
     width: 70%;
     transition: .3s;
-    border-color: rgba( 155, 197, 61, 0.7);
+    border-color: #679436;
 }
 
 .filterBox {
@@ -89,7 +76,7 @@ hr {
 .selectArea {
     outline: none;
     border: 0;
-    border-bottom: 2px solid lightgreen;
+    border-bottom: 2px solid #679436;
     width: 250px;
     font-family: inherit;
     font-size: inherit;
@@ -102,7 +89,7 @@ hr {
 .searchArea{
   outline: none;
   border: 0;
-  border-bottom: 2px solid lightgreen;
+  border-bottom: 2px solid #679436;
   width: 250px;
   font-family: inherit;
   font-size: inherit;
@@ -133,7 +120,7 @@ ul {
 }
 .infoCardExpanded {
     background: #ffffff;
-    transition: width 1s, height 1s;
+    /*transition: width 1s, height 1s;*/
     animation: 250ms ease-out 0s 1 slideInFromLeft;
     /*padding:5px;*/
     margin: 15px;
@@ -206,7 +193,7 @@ ul {
     flex-basis:40%;
     min-width: 300px;
     border-left-style:solid;
-    border-left-color:rgba( 155, 197, 61, 0.7);
+    border-left-color:#A5BE00;
     border-left-width:6px;
 }
 .newsItem:hover{
@@ -238,6 +225,22 @@ ul {
     font-size: 0.9em;
 }
 
+.closeButton{
+    position:absolute;
+    right:3%;
+    top:3%;
+    line-height: initial;
+    height: fit-content;
+    transition: all 250ms ease-out;
+    border-radius: 50%;
+}
+.closeButton:hover{
+    color:#FF3C38;
+    transform:rotate(90deg);
+    border: 1px solid #FF3C38;
+    border-radius: 50%;
+}
+
 a {
     color:black;
     text-decoration: none;
@@ -265,6 +268,19 @@ a {
         height:100px;
     }
 }
+@media (hover:hover) {
+    .infoCard:hover{
+        box-shadow: 0 10px 30px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+        transition: box-shadow 0.5s, transform 0.5s;
+        transform:scale(1.03);
+    }
+    .infoCard:hover hr {
+        width: 90%;
+        border-color: #A5BE00;
+        transition: width .5s, border-color .5s;
+    }
+}
+
 @media screen and (max-width:900px){
     .content{
         width:90%;
@@ -275,12 +291,17 @@ a {
 }
 @media screen and (max-width: 650px) {
     .infoCard {
-        border-left:6px solid lightgreen;
+        border-left:6px solid #A5BE00;
         border-radius: 0;
         height: 52vw;
         margin: 15px 0 15px 0;
         max-width:none;
+        transition: none !important;
         width: 100%;
+    }
+
+    hr{
+        transition: none !important;
     }
     .infoCardExpandedColumn{
         flex-wrap: wrap;
@@ -316,4 +337,8 @@ a {
         height:35%;
     }
 
+    .closeButton{
+        right:8%;
+        top:3%;
+    }
 }
