@@ -105,9 +105,20 @@ class CardText extends Component {
 }
 
 class ExpandedCardContent extends Component {
-    // constructor(props){
-    //     super(props)
-    // }
+    constructor( props ) {
+        super( props );
+        this.getMove = this.getMove.bind( this );
+    }
+
+    getMove() {
+        if ( this.props.id > this.props.info.lastYear ) {
+            return <i className="material-icons" style={{'color': '#9EBA7F', 'fontSize':'1.2em', 'verticalAlign': 'middle'}}>trending_up</i>;
+        } else if ( this.props.id < this.props.info.lastYear ) {
+            return <i className="material-icons" style={{'color': '#FF8686', 'fontSize':'1.2em', 'verticalAlign': 'middle'}}>trending_down</i>;
+        } else {
+            return <i className="material-icons" style={{'color': '#FCD367', 'fontSize':'1.2em', 'verticalAlign': 'middle'}}>trending_flat</i>;
+        }
+    }
 
     render() {
         const news = this.props.info.newsItems.map( item =>
@@ -115,7 +126,9 @@ class ExpandedCardContent extends Component {
         );
         return ( <span>
             <section className="infoCardExpandedColumn">
-                <div className = "biographyName"> {this.props.id} - {this.props.info.firstName}</div>
+                <div className = "biographyName"> {this.props.id} - {this.props.info.firstName} <br/>
+                    <span style={{'color': 'lightgrey', 'fontSize':'0.8em' }}>Plassering i fjor: {this.getMove()} {this.props.info.lastYear}</span>
+                </div>
             </section>
             <section className="infoCardExpandedColumn">
                 <img src={this.props.info.img} className="bgrImgExpanded" alt={this.props.info.firstName} />
@@ -173,7 +186,7 @@ class NewsItem extends React.Component {
     render() {
         return (
             <div className="newsItem" >
-                <img src={this.props.items.img} alt="placeholder" />
+                <img src={this.props.items.img} alt="placeholder" className="newsItemImg"/>
                 <a href="http://www.nationen.no" target="_blank" rel="noopener noreferrer">
                     <div className="newsColumn" >
                         <span className="newsTitle" >{this.props.items.title}</span>

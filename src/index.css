@@ -65,6 +65,7 @@ hr {
     width: 80%;
     margin: 0 auto;
     max-width:1398px;
+    font-family:'Roboto',sans-serif;
 }
 
 .bgrImg {
@@ -81,7 +82,7 @@ hr {
 
 .filterBox {
     font-size: 2em;
-    font-family: 'Roboto', sans-serif;
+    font-family: inherit;
     font-weight:900;
 }
 
@@ -116,10 +117,6 @@ hr {
 ul {
   list-style-type: none;
   font-size:1em;
-}
-.material-icons{
-    color:green;
-    margin-top:5px;
 }
 
 .foundNothing{
@@ -180,7 +177,7 @@ ul {
 
 .biographyText {
     position: relative;
-    font-family: 'Roboto', sans-serif;
+    font-family: inherit;
     color: #686868;
     flex-grow:0;
     margin-left:10px;
@@ -190,10 +187,9 @@ ul {
 }
 
 .biographyName {
-    font-family: 'Roboto', sans-serif;
+    font-family: inherit;
     color: Black;
     font-size: 2em;
-    font-weight:900;
     flex-grow:1;
     flex-basis: auto;
 }
@@ -215,34 +211,36 @@ ul {
 }
 .newsItem:hover{
     box-shadow: 0 10px 30px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-    transition: box-shadow 0.5s, transform 0.5s;
     transform:scale(1.03);
+    transition: box-shadow 0.5s, transform 0.5s;
 }
-.newsItem > img {
-    width:130px;
+.newsItemImg {
     height:140px;
     object-fit: cover;
+    width:130px;
+    flex-basis:130px;
+    flex-shrink:0;
 }
 
 .newsColumn{
-    padding:2px;
-    flex-direction: column;
     display: flex;
+    flex-direction: column;
+    padding:2px;
 }
 .newsTitle{
-    font-weight: bold;
+    font-family: inherit;
     font-size: 1em;
-    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
 }
 .newsIngress{
-    font-size: 0.9em;
-    font-family: 'Roboto', sans-serif;
     color: #686868;
+    font-family: inherit;
+    font-size: 0.9em;
 }
 
 a {
-    text-decoration: none;
     color:black;
+    text-decoration: none;
 }
 
 @media screen and (max-width:1420px){
@@ -252,16 +250,16 @@ a {
         margin-right:0;
     }
     .newsFlex{
-        margin:0;
         justify-content: center;
+        margin:0;
     }
     .newsTitle{
+        font-family: inherit;
         font-size: 0.8em;
-        font-family: 'Roboto', sans-serif;
     }
     .newsIngress{
+        font-family: inherit;
         font-size: 0.8em;
-        font-family: 'Roboto', sans-serif;
     }
     .newsItem > img{
         height:100px;
@@ -277,12 +275,12 @@ a {
 }
 @media screen and (max-width: 650px) {
     .infoCard {
-        width: 100%;
+        border-left:6px solid lightgreen;
+        border-radius: 0;
         height: 52vw;
         margin: 15px 0 15px 0;
-        border-radius: 0;
-        border-left:6px solid lightgreen;
         max-width:none;
+        width: 100%;
     }
     .infoCardExpandedColumn{
         flex-wrap: wrap;
@@ -295,8 +293,8 @@ a {
         width: 100vw;
     }
     .content {
-        width: 100%;
         margin: 0;
+        width: 100%;
     }
     body {
         margin: 0;
@@ -305,13 +303,13 @@ a {
         display: none;
     }
     .bgrImgExpanded {
-        margin-bottom:10px;
         flex-basis: auto;
+        margin-bottom:10px;
     }
     .infoCardExpanded {
+        height:100%;
         margin: 0 0 0 0;
         width: 100%;
-        height:100%;
     }
 
     .cardText{
