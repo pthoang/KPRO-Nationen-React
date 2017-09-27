@@ -9,28 +9,19 @@ body {
     /*padding:5px;*/
     margin: 15px;
     overflow: hidden;
-    width: 15vmax;
+    width: 25vw;
     min-width: 250px;
-    height: 15vmax;
+    height: 22vw;
+    max-height:320px;
+    max-width:320px;
     float: left;
     position: relative;
     border-radius: 5px;
 }
 
-.infoCard:hover{
-    box-shadow: 0 10px 30px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-    transition: box-shadow 0.5s, transform 0.5s;
-    transform:scale(1.03);
-}
-.infoCard:hover hr {
-    width: 90%;
-    border-color: rgba( 255, 242, 117, 0.7);
-    transition: width .5s, border-color .5s;
-}
-
 hr {
     width: 70%;
-    border-color: rgba( 76, 185, 68, 0.7);
+    border-color: #679436;
     transition: width .5s, border-color .5s;
     padding:0;
     margin-top:3px;
@@ -53,15 +44,15 @@ hr {
     text-align: center;
 }
 
-
-
 #nameText {
     color: rgba(255, 255, 255, 0.7);
 }
 
 .content {
-    width: 85%;
+    width: 80%;
     margin: 0 auto;
+    max-width:1398px;
+    font-family:'Roboto',sans-serif;
 }
 
 .bgrImg {
@@ -73,19 +64,19 @@ hr {
 .infocard hr {
     width: 70%;
     transition: .3s;
-    border-color: rgba( 155, 197, 61, 0.7);
+    border-color: #679436;
 }
 
 .filterBox {
     font-size: 2em;
-    font-family: 'Roboto', sans-serif;
+    font-family: inherit;
     font-weight:900;
 }
 
 .selectArea {
     outline: none;
     border: 0;
-    border-bottom: 2px solid lightgreen;
+    border-bottom: 2px solid #679436;
     width: 250px;
     font-family: inherit;
     font-size: inherit;
@@ -98,7 +89,7 @@ hr {
 .searchArea{
   outline: none;
   border: 0;
-  border-bottom: 2px solid lightgreen;
+  border-bottom: 2px solid #679436;
   width: 250px;
   font-family: inherit;
   font-size: inherit;
@@ -114,9 +105,9 @@ ul {
   list-style-type: none;
   font-size:1em;
 }
-.material-icons{
-    color:green;
-    margin-top:5px;
+
+.foundNothing{
+    font-size:2em;
 }
 /* ============ EXPANDED ================ */
 @keyframes slideInFromLeft {
@@ -129,7 +120,7 @@ ul {
 }
 .infoCardExpanded {
     background: #ffffff;
-    transition: width 1s, height 1s;
+    /*transition: width 1s, height 1s;*/
     animation: 250ms ease-out 0s 1 slideInFromLeft;
     /*padding:5px;*/
     margin: 15px;
@@ -173,7 +164,7 @@ ul {
 
 .biographyText {
     position: relative;
-    font-family: 'Roboto', sans-serif;
+    font-family: inherit;
     color: #686868;
     flex-grow:0;
     margin-left:10px;
@@ -183,10 +174,9 @@ ul {
 }
 
 .biographyName {
-    font-family: 'Roboto', sans-serif;
+    font-family: inherit;
     color: Black;
     font-size: 2em;
-    font-weight:900;
     flex-grow:1;
     flex-basis: auto;
 }
@@ -203,39 +193,57 @@ ul {
     flex-basis:40%;
     min-width: 300px;
     border-left-style:solid;
-    border-left-color:rgba( 155, 197, 61, 0.7);
+    border-left-color:#A5BE00;
     border-left-width:6px;
 }
 .newsItem:hover{
     box-shadow: 0 10px 30px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-    transition: box-shadow 0.5s, transform 0.5s;
     transform:scale(1.03);
+    transition: box-shadow 0.5s, transform 0.5s;
 }
-.newsItem > img {
-    width:130px;
+.newsItemImg {
     height:140px;
     object-fit: cover;
+    width:130px;
+    flex-basis:130px;
+    flex-shrink:0;
 }
 
 .newsColumn{
-    padding:2px;
-    flex-direction: column;
     display: flex;
+    flex-direction: column;
+    padding:2px;
 }
 .newsTitle{
-    font-weight: bold;
+    font-family: inherit;
     font-size: 1em;
-    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
 }
 .newsIngress{
-    font-size: 0.9em;
-    font-family: 'Roboto', sans-serif;
     color: #686868;
+    font-family: inherit;
+    font-size: 0.9em;
+}
+
+.closeButton{
+    position:absolute;
+    right:3%;
+    top:3%;
+    line-height: initial;
+    height: fit-content;
+    transition: all 250ms ease-out;
+    border-radius: 50%;
+}
+.closeButton:hover{
+    color:#FF3C38;
+    transform:rotate(90deg);
+    border: 1px solid #FF3C38;
+    border-radius: 50%;
 }
 
 a {
-    text-decoration: none;
     color:black;
+    text-decoration: none;
 }
 
 @media screen and (max-width:1420px){
@@ -245,29 +253,55 @@ a {
         margin-right:0;
     }
     .newsFlex{
-        margin:0;
         justify-content: center;
+        margin:0;
     }
     .newsTitle{
+        font-family: inherit;
         font-size: 0.8em;
-        font-family: 'Roboto', sans-serif;
     }
     .newsIngress{
+        font-family: inherit;
         font-size: 0.8em;
-        font-family: 'Roboto', sans-serif;
     }
     .newsItem > img{
         height:100px;
     }
 }
+@media (hover:hover) {
+    .infoCard:hover{
+        box-shadow: 0 10px 30px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+        transition: box-shadow 0.5s, transform 0.5s;
+        transform:scale(1.03);
+    }
+    .infoCard:hover hr {
+        width: 90%;
+        border-color: #A5BE00;
+        transition: width .5s, border-color .5s;
+    }
+}
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width:900px){
+    .content{
+        width:90%;
+    }
+    .cardText{
+        height:40%;
+    }
+}
+@media screen and (max-width: 650px) {
     .infoCard {
-        width: 100%;
+        border-left:6px solid #A5BE00;
+        border-radius: 0;
         height: 52vw;
         margin: 15px 0 15px 0;
-        border-radius: 0;
-        border-left:6px solid lightgreen;
+        max-width:none;
+        transition: none !important;
+        width: 100%;
+    }
+
+    hr{
+        transition: none !important;
     }
     .infoCardExpandedColumn{
         flex-wrap: wrap;
@@ -280,8 +314,8 @@ a {
         width: 100vw;
     }
     .content {
-        width: 100%;
         margin: 0;
+        width: 100%;
     }
     body {
         margin: 0;
@@ -290,13 +324,21 @@ a {
         display: none;
     }
     .bgrImgExpanded {
-        margin-bottom:10px;
         flex-basis: auto;
+        margin-bottom:10px;
     }
     .infoCardExpanded {
+        height:100%;
         margin: 0 0 0 0;
         width: 100%;
-        height:100%;
     }
 
+    .cardText{
+        height:35%;
+    }
+
+    .closeButton{
+        right:8%;
+        top:3%;
+    }
 }
