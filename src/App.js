@@ -1,7 +1,4 @@
 import React, { Component } from 'react';
-import './App.css';
-
-
 // const areas = ["alt","landbruk", "politikk", "næringsliv"];
 // const counties = ["i hele landet","på Østlandet", "på Vestlandet",
 // "i Nord-Norge", " i Trøndelag", " på Sørlandet"];
@@ -29,7 +26,6 @@ export default class App extends Component {
             this.forceUpdate();
         } else if ( event.target.name === 'nameSearch' ) {
             this.setState( {'nameSearch':event.target.value} );
-            console.log( this.state.nameSearch );
         }
     }
 
@@ -57,7 +53,7 @@ export default class App extends Component {
         }
 
         return (
-            <div className="content">
+            <div className="App">
                 <FilterBox handleChange={this.handleChange}/>
                 {cards}
             </div> );
@@ -84,8 +80,8 @@ class Card extends Component {
 
     render() {
         if ( !this.state.isExpanded ) {
-            return ( <div className="infoCard" id={this.props.id} onClick={this.clickHandler}>
-                <img className="bgrImg" src={this.props.info.img} alt={this.props.info.firstName} />
+            return ( <div className="Card" id={this.props.id} onClick={this.clickHandler}>
+                <img className="Card-bgrImg" src={this.props.info.img} alt={this.props.info.firstName} />
                 <CardText info={this.props.info} id ={this.props.id}/>
             </div> );
         } else {
@@ -100,11 +96,10 @@ class Card extends Component {
 
 class CardText extends Component {
     render() {
-        return ( <div className="cardText">
+        return ( <div className="CardText">
             {this.props.id} - {this.props.info.firstName}<br />
-            <span id="nameText">
+            <span className="CardText-nameText">
                 <hr />
-                {/*this.props.info.firstName*/} {/*this.props.info.lastName*/}
                 {this.props.info.profession}
             </span>
         </div> );
@@ -188,6 +183,7 @@ class SearchArea extends React.Component {
         );
     }
 }
+
 class NewsItem extends React.Component {
     // constructor(props){
     //     super(props);

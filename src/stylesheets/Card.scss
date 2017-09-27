@@ -1,0 +1,87 @@
+@import "./common.scss";
+
+.Card {
+    background: #ffffff;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    /*padding:5px;*/
+    margin: 15px;
+    overflow: hidden;
+    width: 25vw;
+    min-width: 250px;
+    height: 22vw;
+    max-height: 320px;
+    max-width: 320px;
+    float: left;
+    position: relative;
+    border-radius: 5px;
+
+    .Card-bgrImg {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    @media (hover:hover) {
+        &:hover {
+            box-shadow: 0 10px 30px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+            transition: box-shadow 0.5s, transform 0.5s;
+            transform: scale(1.03);
+
+            hr {
+                width: 90%;
+                border-color: $commonGreen;
+                transition: width 0.5s, border-color 0.5s;
+            }
+        }
+    }
+    @media screen and (max-width:900px) {
+        & {
+            height: 40%;
+        }
+    }
+    @media screen and (max-width: 650px) {
+        & {
+            border-left: 6px solid $commonGreen;
+            border-radius: 0;
+            height: 52vw;
+            margin: 15px 0;
+            max-width: none;
+            transition: none !important;
+            width: 100%;
+        }
+    }
+}
+
+.CardText {
+    $textColor: white;
+    $bgrColor: black;
+    padding-bottom: 1%;
+    padding-top: 3%;
+    background-color: rgba($bgrColor, 0.5);
+    position: absolute;
+    bottom: 0;
+    color: $textColor;
+    font-family: $font;
+    font-weight: 300;
+    width: 100%;
+    height: 30%;
+    font-size: 1.3em;
+    text-align: center;
+
+    hr {
+        width: 70%;
+        border-color: $commonGreen;
+        transition: width 0.5s, border-color 0.5s;
+        padding: 0;
+        margin-top: 3px;
+        margin-bottom: 3px;
+    }
+
+    .CardText-nameText {
+        color: rgba($textColor, 0.7);
+    }
+    @media screen and (max-width: 650px) {
+        & {
+            height: 35%;
+        }
+    }
+}

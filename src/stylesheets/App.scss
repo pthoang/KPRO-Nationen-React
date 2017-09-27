@@ -1,0 +1,14 @@
+@import "./common.scss";
+
+.App {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1398px;
+    font-family: $font;
+    @media screen and (max-width:900px) {
+        & {
+            width: 100%;
+            margin: 0;
+        }
+    }
+}
