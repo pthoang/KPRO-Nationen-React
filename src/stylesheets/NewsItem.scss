@@ -1,3 +1,5 @@
+@import "./common.scss";
+
 .newsFlex {
     display: flex;
     flex-flow: row wrap;
@@ -17,7 +19,7 @@
     flex-basis: 40%;
     min-width: 300px;
     border-left-style: solid;
-    border-left-color: &commonGreen;
+    border-left-color: $commonGreen;
     border-left-width: 6px;
 
     &:hover {
