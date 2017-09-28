@@ -1,0 +1,80 @@
+@import "./common.scss";
+
+.newsFlex {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 20px;
+    @media screen and (max-width:1420px) {
+        & {
+            justify-content: center;
+            margin: 0;
+        }
+    }
+}
+
+.newsItem {
+    box-shadow: 0 1px 2px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    margin: 5px;
+    display: flex;
+    flex-basis: 40%;
+    min-width: 300px;
+    border-left-style: solid;
+    border-left-color: $commonGreen;
+    border-left-width: 6px;
+
+    &:hover {
+        box-shadow: 0 10px 30px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+        transform: scale(1.03);
+        transition: box-shadow 0.5s, transform 0.5s;
+    }
+    @media screen and (max-width:1420px) {
+        & {
+            flex-basis: 100%;
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+
+    img {
+        height: 140px;
+        object-fit: cover;
+        width: 130px;
+        flex-basis: 130px;
+        flex-shrink: 0;
+    }
+
+    a {
+        color: black;
+        text-decoration: none;
+    }
+
+    .newsColumn {
+        display: flex;
+        flex-direction: column;
+        padding: 2px;
+    }
+
+    .newsTitle {
+        font-family: inherit;
+        font-size: 1em;
+        font-weight: bold;
+        @media screen and (max-width:1420px) {
+            & {
+                font-family: inherit;
+                font-size: 0.8em;
+            }
+        }
+    }
+}
+
+.newsIngress {
+    color: #686868;
+    font-family: inherit;
+    font-size: 0.9em;
+    @media screen and (max-width:1420px) {
+        & {
+            font-family: inherit;
+            font-size: 0.8em;
+        }
+    }
+}

@@ -1,0 +1,33 @@
+@import "./common.scss";
+
+.filterBox {
+    font-size: 2em;
+    font-family: inherit;
+    font-weight: 900;
+
+    select {
+        outline: none;
+        border: 0;
+        border-bottom: 2px solid $commonGreen;
+        width: 250px;
+        font-family: inherit;
+        font-size: inherit;
+        font-weight: inherit;
+        appearance: none;
+        -webkit-appearance: none;
+        background: inherit;
+    }
+
+    input {
+        @extend select;
+    }
+
+    ul {
+        list-style-type: none;
+        font-size: 1em;
+    }
+}
+
+.foundNothing {
+    font-size: 2em;
+}
