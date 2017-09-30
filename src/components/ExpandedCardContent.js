@@ -9,11 +9,11 @@ export class ExpandedCardContent extends React.Component {
 
     getMove() {
         if ( this.props.id > this.props.info.lastYear ) {
-            return <i className="material-icons" style={{'color': '#FF8686', 'fontSize':'1.2em', 'verticalAlign': 'middle'}}>trending_down</i>;
+            return <i className="material-icons" id='trending_down'>trending_down</i>;
         } else if ( this.props.id < this.props.info.lastYear ) {
-            return <i className="material-icons" style={{'color': '#9EBA7F', 'fontSize':'1.2em', 'verticalAlign': 'middle'}}>trending_up</i>;
+            return <i className="material-icons" id='trending_up'>trending_up</i>;
         } else {
-            return <i className="material-icons" style={{'color': '#FCD367', 'fontSize':'1.2em', 'verticalAlign': 'middle'}}>trending_flat</i>;
+            return <i className="material-icons" id='trending_flat'>trending_flat</i>;
         }
     }
 
@@ -23,9 +23,9 @@ export class ExpandedCardContent extends React.Component {
         );
         return ( <span>
             <section className="infoCardExpandedColumn">
-                <div className = "biographyName"> {this.props.id} - {this.props.info.firstName}<br/>
+                <div className = "biographyName"> {this.props.id} - {this.props.info.firstName} {this.getMove()}<br/>
                     <span style={{'color': 'lightgrey', 'fontSize':'0.8em' }}>{this.props.info.profession}</span> <br/>
-                    <span style={{'color': 'lightgrey', 'fontSize':'0.8em' }}>Plassering i fjor: {this.getMove()} {this.props.info.lastYear}</span>
+                    <span style={{'color': 'lightgrey', 'fontSize':'0.8em' }}>Plassering i fjor: {this.props.info.lastYear}</span>
                 </div>
                 <i className="material-icons closeButton" onClick={this.props.onClick}>close</i>
             </section>
