@@ -7,6 +7,10 @@ export class ExpandedCardContent extends React.Component {
         this.getMove = this.getMove.bind( this );
     }
 
+    componentDidMount() {
+        document.getElementById( 'expandedCard' + this.props.id ).focus();
+    }
+
     getMove() {
         if ( this.props.id > this.props.info.lastYear ) {
             return <i className="material-icons" id='trending_down'>trending_down</i>;

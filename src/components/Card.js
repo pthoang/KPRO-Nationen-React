@@ -28,7 +28,7 @@ export class Card extends React.Component {
             </div> );
         } else {
             return ( <div className="infoCardExpandedBgr">
-                <div className="infoCardExpanded" id={this.props.id} tabIndex="0" onKeyDown={this.handleKeyPress}>
+                <div className="infoCardExpanded" id={'expandedCard' + this.props.id} tabIndex="0" onKeyDown={this.handleKeyPress}>
                     <ExpandedCardContent id={this.props.id} info={this.props.info} onClick={this.clickHandler} />
                 </div>
             </div> );
