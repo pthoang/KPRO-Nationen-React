@@ -2,6 +2,11 @@
 $personCardBgrClr: white;
 $infoCardExpandedBgrClr: rgba(black, 0.7);
 $closeButtonClr: #FF3C38;
+
+$trendingDwnClr: #E87A7A;
+$trendingUpClr: #9EBA7F;
+$trendingFlatClr: #FCD367;
+
 @keyframes slideInFromLeft {
     0% {
         transform: scale(0);
@@ -83,7 +88,7 @@ $closeButtonClr: #FF3C38;
 
     .biographyText {
         position: relative;
-        font-family: inherit;
+        font-family: $fontSansSerif;
         color: #686868;
         flex-grow: 0;
         margin-left: 10px;
@@ -98,11 +103,36 @@ $closeButtonClr: #FF3C38;
     }
 
     .biographyName {
-        font-family: inherit;
+        font-family: $fontSansSerif;
         color: Black;
         font-size: 2em;
         flex-grow: 1;
         flex-basis: auto;
+        .material-icons{
+            border-radius: 50%;
+            font-size:0.8em;
+            vertical-align:middle;
+            transition:all 500ms;
+        }
+        #trending_up{
+            color:$trendingUpClr;
+            background:lighten($trendingUpClr, 20%);
+            border: 3px solid lighten($trendingUpClr, 20%);
+        }
+        #trending_down{
+            color:$trendingDwnClr;
+            background:lighten($trendingDwnClr, 20%);
+            border: 3px solid lighten($trendingDwnClr, 20%);
+        }
+        #trending_flat{
+            color:$trendingFlatClr;
+            background:lighten($trendingFlatClr, 20%);
+            border: 3px solid lighten($trendingFlatClr, 20%);
+        }
+
+        .material-icons:hover{
+            transform:rotate(360deg);
+        }
     }
 
     .closeButton {

@@ -51,7 +51,7 @@ export default class App extends Component {
                 <Card key={name.key} info={name} id={name.key} /> );
 
         if ( cards.length < 1 ) {
-            cards = <span role="img" aria-label="Sad face" className="foundNothing"> 😞 </span>;
+            cards = ( <span role="img" aria-label="Person Shrugging" className="foundNothing"> 🤷 Fant ingen som heter det... </span> );
         }
 
         return (

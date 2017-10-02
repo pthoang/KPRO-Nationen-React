@@ -10,10 +10,14 @@ export class Card extends React.Component {
         this.handleKeyPress = this.handleKeyPress.bind( this );
     }
 
-    clickHandler() {
+    clickHandler( e ) {
         this.setState( {'isExpanded':!this.state.isExpanded} );
     }
 
+    childClickhandler( e ) {
+        e.preventDefault();
+        e.stopPropagation();
+    }
     handleKeyPress( e ) {
         if ( e.key === 'Escape' ) {
             this.setState( {'isExpanded':!this.state.isExpanded} );
@@ -27,8 +31,8 @@ export class Card extends React.Component {
                 <CardText info={this.props.info} id ={this.props.id}/>
             </div> );
         } else {
-            return ( <div className="infoCardExpandedBgr">
-                <div className="infoCardExpanded" id={this.props.id} tabIndex="0" onKeyDown={this.handleKeyPress}>
+            return ( <div className="infoCardExpandedBgr" onClick={this.clickHandler}>
+                <div className="infoCardExpanded" id={'expandedCard' + this.props.id} tabIndex="0" onKeyDown={this.handleKeyPress} onClick={this.childClickhandler}>
                     <ExpandedCardContent id={this.props.id} info={this.props.info} onClick={this.clickHandler} />
                 </div>
             </div> );
