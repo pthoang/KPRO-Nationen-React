@@ -1,5 +1,7 @@
 import React from 'react';
 import {NewsItem} from './NewsItem.js';
+import {NodeBox} from './NodeBox.js'
+
 
 export class ExpandedCardContent extends React.Component {
     constructor( props ) {
@@ -42,6 +44,7 @@ export class ExpandedCardContent extends React.Component {
                 {news}
             </section>
             <hr/>
+            <NodeBox/>
         </span>
         );
     }
