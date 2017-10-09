@@ -1,29 +1,23 @@
 import React from 'react';
-var cytoscape = require( 'cytoscape' );
-var cycola = require( 'cytoscape-cola' );
+const cytoscape = require( 'cytoscape' );
+const cycola = require( 'cytoscape-cola' );
 cytoscape.use( cycola );
 
 export class NodeBox extends React.Component {
+    constructor( props ) {
+        super( props );
+        this.componentDidMount = this.componentDidMount.bind( this );
+    }
     componentDidMount() {
-        let cy = cytoscape( {
+        const img = new Image();
+        // This src needs the correct headers
+        img.src = require( './2-Leif-Forsell.jpg' );
+        // This makes it work
+        img.crossOrigin = 'Anonymous';
+        // This makes it work
+        const cy = cytoscape( {
             'container': document.getElementById( 'cy' ),
-            'elements': {
-                'nodes': [
-                    { 'data': { 'id': 'j', 'name': 'Pål Farstad', 'size':30} },
-                    { 'data': { 'id': 'e', 'name': 'Erna Solberg', 'size':20 } },
-                    { 'data': { 'id': 'k', 'name': 'Leif Hansen', 'size':20 } },
-                    { 'data': { 'id': 'g', 'name': 'Jon Georg Dale', 'size':20 } },
-                    {'data': {'id': 'kn', 'name': 'Knut Arild Hareide', 'size':20}}
-                ],
-                'edges': [
-                    { 'data': { 'source': 'j', 'target': 'e' } },
-                    { 'data': { 'source': 'j', 'target': 'k' } },
-                    { 'data': { 'source': 'j', 'target': 'g' } },
-                    { 'data': { 'source': 'j', 'target': 'kn' } },
-                    { 'data': { 'source': 'k', 'target': 'kn' } },
-                    { 'data': { 'source': 'g', 'target': 'k' } }
-                ]
-            },
+            'elements': this.props.elements[0],
 
             'style': [ // the stylesheet for the graph
                 {
@@ -32,7 +26,10 @@ export class NodeBox extends React.Component {
                         'background-color': '#618b25',
                         'label': 'data(name)',
                         'width':'data(size)',
-                        'height':'data(size)'
+                        'height':'data(size)',
+                        'border-width':'3',
+                        'border-color': '#618b25',
+                        'background-fit':'contain'
                     }
                 },
 
@@ -55,9 +52,10 @@ export class NodeBox extends React.Component {
                 'maxSimulationTime': 3.6e6
             }
         } );
+        cy.nodes()[0].style( {'background-image-crossorigin': 'use-credentials', 'background-image': 'url(' + img.src + ')'} );
     }
     render() {
 
-        return <div style ={{'height':300, 'width':600}} id="cy"> </div>;
+        return <div style ={{'height':300, 'width':'100%'}} id="cy"> </div>;
     }
 }
