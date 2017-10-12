@@ -9,16 +9,13 @@ export class NodeBox extends React.Component {
         this.componentDidMount = this.componentDidMount.bind( this );
     }
     componentDidMount() {
-        const img = new Image();
-        // This src needs the correct headers
-        img.src = require( './2-Leif-Forsell.jpg' );
-        // This makes it work
-        img.crossOrigin = 'Anonymous';
-        // This makes it work
+        // const img = new Image();
+        // img.crossOrigin = 'Use-Credentials';
+        // img.src = "http://via.placeholder.com/320x320"; //require( './2-Leif-Forsell.jpg' );
+
         const cy = cytoscape( {
             'container': document.getElementById( 'cy' ),
             'elements': this.props.elements[0],
-
             'style': [ // the stylesheet for the graph
                 {
                     'selector': 'node',
@@ -52,7 +49,9 @@ export class NodeBox extends React.Component {
                 'maxSimulationTime': 3.6e6
             }
         } );
-        cy.nodes()[0].style( {'background-image-crossorigin': 'use-credentials', 'background-image': 'url(' + img.src + ')'} );
+
+        cy.nodes()[0].style( {'background-image-crossorigin': 'use-credentials', 'background-image': 'url()'} );
+        cy.panningEnabled( false );
     }
     render() {
 

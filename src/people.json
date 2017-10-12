@@ -24,6 +24,25 @@
                 "img": "http://imengine.tun.ocnetwork.se/imengine/image.php?uuid=44479231-0556-49c4-8216-b2996bfb8e07&type=preview&source=false&function=cropresize&width=980&height=514&x=0&y=117&crop_w=1600&crop_h=829&z=0.62002412545235",
                 "lead": "I fjor sommer brant alle driftsbygningene ned til grunnen. Ett år senere er Norges største og mest moderne sauefjøs klar til bruk på Hole gård på Rena."
             }],
+            "stocks": [{
+                "id":1,
+                "company": "Skandiabanken",
+                "numStocks": 2134,
+                "numStocksCompany": null,
+                "stockValueNok": 23000
+            }, {
+                "id":2,
+                "company": "Telenor",
+                "numStocks": 867,
+                "numStocksCompany": null,
+                "stockValueNok": 87689
+            }, {
+                "id":3,
+                "company": "Olav Thon Eiendomsselskap",
+                "numStocks": 457,
+                "numStocksCompany": 30769,
+                "stockValueNok": 347890
+            }],
             "elements": [{
                 "nodes": [{
                     "data": {
