@@ -6,6 +6,7 @@
 	"rules":{
 		"indent":["error",4],
 		"no-console":0,
+		"no-var":0,
 		"curly":"error",
 		"no-multi-spaces":"error",
 		"array-bracket-spacing":"error",

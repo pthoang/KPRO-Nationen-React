@@ -89,7 +89,7 @@ $trendingFlatClr: #FCD367;
     .biographyText {
         position: relative;
         font-family: $fontSansSerif;
-        color: #686868;
+        color: $fontCol;
         flex-grow: 0;
         margin-left: 10px;
         align-self: center;
