@@ -10,7 +10,7 @@ export class FilterBox extends React.Component {
     }
     render() {
         return (
-            <div className="filterBox">Vis meg <SelectArea items = {this.state.types} style={{'width': 120}} name="genderBox" onChange={this.props.handleChange}/> på lista.
+            <div className="filterBox">Filtrér: <SelectArea items = {this.state.types} style={{'width': 140}} name="genderBox" onChange={this.props.handleChange}/>
                 <br/>Søk: <SearchArea onChange={this.props.handleChange} name={'nameSearch'}/>
                 {/*som bor<SelectArea items = {counties} style={{width: 220}}/>*/}
             </div>

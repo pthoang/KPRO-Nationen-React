@@ -43,15 +43,16 @@
         flex-shrink: 0;
     }
 
-    a {
-        color: black;
-        text-decoration: none;
-    }
+
 
     .newsColumn {
         display: flex;
         flex-direction: column;
         padding: 2px;
+         a {
+             color: black;
+             text-decoration: none;
+         }
     }
 
     .newsTitle {
