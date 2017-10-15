@@ -6,16 +6,25 @@
     font-weight: 900;
 
     select {
-        outline: none;
+        display: inline-block;
         border: 0;
+        outline:none;
+        border-radius: 5px;
+        margin:2px;
         border-bottom: 2px solid $commonGreen;
         width: 250px;
         font-family: inherit;
         font-size: inherit;
         font-weight: inherit;
-        appearance: none;
-        -webkit-appearance: none;
-        background: inherit;
+        background:#E3E6D6;
+        option{
+            font-family: inherit;
+            font-size: inherit;
+            font-weight: inherit;
+        }
+    }
+    .searchArea{
+        padding-left:20px;
     }
 
     input {

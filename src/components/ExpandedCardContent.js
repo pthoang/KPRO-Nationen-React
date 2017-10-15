@@ -28,6 +28,7 @@ export class ExpandedCardContent extends React.Component {
         const news = this.props.info.newsItems.map( item =>
             <NewsItem items={item} key={item.key} />
         );
+
         return ( <span>
             <section className="infoCardExpandedColumn">
                 <div className = "biographyName"> {this.props.id} - {this.props.info.firstName} {this.getMove()}<br/>
