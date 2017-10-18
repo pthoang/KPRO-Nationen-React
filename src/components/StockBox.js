@@ -6,9 +6,8 @@ export class StockBox extends React.Component {
         this.state = {
             'data': []
         };
-
     }
-    componentDidMount() {
+    updateStocks( ) {
         const listItems = this.props.stocks.map( stock => (
             <tr key={stock.id}>
                 <td>{stock.company}</td>
@@ -16,8 +15,13 @@ export class StockBox extends React.Component {
                 <td className="rightAlign">{( stock.stockValueNok ).toLocaleString( 'no-NO' )},-</td>
             </tr>
         ) );
-        this.setState( { 'data': listItems } );
+        return listItems
     }
+
+    // componentWillReceiveProps( nextProps ) {
+    //     this.updateStocks( );
+    // }
+
     render() {
         if ( this.props.stocks ) {
             return (
@@ -29,7 +33,7 @@ export class StockBox extends React.Component {
                             <th className="rightAlign">Verdi (NOK)</th>
                         </tr>
                     </thead>
-                    <tbody>{this.state.data}</tbody>
+                    <tbody>{this.updateStocks()}</tbody>
                 </table>
             );
         } else {
