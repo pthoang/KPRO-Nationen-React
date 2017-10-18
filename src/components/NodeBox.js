@@ -24,7 +24,6 @@ export class NodeBox extends React.Component {
 
             elements: this.props.elements[0],
 
-
             style: cytoscape.stylesheet()
               .selector('node')
                 .css({
@@ -34,6 +33,7 @@ export class NodeBox extends React.Component {
                   'border-width':'3',
                   'border-color': '#618b25',
                   'background-fit':'cover',
+                  'background-image': 'data(img)'
 
                 })
 
@@ -47,6 +47,7 @@ export class NodeBox extends React.Component {
                   'target-arrow-color': '#618B25',
                   'target-arrow-shape': 'triangle'
                 })
+
 
 
         }
@@ -83,6 +84,24 @@ export class NodeBox extends React.Component {
 
 
 
+
+
+              .selector('#1')
+                .css({
+                  position:{
+                    x:0,
+                    y:0
+                  }
+                })
+                ,
+            layout: {
+                'name': 'cola',
+                'maxSimulationTime': 3.6e6
+            }
+        }
+      );
+
+      cy.panningEnabled( false );
 
     }
     render() {
