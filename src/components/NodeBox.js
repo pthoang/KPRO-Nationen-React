@@ -15,7 +15,10 @@ export class NodeBox extends React.Component {
         // img.src = "http://via.placeholder.com/320x320"; //require( './2-Leif-Forsell.jpg' );
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> de8d973976267c7644ac0a67032a4706e0b8065d
         const cy = cytoscape( {
 
             container: document.getElementById( 'cy' ),
@@ -24,7 +27,10 @@ export class NodeBox extends React.Component {
 
             elements: this.props.elements[0],
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> de8d973976267c7644ac0a67032a4706e0b8065d
             style: cytoscape.stylesheet()
               .selector('node')
                 .css({
@@ -34,7 +40,11 @@ export class NodeBox extends React.Component {
                   'border-width':'3',
                   'border-color': '#618b25',
                   'background-fit':'cover',
+<<<<<<< HEAD
 
+=======
+                  'background-image': 'data(img)'
+>>>>>>> de8d973976267c7644ac0a67032a4706e0b8065d
                 })
 
               .selector('edge')
@@ -47,6 +57,7 @@ export class NodeBox extends React.Component {
                   'target-arrow-color': '#618B25',
                   'target-arrow-shape': 'triangle'
                 })
+<<<<<<< HEAD
 
 
         }
@@ -84,6 +95,24 @@ export class NodeBox extends React.Component {
 
 
 
+=======
+              .selector('#1')
+                .css({
+                  position:{
+                    x:0,
+                    y:0
+                  }
+                })
+                ,
+            layout: {
+                'name': 'cola',
+                'maxSimulationTime': 3.6e6
+            }
+        }
+      );
+
+      cy.panningEnabled( false );
+>>>>>>> de8d973976267c7644ac0a67032a4706e0b8065d
     }
     render() {
         return <div style ={{'height':300, 'width':'100%'}} id="cy"> </div>;

@@ -49,16 +49,24 @@
                         "id": "1",
                         "name": "Jon Georg Dale",
                         "size": 60,
+<<<<<<< HEAD
                         "img" : "https://www.fylkesmannen.no/Images/Bilder%20FMNO/Landbruk%20bilder/LARAs%20prosjekter,%20konferanser,%20annet%20bilder/jgd.jpg"
+=======
+                        "img" : "http://s3.amazonaws.com/tun-static/wp-content/uploads/sites/2/2016/11/18150811/1.-Jon-Georg-Dale.jpg"
+>>>>>>> de8d973976267c7644ac0a67032a4706e0b8065d
                     }
                 }, {
                     "data": {
                         "id": "2",
                         "name": "Erna Solberg",
                         "size": 30,
+<<<<<<< HEAD
                         "img": "https://farm8.staticflickr.com/7272/7633179468_3e19e45a0c_b.jpg",
                         "description": "Erna og Jon Georg har en affære"
 
+=======
+                        "img" : "https://farm8.staticflickr.com/7272/7633179468_3e19e45a0c_b.jpg"
+>>>>>>> de8d973976267c7644ac0a67032a4706e0b8065d
                     }
                 }, {
                     "data": {
