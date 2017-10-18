@@ -46,65 +46,61 @@
             "elements": [{
                 "nodes": [{
                     "data": {
-                        "id": "j",
+                        "id": "4",
                         "name": "Pål Farstad",
-                        "size": 60
-                    }
+                        "size": 60,
+                        "img": "https://www.fylkesmannen.no/Images/Bilder%20FMNO/Landbruk%20bilder/LARAs%20prosjekter,%20konferanser,%20annet%20bilder/jgd.jpg"
+                      }
                 }, {
                     "data": {
-                        "id": "e",
+                        "id": "2",
                         "name": "Erna Solberg",
-                        "size": 30
-                    }
+                        "size": 30,
+                        "img": "https://www.fylkesmannen.no/Images/Bilder%20FMNO/Landbruk%20bilder/LARAs%20prosjekter,%20konferanser,%20annet%20bilder/jgd.jpg"
+                      }
                 }, {
                     "data": {
-                        "id": "k",
+                        "id": "3",
                         "name": "Leif Hansen",
-                        "size": 30
-                    }
+                        "size": 30,
+                        "img": "https://www.fylkesmannen.no/Images/Bilder%20FMNO/Landbruk%20bilder/LARAs%20prosjekter,%20konferanser,%20annet%20bilder/jgd.jpg"
+                      }
                 }, {
                     "data": {
-                        "id": "g",
+                        "id": "1",
                         "name": "Jon Georg Dale",
-                        "size": 30
-                    }
+                        "size": 30,
+                        "img": "https://www.fylkesmannen.no/Images/Bilder%20FMNO/Landbruk%20bilder/LARAs%20prosjekter,%20konferanser,%20annet%20bilder/jgd.jpg"
+                      }
                 }, {
                     "data": {
-                        "id": "kn",
+                        "id": "5",
                         "name": "Knut Arild Hareide",
-                        "size": 30
-                    }
+                        "size": 30,
+                        "img": "https://www.fylkesmannen.no/Images/Bilder%20FMNO/Landbruk%20bilder/LARAs%20prosjekter,%20konferanser,%20annet%20bilder/jgd.jpg"
+                      }
                 }],
                 "edges": [{
                     "data": {
-                        "source": "j",
-                        "target": "e"
+                        "source": "1",
+                        "target": "2"
                     }
                 }, {
                     "data": {
-                        "source": "j",
-                        "target": "k"
+                        "source": "1",
+                        "target": "3"
                     }
                 }, {
                     "data": {
-                        "source": "j",
-                        "target": "g"
+                        "source": "1",
+                        "target": "4"
                     }
                 }, {
                     "data": {
-                        "source": "j",
-                        "target": "kn"
+                        "source": "1",
+                        "target": "5"
                     }
-                }, {
-                    "data": {
-                        "source": "k",
-                        "target": "kn"
-                    }
-                }, {
-                    "data": {
-                        "source": "g",
-                        "target": "k"
-                    }
+
                 }]
             }]
         },
@@ -128,7 +124,25 @@
                 "img": "http://imengine.tun.ocnetwork.se/imengine/image.php?uuid=687d6f94-8117-4b4b-8006-e3aa8390c2b3&type=preview&source=false&function=cropresize&width=980&height=514&x=262&y=360&crop_w=1338&crop_h=694&z=0.74063400576369",
                 "lead": "Etter forhandlingar om fordelinga av den nye ramma i jordbruksoppgjeret sidan onsdag tar partane pause til over helga."
             }],
-            "stocks": [],
+            "stocks": [{
+                "id":1,
+                "company": "Ebay",
+                "numStocks": 37456,
+                "numStocksCompany": null,
+                "stockValueNok": 32
+            }, {
+                "id":2,
+                "company": "Tesla",
+                "numStocks": 235,
+                "numStocksCompany": null,
+                "stockValueNok": 234
+            }, {
+                "id":3,
+                "company": "Statoil",
+                "numStocks": 978,
+                "numStocksCompany": 30769,
+                "stockValueNok": 56856
+            }],
             "elements": [{
                 "nodes": [{
                     "data": {

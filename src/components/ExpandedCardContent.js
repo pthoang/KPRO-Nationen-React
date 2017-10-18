@@ -30,9 +30,9 @@ export class ExpandedCardContent extends React.Component {
         );
 
         return ( <span>
-            <button className="btnBack" type="button" onClick={() => this.props.expandoHandler( this.props.id - 2 )}>{'<< Forrige'}</button>
+            <button className="btnBack" type="button" onClick={() => this.props.expandoHandler( this.props.id - 2 )}><i className="material-icons md-36">arrow_back</i></button>
             <i className="material-icons closeButton" onClick={() => this.props.expandoHandler( -1 )}>close</i>
-            <button className="btnForward" type="button" onClick={() => this.props.expandoHandler( this.props.id )}>{'Neste >>'}</button>
+            <button className="btnForward" type="button" onClick={() => this.props.expandoHandler( this.props.id )}><i className="material-icons md-36">arrow_forward</i></button>
 
             <section className="infoCardExpandedColumn">
                 <div className = "biographyName"> {this.props.id} - {this.props.info.firstName} {this.getMove()}<br/>

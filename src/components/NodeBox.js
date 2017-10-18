@@ -20,13 +20,13 @@ export class NodeBox extends React.Component {
                 {
                     'selector': 'node',
                     'style': {
-                        'background-color': '#618b25',
+
                         'label': 'data(name)',
                         'width':'data(size)',
                         'height':'data(size)',
                         'border-width':'3',
                         'border-color': '#618b25',
-                        'background-fit':'contain'
+                        'background-fit':'cover'
                     }
                 },
 
@@ -50,7 +50,18 @@ export class NodeBox extends React.Component {
             }
         } );
 
-        cy.nodes()[0].style( {'background-image-crossorigin': 'use-credentials', 'background-image': 'url()'} );
+        //cy.nodes()[0].style( {'background-image-crossorigin': 'use-credentials', 'background-image': 'url()'} );
+        var bfs = cy.elements().bfs({
+          roots: '#1',
+          visit: function(v, e, u, i, depth){
+            console.log( 'visit ' + v.id() );
+            v.style( {'background-image': v.data('img')} );
+          },
+          directed: false
+        });
+
+        console.log(bfs);
+
         cy.panningEnabled( false );
     }
     render() {

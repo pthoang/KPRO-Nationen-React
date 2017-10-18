@@ -64,6 +64,7 @@ $trendingFlatClr: #FCD367;
         display: flex;
         flex-flow: row wrap;
         margin: 20px;
+        margin-top:0;
         @media screen and (max-width: 650px) {
             & {
                 flex-wrap: wrap;
@@ -136,12 +137,11 @@ $trendingFlatClr: #FCD367;
     }
 
     button{
-      background:$commonGreen;
-      color:white;
-      padding:5px;
+      background:none;
+      color: rgba(0, 0, 0, 0.54);
       margin:10px;
       font-style:$fontSansSerif;
-      font-size:14pt;
+      .material-icons.md-36 { font-size: 36px; }
       border:none;
       position:relative;
       align-self:center;
@@ -149,7 +149,7 @@ $trendingFlatClr: #FCD367;
         overflow:hidden;
       }
       &:hover{
-          background:$lighterGreen;
+          color:$trendingUpClr;
       }
       &:active{
           background:$darkerGreen;
@@ -161,13 +161,7 @@ $trendingFlatClr: #FCD367;
       }
     }
 
-    .btnBack{
-        border-bottom-left-radius:10px;
-        border-top-left-radius:10px;
-    }
     .btnForward{
-        border-bottom-right-radius:10px;
-        border-top-right-radius:10px;
         float:right;
     }
 
@@ -177,6 +171,7 @@ $trendingFlatClr: #FCD367;
         transition: all 250ms ease-out;
         border-radius: 50%;
         float:right;
+        font-size: 36px;
         margin:10px;
         &:hover {
             color: $closeButtonClr;
