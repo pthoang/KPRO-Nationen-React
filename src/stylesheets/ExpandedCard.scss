@@ -135,15 +135,49 @@ $trendingFlatClr: #FCD367;
         }
     }
 
+    button{
+      background:$commonGreen;
+      color:white;
+      padding:5px;
+      margin:10px;
+      font-style:$fontSansSerif;
+      font-size:14pt;
+      border:none;
+      position:relative;
+      align-self:center;
+      span{
+        overflow:hidden;
+      }
+      &:hover{
+          background:$lighterGreen;
+      }
+      &:active{
+          background:$darkerGreen;
+      }
+      @media screen and (max-width: 650px) {
+          & {
+              float:center;
+          }
+      }
+    }
+
+    .btnBack{
+        border-bottom-left-radius:10px;
+        border-top-left-radius:10px;
+    }
+    .btnForward{
+        border-bottom-right-radius:10px;
+        border-top-right-radius:10px;
+        float:right;
+    }
+
     .closeButton {
-        position: absolute;
-        right: 3%;
-        top: 3%;
         line-height: initial;
         height: fit-content;
         transition: all 250ms ease-out;
         border-radius: 50%;
-
+        float:right;
+        margin:10px;
         &:hover {
             color: $closeButtonClr;
             transform: rotate(90deg);
