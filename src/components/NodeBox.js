@@ -15,7 +15,6 @@ export class NodeBox extends React.Component {
         // img.src = "http://via.placeholder.com/320x320"; //require( './2-Leif-Forsell.jpg' );
 
 
-
         const cy = cytoscape( {
 
             container: document.getElementById( 'cy' ),
@@ -34,6 +33,7 @@ export class NodeBox extends React.Component {
                   'border-color': '#618b25',
                   'background-fit':'cover',
                   'background-image': 'data(img)'
+
 
                 })
 
@@ -102,6 +102,7 @@ export class NodeBox extends React.Component {
       );
 
       cy.panningEnabled( false );
+
 
     }
     render() {
