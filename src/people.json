@@ -46,64 +46,59 @@
             "elements": [{
                 "nodes": [{
                     "data": {
-                        "id": "j",
-                        "name": "Pål Farstad",
-                        "size": 60
-                    }
-                }, {
-                    "data": {
-                        "id": "e",
-                        "name": "Erna Solberg",
-                        "size": 30
-                    }
-                }, {
-                    "data": {
-                        "id": "k",
-                        "name": "Leif Hansen",
-                        "size": 30
-                    }
-                }, {
-                    "data": {
-                        "id": "g",
+                        "id": "1",
                         "name": "Jon Georg Dale",
-                        "size": 30
+                        "size": 60,
+                        "img" : "http://s3.amazonaws.com/tun-static/wp-content/uploads/sites/2/2016/11/18150811/1.-Jon-Georg-Dale.jpg"
                     }
                 }, {
                     "data": {
-                        "id": "kn",
+                        "id": "2",
+                        "name": "Erna Solberg",
+                        "size": 30,
+                        "img" : "https://farm8.staticflickr.com/7272/7633179468_3e19e45a0c_b.jpg"
+                    }
+                }, {
+                    "data": {
+                        "id": "3",
+                        "name": "Leif Hansen",
+                        "size": 30,
+                        "img" : "https://farm8.staticflickr.com/7272/7633179468_3e19e45a0c_b.jpg"
+                    }
+                }, {
+                    "data": {
+                        "id": "4",
+                        "name": "Pål Farstad",
+                        "size": 30,
+                        "img" : "https://farm8.staticflickr.com/7272/7633179468_3e19e45a0c_b.jpg"
+                    }
+                }, {
+                    "data": {
+                        "id": "5",
                         "name": "Knut Arild Hareide",
-                        "size": 30
+                        "size": 30,
+                        "img" : "https://farm8.staticflickr.com/7272/7633179468_3e19e45a0c_b.jpg"
                     }
                 }],
                 "edges": [{
                     "data": {
-                        "source": "j",
-                        "target": "e"
+                        "source": "1",
+                        "target": "2"
                     }
                 }, {
                     "data": {
-                        "source": "j",
-                        "target": "k"
+                        "source": "1",
+                        "target": "3"
                     }
                 }, {
                     "data": {
-                        "source": "j",
-                        "target": "g"
+                        "source": "1",
+                        "target": "4"
                     }
                 }, {
                     "data": {
-                        "source": "j",
-                        "target": "kn"
-                    }
-                }, {
-                    "data": {
-                        "source": "k",
-                        "target": "kn"
-                    }
-                }, {
-                    "data": {
-                        "source": "g",
-                        "target": "k"
+                        "source": "1",
+                        "target": "5"
                     }
                 }]
             }]
