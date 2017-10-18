@@ -48,9 +48,14 @@ export class NodeBox extends React.Component {
                   'target-arrow-shape': 'triangle'
                 })
 
+          },
+          layout:{
+            name: 'cola', 'maxSimulationTime': 3.6e6
+          }
 
 
-        }
+
+        
       );
 
 
@@ -61,7 +66,7 @@ export class NodeBox extends React.Component {
             console.log(node.id());
         }
         });
-      var layout = cy.layout({ name: 'cola', 'maxSimulationTime': 3.6e6 });
+
 
     var bfs = cy.elements().bfs({
     roots: '#1',
@@ -82,24 +87,6 @@ export class NodeBox extends React.Component {
 
       console.log(bfs);
 
-
-
-
-
-              .selector('#1')
-                .css({
-                  position:{
-                    x:0,
-                    y:0
-                  }
-                })
-                ,
-            layout: {
-                'name': 'cola',
-                'maxSimulationTime': 3.6e6
-            }
-        }
-      );
 
       cy.panningEnabled( false );
 
