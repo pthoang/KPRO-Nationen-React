@@ -49,13 +49,13 @@ export class NodeBox extends React.Component {
                 })
 
           },
-          layout:{
-            name: 'cola', 'maxSimulationTime': 3.6e6
+          'layout':{
+            'name': 'cola', 'maxSimulationTime': 3.6e6
           }
 
 
 
-        
+
       );
 
 
@@ -67,27 +67,17 @@ export class NodeBox extends React.Component {
         }
         });
 
+        var bfs = cy.elements().bfs({
+        roots: '#1',
+        visit: function(v, e, u, i, depth){
+          console.log( 'visit ' + v.id() );
+          //v.style( { 'background-image': v.data('img')} );
+          v.emit('tap');
+        },
 
-    var bfs = cy.elements().bfs({
-    roots: '#1',
-    visit: function(v, e, u, i, depth){
-      console.log( 'visit ' + v.id() );
-      v.style( { 'background-image': v.data('img')} );
-      v.emit('tap');
-      layout.run();
-    },
-
-    directed: false
-  });
-
-
-      cy.ready(function(event){
-        console.log("layoutready");
+      directed: false
       });
-
-      console.log(bfs);
-
-
+      //console.log(bfs);
       cy.panningEnabled( false );
 
 
