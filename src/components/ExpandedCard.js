@@ -15,6 +15,12 @@ export class ExpandedCard extends React.Component {
         if ( e.key === 'Escape' ) {
             this.props.expandoHandler( -1 );
         }
+        if ( e.key === 'ArrowRight' ) {
+            this.props.expandoHandler( this.props.info.key );
+        }
+        if ( e.key === 'ArrowLeft' ) {
+            this.props.expandoHandler( this.props.info.key - 2 );
+        }
     }
 
     render() {
