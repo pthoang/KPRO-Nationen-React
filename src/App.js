@@ -48,6 +48,9 @@ export default class App extends Component {
             if ( name.profession.toLowerCase().indexOf( this.state.nameSearch.toLowerCase() ) !== -1 ) {
                 return true;
             }
+            if ( name.residence.toLowerCase().indexOf( this.state.nameSearch.toLowerCase() ) !== -1 ) {
+                return true;
+            }
             return false;
         }
 
