@@ -64,6 +64,7 @@ $trendingFlatClr: #FCD367;
         display: flex;
         flex-flow: row wrap;
         margin: 20px;
+        margin-top:0;
         @media screen and (max-width: 650px) {
             & {
                 flex-wrap: wrap;
@@ -135,15 +136,43 @@ $trendingFlatClr: #FCD367;
         }
     }
 
+    button{
+      background:none;
+      color: rgba(0, 0, 0, 0.54);
+      margin:10px;
+      font-style:$fontSansSerif;
+      .material-icons.md-36 { font-size: 36px; }
+      border:none;
+      position:relative;
+      align-self:center;
+      span{
+        overflow:hidden;
+      }
+      &:hover{
+          color:$trendingUpClr;
+      }
+      &:active{
+          background:$darkerGreen;
+      }
+      @media screen and (max-width: 650px) {
+          & {
+              float:center;
+          }
+      }
+    }
+
+    .btnForward{
+        float:right;
+    }
+
     .closeButton {
-        position: absolute;
-        right: 3%;
-        top: 3%;
         line-height: initial;
         height: fit-content;
         transition: all 250ms ease-out;
         border-radius: 50%;
-
+        float:right;
+        font-size: 36px;
+        margin:10px;
         &:hover {
             color: $closeButtonClr;
             transform: rotate(90deg);
