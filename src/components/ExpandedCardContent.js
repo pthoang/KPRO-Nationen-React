@@ -2,6 +2,7 @@ import React from 'react';
 import {NewsItem} from './NewsItem.js';
 import {NodeBox} from './NodeBox.js';
 import {StockBox} from './StockBox.js';
+import {Subsidies} from './Subsidies';
 
 
 export class ExpandedCardContent extends React.Component {
@@ -44,6 +45,7 @@ export class ExpandedCardContent extends React.Component {
             <section className="infoCardExpandedColumn">
                 <img src={this.props.info.img} className="bgrImgExpanded" alt={this.props.info.firstName} />
                 <div className="biographyText">{this.props.info.bio} </div>
+                <Subsidies subsidies={this.props.info.subsidies} />
             </section>
 
             <hr/>

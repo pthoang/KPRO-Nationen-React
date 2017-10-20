@@ -15,29 +15,24 @@ export class StockBox extends React.Component {
                 <td className="rightAlign">{( stock.stockValueNok ).toLocaleString( 'no-NO' )},-</td>
             </tr>
         ) );
-        return listItems
+        return listItems;
     }
 
-    // componentWillReceiveProps( nextProps ) {
-    //     this.updateStocks( );
-    // }
-
     render() {
-        if ( this.props.stocks ) {
-            return (
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Selskap</th>
-                            <th className="rightAlign">Aksjer</th>
-                            <th className="rightAlign">Verdi (NOK)</th>
-                        </tr>
-                    </thead>
-                    <tbody>{this.updateStocks()}</tbody>
-                </table>
-            );
-        } else {
-            return null;
-        }
+        const stocks = this.props.stocks.length < 1 ? null : (
+            <table>
+                <thead>
+                    <tr>
+                        <th>Selskap</th>
+                        <th className="rightAlign">Aksjer</th>
+                        <th className="rightAlign">Verdi (NOK)</th>
+                    </tr>
+                </thead>
+                <tbody>{this.updateStocks()}</tbody>
+            </table>
+        );
+        return (
+            <span> {stocks} </span>
+        );
     }
 }
