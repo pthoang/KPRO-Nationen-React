@@ -8,7 +8,6 @@ export class ExpandedCard extends React.Component {
         this.handleKeyPress = this.handleKeyPress.bind( this );
     }
     childClickhandler( e ) {
-        e.preventDefault();
         e.stopPropagation();
     }
 
