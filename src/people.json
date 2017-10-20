@@ -46,16 +46,18 @@
             "elements": [{
                 "nodes": [{
                     "data": {
-                        "id": "4",
-                        "name": "Pål Farstad",
+                        "id": "1",
+                        "name": "Jon Georg Dale",
                         "size": 60,
-                        "img": "https://www.fylkesmannen.no/Images/Bilder%20FMNO/Landbruk%20bilder/LARAs%20prosjekter,%20konferanser,%20annet%20bilder/jgd.jpg"
+                        "description": "Jon for president",
+                        "img": "http://s3.amazonaws.com/tun-static/wp-content/uploads/sites/2/2016/11/18150811/1.-Jon-Georg-Dale.jpg"
                       }
                 }, {
                     "data": {
                         "id": "2",
                         "name": "Erna Solberg",
                         "size": 30,
+                        "description": "Erna for president",
                         "img": "https://www.fylkesmannen.no/Images/Bilder%20FMNO/Landbruk%20bilder/LARAs%20prosjekter,%20konferanser,%20annet%20bilder/jgd.jpg"
                       }
                 }, {
@@ -66,9 +68,10 @@
                         "img": "https://www.fylkesmannen.no/Images/Bilder%20FMNO/Landbruk%20bilder/LARAs%20prosjekter,%20konferanser,%20annet%20bilder/jgd.jpg"
                       }
                 }, {
+
                     "data": {
-                        "id": "1",
-                        "name": "Jon Georg Dale",
+                        "id": "4",
+                        "name": "Pål Farstad",
                         "size": 30,
                         "img": "https://www.fylkesmannen.no/Images/Bilder%20FMNO/Landbruk%20bilder/LARAs%20prosjekter,%20konferanser,%20annet%20bilder/jgd.jpg"
                       }
