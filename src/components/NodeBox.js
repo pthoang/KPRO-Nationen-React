@@ -21,9 +21,9 @@ export class NodeBox extends React.Component {
 
     componentWillReceiveProps( nextProps ) {
         this.setState( {'elements': nextProps.elements[0]} );
-        this.createGraph(nextProps.elements[0]);
+        this.createGraph( nextProps.elements[0] );
     }
-    createGraph(elements) {
+    createGraph( elements ) {
         const cy = cytoscape( {
             'container': document.getElementById( 'cy' ),
             'boxSelectionEnabled': false,
@@ -65,7 +65,7 @@ export class NodeBox extends React.Component {
         //cy.panningEnabled( false );
     }
     componentDidMount() {
-        this.createGraph(this.state.elements);
+        this.createGraph( this.state.elements );
     }
     render() {
         return <div> <div style ={{'height':300, 'width':'100%'}} id="cy"> </div><h3 id="desc" style={{'textAlign':'center'}}>{this.state.description}</h3></div>;

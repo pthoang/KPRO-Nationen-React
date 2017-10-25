@@ -35,6 +35,18 @@
         list-style-type: none;
         font-size: 1em;
     }
+
+    .btnJury{
+        background:none;
+        margin:2px;
+        font-style:$fontSansSerif;
+        .material-icons.md-36 { font-size: 36px; }
+        border:none;
+        border-bottom: 2px solid $commonGreen;
+        font-family: inherit;
+        font-size: inherit;
+        font-weight: inherit;
+    }
 }
 
 .foundNothing {
