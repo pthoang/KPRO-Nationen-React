@@ -62,13 +62,18 @@ $trendingFlatClr: #FCD367;
 
     .infoCardExpandedColumn {
         display: flex;
-        flex-flow: row wrap;
+        // flex-flow: row wrap;
         margin: 20px;
         margin-top:0;
-        @media screen and (max-width: 650px) {
+        @media screen and (max-width: 1200px) {
             & {
                 flex-wrap: wrap;
+                flex-direction: column;
                 justify-content: center;
+                align-items:center;
+                > * {
+                    margin-top: 10px;
+                }
             }
         }
     }

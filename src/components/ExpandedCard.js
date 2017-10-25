@@ -8,13 +8,18 @@ export class ExpandedCard extends React.Component {
         this.handleKeyPress = this.handleKeyPress.bind( this );
     }
     childClickhandler( e ) {
-        e.preventDefault();
         e.stopPropagation();
     }
 
     handleKeyPress( e ) {
         if ( e.key === 'Escape' ) {
             this.props.expandoHandler( -1 );
+        }
+        if ( e.key === 'ArrowRight' ) {
+            this.props.expandoHandler( this.props.info.key );
+        }
+        if ( e.key === 'ArrowLeft' ) {
+            this.props.expandoHandler( this.props.info.key - 2 );
         }
     }
 
