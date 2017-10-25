@@ -6,7 +6,7 @@
             "lastYear": 2,
             "gender": "m",
             "profession": "Statsråd (FrP)",
-            "residence": "Norge",
+            "residence": "Tajikistan",
             "bio": "Posisjonen i seg selv gir mye makt. Landbrukspolitikken har ikke gjennomgått noe retningsskifte etter at Dale overtok i desember 2015, men stilen er en annen. Der Sylvi Listhaug forsøkte å drive gjennom endringer mot næringens og det politiske flertalls vilje (f.eks. brev til kommunene om priskontroll på landbrukseiendom), ønsker Dale dialog. Men til sjuende og sist er det statsråden som må utøve politisk makt for å drive sakene gjennom. Ved hjelp av departementsråden fikk han lirket på plass en jordbruksavtale, og den nye landbruksmeldinga vil angi retningen framover.",
             "newsItems": [{
                 "title": "Bondetoppar trur KrF vil tøyle Frps reform-iver",
@@ -24,6 +24,19 @@
                 "img": "http://imengine.tun.ocnetwork.se/imengine/image.php?uuid=44479231-0556-49c4-8216-b2996bfb8e07&type=preview&source=false&function=cropresize&width=980&height=514&x=0&y=117&crop_w=1600&crop_h=829&z=0.62002412545235",
                 "lead": "I fjor sommer brant alle driftsbygningene ned til grunnen. Ett år senere er Norges største og mest moderne sauefjøs klar til bruk på Hole gård på Rena."
             }],
+            "subsidies": [{
+                "id":1,
+                "name":"Dyr",
+                "value":2342
+                },{
+                "id":2,
+                "name":"Landbruk",
+                "value":2342
+                },{
+                "id":3,
+                "name":"Avløser",
+                "value":2342
+                }],
             "stocks": [{
                 "id":1,
                 "company": "Skandiabanken",
@@ -127,6 +140,19 @@
                 "img": "http://imengine.tun.ocnetwork.se/imengine/image.php?uuid=687d6f94-8117-4b4b-8006-e3aa8390c2b3&type=preview&source=false&function=cropresize&width=980&height=514&x=262&y=360&crop_w=1338&crop_h=694&z=0.74063400576369",
                 "lead": "Etter forhandlingar om fordelinga av den nye ramma i jordbruksoppgjeret sidan onsdag tar partane pause til over helga."
             }],
+            "subsidies": [{
+                "id":1,
+                "name":"Dyr",
+                "value":23490
+                },{
+                "id":2,
+                "name":"Landbruk",
+                "value":253092
+                },{
+                "id":3,
+                "name":"Avløser",
+                "value":23503
+                }],
             "stocks": [{
                 "id":1,
                 "company": "Ebay",
@@ -231,6 +257,19 @@
                 "img": "http://imengine.tun.ocnetwork.se/imengine/image.php?uuid=44479231-0556-49c4-8216-b2996bfb8e07&type=preview&source=false&function=cropresize&width=980&height=514&x=0&y=117&crop_w=1600&crop_h=829&z=0.62002412545235",
                 "lead": "Samvirketopp Ola Hedstein håper å unngå fire nye år med «opphaldande strid» i landbrukspolitikken. Han ber regjeringa i staden satse på å nytte potensialet både innan jord og skog."
             }],
+            "subsidies": [{
+                "id":1,
+                "name":"Dyr",
+                "value":2342
+                },{
+                "id":2,
+                "name":"Landbruk",
+                "value":2342
+                },{
+                "id":3,
+                "name":"Avløser",
+                "value":2342
+                }],
             "stocks": [],
             "elements": [{
                 "nodes": [{
@@ -317,6 +356,19 @@
                 "img": "http://imengine.tun.ocnetwork.se/imengine/image.php?uuid=44479231-0556-49c4-8216-b2996bfb8e07&type=preview&source=false&function=cropresize&width=980&height=514&x=0&y=117&crop_w=1600&crop_h=829&z=0.62002412545235",
                 "lead": "Samvirketopp Ola Hedstein håper å unngå fire nye år med «opphaldande strid» i landbrukspolitikken. Han ber regjeringa i staden satse på å nytte potensialet både innan jord og skog."
             }],
+            "subsidies": [{
+                "id":1,
+                "name":"Dyr",
+                "value":2342
+                },{
+                "id":2,
+                "name":"Landbruk",
+                "value":2342
+                },{
+                "id":3,
+                "name":"Avløser",
+                "value":2342
+                }],
             "stocks": [],
             "elements": [{
                 "nodes": [{
@@ -403,6 +455,19 @@
                 "img": "http://imengine.tun.ocnetwork.se/imengine/image.php?uuid=44479231-0556-49c4-8216-b2996bfb8e07&type=preview&source=false&function=cropresize&width=980&height=514&x=0&y=117&crop_w=1600&crop_h=829&z=0.62002412545235",
                 "lead": "Samvirketopp Ola Hedstein håper å unngå fire nye år med «opphaldande strid» i landbrukspolitikken. Han ber regjeringa i staden satse på å nytte potensialet både innan jord og skog."
             }],
+            "subsidies": [{
+                "id":1,
+                "name":"Dyr",
+                "value":2342
+                },{
+                "id":2,
+                "name":"Landbruk",
+                "value":2342
+                },{
+                "id":3,
+                "name":"Avløser",
+                "value":2342
+                }],
             "stocks": [],
             "elements": [{
                 "nodes": [{
@@ -489,6 +554,19 @@
                 "img": "http://imengine.tun.ocnetwork.se/imengine/image.php?uuid=44479231-0556-49c4-8216-b2996bfb8e07&type=preview&source=false&function=cropresize&width=980&height=514&x=0&y=117&crop_w=1600&crop_h=829&z=0.62002412545235",
                 "lead": "Samvirketopp Ola Hedstein håper å unngå fire nye år med «opphaldande strid» i landbrukspolitikken. Han ber regjeringa i staden satse på å nytte potensialet både innan jord og skog."
             }],
+            "subsidies": [{
+                "id":1,
+                "name":"Dyr",
+                "value":2342
+                },{
+                "id":2,
+                "name":"Landbruk",
+                "value":2342
+                },{
+                "id":3,
+                "name":"Avløser",
+                "value":2342
+                }],
             "stocks": [],
             "elements": [{
                 "nodes": [{
@@ -575,6 +653,19 @@
                 "img": "http://imengine.tun.ocnetwork.se/imengine/image.php?uuid=44479231-0556-49c4-8216-b2996bfb8e07&type=preview&source=false&function=cropresize&width=980&height=514&x=0&y=117&crop_w=1600&crop_h=829&z=0.62002412545235",
                 "lead": "Samvirketopp Ola Hedstein håper å unngå fire nye år med «opphaldande strid» i landbrukspolitikken. Han ber regjeringa i staden satse på å nytte potensialet både innan jord og skog."
             }],
+            "subsidies": [{
+                "id":1,
+                "name":"Dyr",
+                "value":2342
+                },{
+                "id":2,
+                "name":"Landbruk",
+                "value":2342
+                },{
+                "id":3,
+                "name":"Avløser",
+                "value":2342
+                }],
             "stocks": [],
             "elements": [{
                 "nodes": [{
@@ -661,6 +752,19 @@
                 "img": "http://imengine.tun.ocnetwork.se/imengine/image.php?uuid=44479231-0556-49c4-8216-b2996bfb8e07&type=preview&source=false&function=cropresize&width=980&height=514&x=0&y=117&crop_w=1600&crop_h=829&z=0.62002412545235",
                 "lead": "Samvirketopp Ola Hedstein håper å unngå fire nye år med «opphaldande strid» i landbrukspolitikken. Han ber regjeringa i staden satse på å nytte potensialet både innan jord og skog."
             }],
+            "subsidies": [{
+                "id":1,
+                "name":"Dyr",
+                "value":2342
+                },{
+                "id":2,
+                "name":"Landbruk",
+                "value":2342
+                },{
+                "id":3,
+                "name":"Avløser",
+                "value":2342
+                }],
             "stocks": [],
             "elements": [{
                 "nodes": [{
@@ -747,6 +851,19 @@
                 "img": "http://imengine.tun.ocnetwork.se/imengine/image.php?uuid=44479231-0556-49c4-8216-b2996bfb8e07&type=preview&source=false&function=cropresize&width=980&height=514&x=0&y=117&crop_w=1600&crop_h=829&z=0.62002412545235",
                 "lead": "Samvirketopp Ola Hedstein håper å unngå fire nye år med «opphaldande strid» i landbrukspolitikken. Han ber regjeringa i staden satse på å nytte potensialet både innan jord og skog."
             }],
+            "subsidies": [{
+                "id":1,
+                "name":"Dyr",
+                "value":2342
+                },{
+                "id":2,
+                "name":"Landbruk",
+                "value":2342
+                },{
+                "id":3,
+                "name":"Avløser",
+                "value":2342
+                }],
             "stocks": [],
             "elements": [{
                 "nodes": [{
@@ -833,6 +950,19 @@
                 "img": "http://imengine.tun.ocnetwork.se/imengine/image.php?uuid=44479231-0556-49c4-8216-b2996bfb8e07&type=preview&source=false&function=cropresize&width=980&height=514&x=0&y=117&crop_w=1600&crop_h=829&z=0.62002412545235",
                 "lead": "Samvirketopp Ola Hedstein håper å unngå fire nye år med «opphaldande strid» i landbrukspolitikken. Han ber regjeringa i staden satse på å nytte potensialet både innan jord og skog."
             }],
+            "subsidies": [{
+                "id":1,
+                "name":"Dyr",
+                "value":2342
+                },{
+                "id":2,
+                "name":"Landbruk",
+                "value":2342
+                },{
+                "id":3,
+                "name":"Avløser",
+                "value":2342
+                }],
             "stocks": [],
             "elements": [{
                 "nodes": [{
@@ -923,6 +1053,19 @@
                 "img": "http://imengine.tun.ocnetwork.se/imengine/image.php?uuid=44479231-0556-49c4-8216-b2996bfb8e07&type=preview&source=false&function=cropresize&width=980&height=514&x=0&y=117&crop_w=1600&crop_h=829&z=0.62002412545235",
                 "lead": "I fjor sommer brant alle driftsbygningene ned til grunnen. Ett år senere er Norges største og mest moderne sauefjøs klar til bruk på Hole gård på Rena."
             }],
+            "subsidies": [{
+                "id":1,
+                "name":"Dyr",
+                "value":2342
+                },{
+                "id":2,
+                "name":"Landbruk",
+                "value":2342
+                },{
+                "id":3,
+                "name":"Avløser",
+                "value":2342
+                }],
             "stocks": [],
             "elements": [{
                 "nodes": [{
@@ -1009,6 +1152,19 @@
                 "img": "http://imengine.tun.ocnetwork.se/imengine/image.php?uuid=44479231-0556-49c4-8216-b2996bfb8e07&type=preview&source=false&function=cropresize&width=980&height=514&x=0&y=117&crop_w=1600&crop_h=829&z=0.62002412545235",
                 "lead": "Samvirketopp Ola Hedstein håper å unngå fire nye år med «opphaldande strid» i landbrukspolitikken. Han ber regjeringa i staden satse på å nytte potensialet både innan jord og skog."
             }],
+            "subsidies": [{
+                "id":1,
+                "name":"Dyr",
+                "value":2342
+                },{
+                "id":2,
+                "name":"Landbruk",
+                "value":2342
+                },{
+                "id":3,
+                "name":"Avløser",
+                "value":2342
+                }],
             "stocks": [],
             "elements": [{
                 "nodes": [{
@@ -1094,6 +1250,7 @@
                 "img": "http://imengine.tun.ocnetwork.se/imengine/image.php?uuid=44479231-0556-49c4-8216-b2996bfb8e07&type=preview&source=false&function=cropresize&width=980&height=514&x=0&y=117&crop_w=1600&crop_h=829&z=0.62002412545235",
                 "lead": "Samvirketopp Ola Hedstein håper å unngå fire nye år med «opphaldande strid» i landbrukspolitikken. Han ber regjeringa i staden satse på å nytte potensialet både innan jord og skog."
             }],
+            "subsidies": [],
             "stocks": [],
             "elements": [{
                 "nodes": [{
@@ -1179,6 +1336,7 @@
                 "img": "http://imengine.tun.ocnetwork.se/imengine/image.php?uuid=44479231-0556-49c4-8216-b2996bfb8e07&type=preview&source=false&function=cropresize&width=980&height=514&x=0&y=117&crop_w=1600&crop_h=829&z=0.62002412545235",
                 "lead": "Samvirketopp Ola Hedstein håper å unngå fire nye år med «opphaldande strid» i landbrukspolitikken. Han ber regjeringa i staden satse på å nytte potensialet både innan jord og skog."
             }],
+            "subsidies": [],
             "stocks": [],
             "elements": [{
                 "nodes": [{
@@ -1264,6 +1422,7 @@
                 "img": "http://imengine.tun.ocnetwork.se/imengine/image.php?uuid=44479231-0556-49c4-8216-b2996bfb8e07&type=preview&source=false&function=cropresize&width=980&height=514&x=0&y=117&crop_w=1600&crop_h=829&z=0.62002412545235",
                 "lead": "Samvirketopp Ola Hedstein håper å unngå fire nye år med «opphaldande strid» i landbrukspolitikken. Han ber regjeringa i staden satse på å nytte potensialet både innan jord og skog."
             }],
+            "subsidies": [],
             "stocks": [],
             "elements": [{
                 "nodes": [{
@@ -1349,6 +1508,7 @@
                 "img": "http://imengine.tun.ocnetwork.se/imengine/image.php?uuid=44479231-0556-49c4-8216-b2996bfb8e07&type=preview&source=false&function=cropresize&width=980&height=514&x=0&y=117&crop_w=1600&crop_h=829&z=0.62002412545235",
                 "lead": "Samvirketopp Ola Hedstein håper å unngå fire nye år med «opphaldande strid» i landbrukspolitikken. Han ber regjeringa i staden satse på å nytte potensialet både innan jord og skog."
             }],
+            "subsidies": [],
             "stocks": [],
             "elements": [{
                 "nodes": [{
@@ -1434,6 +1594,7 @@
                 "img": "http://imengine.tun.ocnetwork.se/imengine/image.php?uuid=44479231-0556-49c4-8216-b2996bfb8e07&type=preview&source=false&function=cropresize&width=980&height=514&x=0&y=117&crop_w=1600&crop_h=829&z=0.62002412545235",
                 "lead": "Samvirketopp Ola Hedstein håper å unngå fire nye år med «opphaldande strid» i landbrukspolitikken. Han ber regjeringa i staden satse på å nytte potensialet både innan jord og skog."
             }],
+            "subsidies": [],
             "stocks": [],
             "elements": [{
                 "nodes": [{
@@ -1519,6 +1680,7 @@
                 "img": "http://imengine.tun.ocnetwork.se/imengine/image.php?uuid=44479231-0556-49c4-8216-b2996bfb8e07&type=preview&source=false&function=cropresize&width=980&height=514&x=0&y=117&crop_w=1600&crop_h=829&z=0.62002412545235",
                 "lead": "Samvirketopp Ola Hedstein håper å unngå fire nye år med «opphaldande strid» i landbrukspolitikken. Han ber regjeringa i staden satse på å nytte potensialet både innan jord og skog."
             }],
+            "subsidies": [],
             "stocks": [],
             "elements": [{
                 "nodes": [{
@@ -1604,6 +1766,7 @@
                 "img": "http://imengine.tun.ocnetwork.se/imengine/image.php?uuid=44479231-0556-49c4-8216-b2996bfb8e07&type=preview&source=false&function=cropresize&width=980&height=514&x=0&y=117&crop_w=1600&crop_h=829&z=0.62002412545235",
                 "lead": "Samvirketopp Ola Hedstein håper å unngå fire nye år med «opphaldande strid» i landbrukspolitikken. Han ber regjeringa i staden satse på å nytte potensialet både innan jord og skog."
             }],
+            "subsidies": [],
             "stocks": [],
             "elements": [{
                 "nodes": [{
@@ -1689,6 +1852,7 @@
                 "img": "http://imengine.tun.ocnetwork.se/imengine/image.php?uuid=44479231-0556-49c4-8216-b2996bfb8e07&type=preview&source=false&function=cropresize&width=980&height=514&x=0&y=117&crop_w=1600&crop_h=829&z=0.62002412545235",
                 "lead": "Samvirketopp Ola Hedstein håper å unngå fire nye år med «opphaldande strid» i landbrukspolitikken. Han ber regjeringa i staden satse på å nytte potensialet både innan jord og skog."
             }],
+            "subsidies": [],
             "stocks": [],
 			"elements": [{
                 "nodes": [{
@@ -1774,6 +1938,7 @@
                 "img": "http://imengine.tun.ocnetwork.se/imengine/image.php?uuid=44479231-0556-49c4-8216-b2996bfb8e07&type=preview&source=false&function=cropresize&width=980&height=514&x=0&y=117&crop_w=1600&crop_h=829&z=0.62002412545235",
                 "lead": "Samvirketopp Ola Hedstein håper å unngå fire nye år med «opphaldande strid» i landbrukspolitikken. Han ber regjeringa i staden satse på å nytte potensialet både innan jord og skog."
             }],
+            "subsidies": [],
             "stocks": [],
 			"elements": [{
                 "nodes": [{
@@ -1859,6 +2024,7 @@
                 "img": "http://imengine.tun.ocnetwork.se/imengine/image.php?uuid=44479231-0556-49c4-8216-b2996bfb8e07&type=preview&source=false&function=cropresize&width=980&height=514&x=0&y=117&crop_w=1600&crop_h=829&z=0.62002412545235",
                 "lead": "Samvirketopp Ola Hedstein håper å unngå fire nye år med «opphaldande strid» i landbrukspolitikken. Han ber regjeringa i staden satse på å nytte potensialet både innan jord og skog."
             }],
+            "subsidies": [],
             "stocks": [],
 			"elements": [{
                 "nodes": [{
@@ -1944,6 +2110,7 @@
                 "img": "http://imengine.tun.ocnetwork.se/imengine/image.php?uuid=44479231-0556-49c4-8216-b2996bfb8e07&type=preview&source=false&function=cropresize&width=980&height=514&x=0&y=117&crop_w=1600&crop_h=829&z=0.62002412545235",
                 "lead": "Samvirketopp Ola Hedstein håper å unngå fire nye år med «opphaldande strid» i landbrukspolitikken. Han ber regjeringa i staden satse på å nytte potensialet både innan jord og skog."
             }],
+            "subsidies": [],
             "stocks": [],
 			"elements": [{
                 "nodes": [{
@@ -2029,6 +2196,7 @@
                 "img": "http://imengine.tun.ocnetwork.se/imengine/image.php?uuid=44479231-0556-49c4-8216-b2996bfb8e07&type=preview&source=false&function=cropresize&width=980&height=514&x=0&y=117&crop_w=1600&crop_h=829&z=0.62002412545235",
                 "lead": "Samvirketopp Ola Hedstein håper å unngå fire nye år med «opphaldande strid» i landbrukspolitikken. Han ber regjeringa i staden satse på å nytte potensialet både innan jord og skog."
             }],
+            "subsidies": [],
             "stocks": [],
 			"elements": [{
                 "nodes": [{
@@ -2114,6 +2282,7 @@
                 "img": "http://imengine.tun.ocnetwork.se/imengine/image.php?uuid=44479231-0556-49c4-8216-b2996bfb8e07&type=preview&source=false&function=cropresize&width=980&height=514&x=0&y=117&crop_w=1600&crop_h=829&z=0.62002412545235",
                 "lead": "Samvirketopp Ola Hedstein håper å unngå fire nye år med «opphaldande strid» i landbrukspolitikken. Han ber regjeringa i staden satse på å nytte potensialet både innan jord og skog."
             }],
+            "subsidies": [],
             "stocks": [],
 			"elements": [{
                 "nodes": [{
@@ -2199,6 +2368,7 @@
                 "img": "http://imengine.tun.ocnetwork.se/imengine/image.php?uuid=44479231-0556-49c4-8216-b2996bfb8e07&type=preview&source=false&function=cropresize&width=980&height=514&x=0&y=117&crop_w=1600&crop_h=829&z=0.62002412545235",
                 "lead": "Samvirketopp Ola Hedstein håper å unngå fire nye år med «opphaldande strid» i landbrukspolitikken. Han ber regjeringa i staden satse på å nytte potensialet både innan jord og skog."
             }],
+            "subsidies": [],
             "stocks": [],
 			"elements": [{
                 "nodes": [{
