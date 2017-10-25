@@ -1,60 +1,69 @@
-import React from 'react';
-const cytoscape = require( 'cytoscape' );
-const cycola = require( 'cytoscape-cola' );
-cytoscape.use( cycola );
+    import React from 'react';
+    const cytoscape = require( 'cytoscape' );
+    const cycola = require( 'cytoscape-cola' );
 
-export class NodeBox extends React.Component {
-    constructor( props ) {
-        super( props );
-        this.componentDidMount = this.componentDidMount.bind( this );
-    }
-    componentDidMount() {
-        // const img = new Image();
-        // img.crossOrigin = 'Use-Credentials';
-        // img.src = "http://via.placeholder.com/320x320"; //require( './2-Leif-Forsell.jpg' );
+    cytoscape.use( cycola );
 
-        const cy = cytoscape( {
-            'container': document.getElementById( 'cy' ),
-            'elements': this.props.elements[0],
-            'style': [ // the stylesheet for the graph
-                {
-                    'selector': 'node',
-                    'style': {
-                        'background-color': '#618b25',
-                        'label': 'data(name)',
-                        'width':'data(size)',
-                        'height':'data(size)',
-                        'border-width':'3',
-                        'border-color': '#618b25',
-                        'background-fit':'contain'
+    export class NodeBox extends React.Component {
+
+        constructor( props ) {
+            super( props );
+            this.state = {
+             description: ''
+          }
+          this.handleTextChange = this.handleTextChange.bind(this);
+        }
+
+        handleTextChange(text){
+          this.setState({description: text});
+        }
+
+        componentDidMount() {
+
+            const cy = cytoscape( {
+                container: document.getElementById( 'cy' ),
+                boxSelectionEnabled: false,
+                elements: this.props.elements[0],
+                style: cytoscape.stylesheet()
+                  .selector('node')
+                    .css({
+                      'label': 'data(name)',
+                      'width':'data(size)',
+                      'height':'data(size)',
+                      'border-width':'3',
+                      'border-color': '#618b25',
+                      'background-fit':'cover',
+                      'background-image': 'data(img)'
+                    })
+                  .selector('edge')
+                    .css({
+                      'curve-style': 'unbundled-bezier',
+                      'control-point-distance': '20px',
+                      'control-point-weight': '0.5', // '0': curve towards source node, '1': towards target node.
+                      'width': 1, //
+                      'line-color': '#618B25',
+                      'target-arrow-color': '#618B25',
+                      'target-arrow-shape': 'triangle'
+                    })
+                    },
+                    'layout':{
+                      'name': 'cola', 'maxSimulationTime': 0
                     }
-                },
+                  );
 
-                {
-                    'selector': 'edge',
-                    'style': {
-                        'curve-style': 'unbundled-bezier',
-                        'control-point-distance': '20px',
-                        'control-point-weight': '0.5', // '0': curve towards source node, '1': towards target node.
-                        'width': 1, //
-                        'line-color': '#618B25',
-                        'target-arrow-color': '#618B25',
-                        'target-arrow-shape': 'triangle'
-                    }
-                }
-            ],
+          cy.panningEnabled( false );
 
-            'layout': {
-                'name': 'cola',
-                'maxSimulationTime': 3.6e6
-            }
-        } );
+          cy.on('tap', 'node', (evt) => {
+              var node = evt.target;
+              if (node.id() !== 1){
+                console.log(node.data('description'));
+                this.handleTextChange(node.data('description'));
+              }
+            });
 
-        cy.nodes()[0].style( {'background-image-crossorigin': 'use-credentials', 'background-image': 'url()'} );
-        cy.panningEnabled( false );
+          cy.panningEnabled( false );
+        }
+        render() {
+            return <div> <div style ={{'height':300, 'width':'100%'}} id="cy"> </div><h3 id="desc" style={{textAlign:"center"}}>{this.state.description}</h3></div>;
+        }
     }
-    render() {
-
-        return <div style ={{'height':300, 'width':'100%'}} id="cy"> </div>;
-    }
-}
