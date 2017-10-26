@@ -62,7 +62,7 @@ export class NodeBox extends React.Component {
                 this.handleTextChange( node.data( 'description' ) );
             }
         } );
-        //cy.panningEnabled( false );
+        cy.panningEnabled( false );
     }
     componentDidMount() {
         this.createGraph( this.state.elements );

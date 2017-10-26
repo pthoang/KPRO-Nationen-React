@@ -98,6 +98,7 @@ $trendingFlatClr: #FCD367;
         color: $fontCol;
         flex-grow: 0;
         margin-left: 10px;
+        padding:15px;
         align-self: center;
         width: 60%;
         flex-basis: auto;
@@ -114,6 +115,10 @@ $trendingFlatClr: #FCD367;
         font-size: 2em;
         flex-grow: 1;
         flex-basis: auto;
+        .underText{
+            color: lighten(black,30%);
+            font-size: 0.8em;
+        }
         .listMove{
             border-radius: 50%;
             font-size:0.8em;
@@ -134,10 +139,6 @@ $trendingFlatClr: #FCD367;
             color:$trendingFlatClr;
             background:lighten($trendingFlatClr, 20%);
             border: 3px solid lighten($trendingFlatClr, 20%);
-        }
-
-        .listMove:hover{
-            transform:rotate(360deg);
         }
     }
 

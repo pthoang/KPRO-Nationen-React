@@ -38,8 +38,8 @@ export class ExpandedCardContent extends React.Component {
 
             <section className="infoCardExpandedColumn">
                 <div className = "biographyName"> {this.props.id} - {this.props.info.firstName} {this.getMove()}<br/>
-                    <span style={{'color': 'lightgrey', 'fontSize':'0.8em' }}>{this.props.info.profession}</span> <ParliamentBox /> <br/>
-                    <span style={{'color': 'lightgrey', 'fontSize':'0.8em' }}>Plassering i fjor: {this.props.info.lastYear}</span>
+                    <span className="underText">{this.props.info.profession}</span> <ParliamentBox /> <br/>
+                    <span className="underText">Plassering i fjor: {this.props.info.lastYear}</span>
                 </div>
 
             </section>

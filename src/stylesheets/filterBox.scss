@@ -1,51 +1,52 @@
 @import "./common.scss";
 
 .filterBox {
-    font-size: 2em;
+    display:flex;
+    background-color:white;
+    border-radius:5px;
+    padding:10px;
+    width:80%;
     font-family: $fontSerif;
-    font-weight: 900;
-
-    select {
-        display: inline-block;
-        border: 0;
-        outline:none;
-        border-radius: 5px;
-        margin:2px;
-        border-bottom: 2px solid $commonGreen;
-        width: 250px;
-        font-family: inherit;
-        font-size: inherit;
-        font-weight: inherit;
-        background:#E3E6D6;
-        option{
-            font-family: inherit;
-            font-size: inherit;
-            font-weight: inherit;
+    flex-wrap:wrap;
+    @media screen and (max-width:900px) {
+        & {
+            width:100%;
         }
     }
-    .searchArea{
-        padding-left:20px;
+    .filter{
+        flex-basis:33%;
+        font-family:inherit;
+        .selectArea{
+            font-family:inherit;
+            border: solid 1px $commonGreen;
+            border-radius:5px;
+        }
     }
-
-    input {
-        @extend select;
+    .search{
+        flex-basis:33%;
+        font-family:inherit;
+        .searchArea{
+            font-family:inherit;
+            border:solid 1px $commonGreen;
+            border-radius:5px;
+        }
     }
-
-    ul {
-        list-style-type: none;
-        font-size: 1em;
-    }
-
-    .btnJury{
-        background:none;
-        margin:2px;
-        font-style:$fontSansSerif;
-        .material-icons.md-36 { font-size: 36px; }
-        border:none;
-        border-bottom: 2px solid $commonGreen;
-        font-family: inherit;
-        font-size: inherit;
-        font-weight: inherit;
+    .jury{
+        flex-basis:33%;
+        font-family:inherit;
+        .btnJury{
+            font-family:inherit;
+            float:right;
+            background:white;
+            border: solid 1px $commonGreen;
+            border-radius:5px;
+            @media screen and (max-width:900px) {
+                & {
+                    float:none;
+                    margin-top:5px;
+                }
+            }
+        }
     }
 }
 
