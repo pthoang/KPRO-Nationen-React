@@ -114,7 +114,7 @@ $trendingFlatClr: #FCD367;
         font-size: 2em;
         flex-grow: 1;
         flex-basis: auto;
-        .material-icons{
+        .listMove{
             border-radius: 50%;
             font-size:0.8em;
             vertical-align:middle;
@@ -136,7 +136,7 @@ $trendingFlatClr: #FCD367;
             border: 3px solid lighten($trendingFlatClr, 20%);
         }
 
-        .material-icons:hover{
+        .listMove:hover{
             transform:rotate(360deg);
         }
     }

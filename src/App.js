@@ -2,9 +2,8 @@ import React, { Component } from 'react';
 import {FilterBox} from './components/FilterBox';
 import {Card} from './components/Card';
 import {ExpandedCard} from './components/ExpandedCard';
-// const areas = ["alt","landbruk", "politikk", "næringsliv"];
-// const counties = ["i hele landet","på Østlandet", "på Vestlandet",
-// "i Nord-Norge", " i Trøndelag", " på Sørlandet"];
+import {ExpandedCardContent} from './components/ExpandedCardContent.js';
+import {ExpandedCardJury} from './components/ExpandedCardJury';
 
 export default class App extends Component {
     constructor( props ) {
@@ -15,7 +14,8 @@ export default class App extends Component {
         this.expandoHandler = this.expandoHandler.bind( this );
         this.state = {'show':['m', 'f', 'none'],
             'nameSearch': '',
-            'isExpanded': -1};
+            'isExpanded': -1,
+            'showJury': false};
         console.log( '%c👋 Hello!\n', 'font-size:2em;' );
     }
 
@@ -57,8 +57,12 @@ export default class App extends Component {
     }
 
     expandoHandler( clickedId ) {
-        if ( clickedId !== this.state.isExpanded ) {
-            this.setState( {'isExpanded': ( clickedId < this.props.names.length ? clickedId : -1 )} );
+        const clicked = clickedId;
+        if ( ( clicked !== this.state.isExpanded ) && ( typeof clicked === 'number' ) ) {
+            this.setState( {'isExpanded': ( clicked < this.props.names.length ? clicked : -1 )} );
+        } else {
+            this.setState( {'showJury': !this.state.showJury} );
+            console.log( this.state.showJury );
         }
     }
 
@@ -72,13 +76,19 @@ export default class App extends Component {
             cards = ( <span role="img" aria-label="Person Shrugging" className="foundNothing"> 🤷 Fant ingen som heter det... </span> );
         }
 
-        let expando = this.state.isExpanded !== -1 ? ( <ExpandedCard info={this.props.names[this.state.isExpanded] } expandoHandler={this.expandoHandler}/> ) : ( null );
+        const expando = this.state.isExpanded !== -1 ? ( <ExpandedCard info={this.props.names[this.state.isExpanded] } expandoHandler={this.expandoHandler}>
+            <ExpandedCardContent id={this.props.names[this.state.isExpanded].key} info={this.props.names[this.state.isExpanded]} expandoHandler={this.expandoHandler}/>
+        </ExpandedCard> ) : ( null );
 
+        const juryInfo = this.state.showJury ? ( <ExpandedCard info={{'key':1}} expandoHandler={this.expandoHandler} height='auto'>
+            <ExpandedCardJury />
+        </ExpandedCard> ) : null;
         return (
             <div className="App">
-                <FilterBox handleChange={this.handleChange}/>
+                <FilterBox handleChange={this.handleChange} expandoHandler={this.expandoHandler}/>
                 {cards}
                 {expando}
+                {juryInfo}
             </div> );
     }
 }
