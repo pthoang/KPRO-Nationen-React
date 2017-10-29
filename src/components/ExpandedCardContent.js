@@ -1,5 +1,5 @@
 import React from 'react';
-import {NewsItem} from './NewsItem.js';
+//import {NewsItem} from './NewsItem.js';
 import {NodeBox} from './NodeBox.js';
 import {StockBox} from './StockBox.js';
 import {Subsidies} from './Subsidies';
@@ -11,7 +11,7 @@ export class ExpandedCardContent extends React.Component {
         super( props );
         this.getMove = this.getMove.bind( this );
     }
-    makeTweetButton( name, pos) {
+    makeTweetButton( name, pos ) {
         document.getElementById( 'tweetButton' ).innerHTML = '';
         window.twttr.widgets.createShareButton(
             '/',
@@ -19,6 +19,7 @@ export class ExpandedCardContent extends React.Component {
             {
                 'text': name + ' er nummer ' + pos + ' på listen over de 100 mektigste i landbruket!',
                 'hashtags': 'maktkåringen,landbruksmakt,nationen',
+                'related':'Nationen_as'
             }
         );
     }

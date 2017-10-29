@@ -28,7 +28,7 @@ export class NodeBox extends React.Component {
             'container': document.getElementById( 'cy' ),
             'boxSelectionEnabled': false,
             'layout':{
-                'name':'circle'
+                'name':'circle',
             },
             'elements': elements,
             'style': cytoscape.stylesheet()
