@@ -12,6 +12,7 @@ export default class App extends Component {
         this.filterGender = this.filterGender.bind( this );
         this.filterName = this.filterName.bind( this );
         this.expandoHandler = this.expandoHandler.bind( this );
+        this.getNames = this.getNames.bind( this );
         this.state = {'show':['m', 'f', 'none'],
             'nameSearch': '',
             'isExpanded': -1,
@@ -66,6 +67,23 @@ export default class App extends Component {
         }
     }
 
+    getNames() {
+        let namePrev = null;
+        let nameNxt = null;
+        if ( this.state.isExpanded < this.props.names.length - 1 ) {
+            nameNxt = this.props.names[this.state.isExpanded + 1].firstName.substring( 0, 6 )+'...';
+        }
+        if ( this.state.isExpanded > 0 ) {
+            namePrev = this.props.names[this.state.isExpanded - 1].firstName.substring( 0, 6 )+'...';
+        }
+        // this.state.isExpaned < this.props.names.length ? nameNxt = this.props.names[this.state.isExpanded + 1].firstName : null;
+        // this.state.isExpaned > 0 ? namePrev = this.props.names[this.state.isExpanded - 1].firstName : null;
+        // console.log(namePrev);
+        // return ( namePrev, nameNxt );
+        console.log( nameNxt );
+        return [namePrev, nameNxt]
+    }
+
     render() {
         let cards = this.props.names.filter( this.filterGender )
             .filter( this.filterName )
@@ -77,7 +95,7 @@ export default class App extends Component {
         }
 
         const expando = this.state.isExpanded !== -1 ? ( <ExpandedCard info={this.props.names[this.state.isExpanded] } expandoHandler={this.expandoHandler}>
-            <ExpandedCardContent id={this.props.names[this.state.isExpanded].key} info={this.props.names[this.state.isExpanded]} expandoHandler={this.expandoHandler}/>
+            <ExpandedCardContent id={this.props.names[this.state.isExpanded].key} info={this.props.names[this.state.isExpanded]} expandoHandler={this.expandoHandler} names={this.getNames()}/>
         </ExpandedCard> ) : ( null );
 
         const juryInfo = this.state.showJury ? ( <ExpandedCard info={{'key':1}} expandoHandler={this.expandoHandler} height='auto'>

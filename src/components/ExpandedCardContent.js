@@ -46,13 +46,13 @@ export class ExpandedCardContent extends React.Component {
         // const news = this.props.info.newsItems.map( item =>
         //     <NewsItem items={item} key={item.key} />
         // );
-
+        //console.log(this.props.names)
         return ( <span>
-            <button className="btnBack" type="button" onClick={() => this.props.expandoHandler( this.props.id - 2 )}><i className="material-icons md-36">arrow_back</i></button>
+            <button className="btnBack" type="button" onClick={() => this.props.expandoHandler( this.props.id - 2 )}><i className="material-icons md-36" style={{'verticalAlign':'middle'}}>arrow_back</i>{this.props.names[0]}</button>
             <i className="material-icons closeButton" onClick={() => this.props.expandoHandler( -1 )}>close</i>
-            <button className="btnForward" type="button" onClick={() => this.props.expandoHandler( this.props.id )}><i className="material-icons md-36">arrow_forward</i></button>
+            <button className="btnForward" type="button" onClick={() => this.props.expandoHandler( this.props.id )}>{this.props.names[1]}<i className="material-icons md-36" style={{'verticalAlign':'middle', 'padding-bottom':5}}>arrow_forward</i></button>
 
-            <section className="infoCardExpandedColumn">
+            <section className="infoCardExpandedColumn" style={{'width':'85%'}}>
                 <div className = "biographyName">#{this.props.id} - {this.props.info.firstName} {this.getMove()}<br/>
                     <span className="underText">{this.props.info.profession}</span> <ParliamentBox /> <br/>
                     <span className="underText">Plassering i fjor: {this.props.info.lastYear} <div id="tweetButton" style={{'display':'inline'}}/></span>
