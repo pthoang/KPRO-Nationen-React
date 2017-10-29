@@ -62,7 +62,7 @@
                         "id": "1",
                         "name": "Jon Georg Dale",
                         "size": 60,
-                        "description": "Jon for president",
+                        "description": "",
                         "img": "https://s3.amazonaws.com/tun-static/wp-content/uploads/sites/2/2016/11/18150811/1.-Jon-Georg-Dale.jpg"
                       }
                 }, {
@@ -70,7 +70,7 @@
                         "id": "2",
                         "name": "Erna Solberg",
                         "size": 30,
-                        "description": "Erna for president",
+                        "description": "Erna Solberg sitter i samme regjering som Jon Georg Dale",
                         "img": "https://www.fylkesmannen.no/Images/Bilder%20FMNO/Landbruk%20bilder/LARAs%20prosjekter,%20konferanser,%20annet%20bilder/jgd.jpg"
                       }
                 }, {
@@ -78,6 +78,7 @@
                         "id": "3",
                         "name": "Leif Hansen",
                         "size": 30,
+                        "description": "Leif Hansen eier aksjer i samme selskap som Jon Georg Dale",
                         "img": "https://www.fylkesmannen.no/Images/Bilder%20FMNO/Landbruk%20bilder/LARAs%20prosjekter,%20konferanser,%20annet%20bilder/jgd.jpg"
                       }
                 }, {
@@ -93,6 +94,7 @@
                         "id": "5",
                         "name": "Knut Arild Hareide",
                         "size": 30,
+                        "description": "Knut Arild Hareide sitter på Stortinget med Jon Georg Dale",
                         "img": "https://www.fylkesmannen.no/Images/Bilder%20FMNO/Landbruk%20bilder/LARAs%20prosjekter,%20konferanser,%20annet%20bilder/jgd.jpg"
                       }
                 }],
@@ -356,19 +358,7 @@
                 "img": "http://imengine.tun.ocnetwork.se/imengine/image.php?uuid=44479231-0556-49c4-8216-b2996bfb8e07&type=preview&source=false&function=cropresize&width=980&height=514&x=0&y=117&crop_w=1600&crop_h=829&z=0.62002412545235",
                 "lead": "Samvirketopp Ola Hedstein håper å unngå fire nye år med «opphaldande strid» i landbrukspolitikken. Han ber regjeringa i staden satse på å nytte potensialet både innan jord og skog."
             }],
-            "subsidies": [{
-                "id":1,
-                "name":"Dyr",
-                "value":2342
-                },{
-                "id":2,
-                "name":"Landbruk",
-                "value":2342
-                },{
-                "id":3,
-                "name":"Avløser",
-                "value":2342
-                }],
+            "subsidies": [],
             "stocks": [],
             "elements": [{
                 "nodes": [{

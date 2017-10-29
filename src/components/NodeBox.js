@@ -41,6 +41,7 @@ export class NodeBox extends React.Component {
                     'border-color': '#618b25',
                     'background-fit':'cover',
                     //'background-image': 'data(img)'
+                    'background-image': 'https://www.fylkesmannen.no/Images/Bilder%20FMNO/Landbruk%20bilder/LARAs%20prosjekter,%20konferanser,%20annet%20bilder/jgd.jpg'
                 } )
                 .selector( 'edge' )
                 .css( {

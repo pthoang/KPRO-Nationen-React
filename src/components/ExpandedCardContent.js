@@ -11,9 +11,24 @@ export class ExpandedCardContent extends React.Component {
         super( props );
         this.getMove = this.getMove.bind( this );
     }
-
+    makeTweetButton( name, pos) {
+        document.getElementById( 'tweetButton' ).innerHTML = '';
+        window.twttr.widgets.createShareButton(
+            '/',
+            document.getElementById( 'tweetButton' ),
+            {
+                'text': name + ' er nummer ' + pos + ' på listen over de 100 mektigste i landbruket!',
+                'hashtags': 'maktkåringen,landbruksmakt,nationen',
+            }
+        );
+    }
     componentDidMount() {
         document.getElementById( 'expandedCard' + this.props.id ).focus();
+        this.makeTweetButton( this.props.info.firstName, this.props.id );
+    }
+    componentWillReceiveProps( props ) {
+        document.getElementById( 'tweetButton' ).innerHTML = '';
+        this.makeTweetButton( props.info.firstName, props.id );
     }
 
     getMove() {
@@ -27,9 +42,9 @@ export class ExpandedCardContent extends React.Component {
     }
 
     render() {
-        const news = this.props.info.newsItems.map( item =>
-            <NewsItem items={item} key={item.key} />
-        );
+        // const news = this.props.info.newsItems.map( item =>
+        //     <NewsItem items={item} key={item.key} />
+        // );
 
         return ( <span>
             <button className="btnBack" type="button" onClick={() => this.props.expandoHandler( this.props.id - 2 )}><i className="material-icons md-36">arrow_back</i></button>
@@ -37,27 +52,29 @@ export class ExpandedCardContent extends React.Component {
             <button className="btnForward" type="button" onClick={() => this.props.expandoHandler( this.props.id )}><i className="material-icons md-36">arrow_forward</i></button>
 
             <section className="infoCardExpandedColumn">
-                <div className = "biographyName"> {this.props.id} - {this.props.info.firstName} {this.getMove()}<br/>
+                <div className = "biographyName">#{this.props.id} - {this.props.info.firstName} {this.getMove()}<br/>
                     <span className="underText">{this.props.info.profession}</span> <ParliamentBox /> <br/>
-                    <span className="underText">Plassering i fjor: {this.props.info.lastYear}</span>
+                    <span className="underText">Plassering i fjor: {this.props.info.lastYear} <div id="tweetButton" style={{'display':'inline'}}/></span>
                 </div>
 
             </section>
-            <section className="infoCardExpandedColumn">
+            <section className="infoCardExpandedColumn" style={{'justifyContent':'flex-start'}}>
                 <img src={this.props.info.img} className="bgrImgExpanded" alt={this.props.info.firstName} />
                 <div className="biographyText">{this.props.info.bio} </div>
-                <Subsidies subsidies={this.props.info.subsidies} />
             </section>
 
             <hr/>
-            <section className="newsFlex">
-                {news}
-            </section>
-            <hr/>
             <NodeBox elements={this.props.info.elements}/>
             <hr/>
-            <StockBox stocks={this.props.info.stocks}/>
+            <section className="infoCardExpandedColumn" style={{'justifyContent':'center'}}>
+                <StockBox stocks={this.props.info.stocks}/>
+                <Subsidies subsidies={this.props.info.subsidies} />
+            </section>
             <hr/>
+            {/* <section className="newsFlex">
+                {news}
+            </section>
+            <hr/> */}
         </span>
         );
     }
