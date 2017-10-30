@@ -71,17 +71,17 @@ export default class App extends Component {
         let namePrev = null;
         let nameNxt = null;
         if ( this.state.isExpanded < this.props.names.length - 1 ) {
-            nameNxt = this.props.names[this.state.isExpanded + 1].firstName.substring( 0, 6 )+'...';
+            nameNxt = this.props.names[this.state.isExpanded + 1].firstName.substring( 0, 6 ) + '...';
         }
         if ( this.state.isExpanded > 0 ) {
-            namePrev = this.props.names[this.state.isExpanded - 1].firstName.substring( 0, 6 )+'...';
+            namePrev = this.props.names[this.state.isExpanded - 1].firstName.substring( 0, 6 ) + '...';
         }
         // this.state.isExpaned < this.props.names.length ? nameNxt = this.props.names[this.state.isExpanded + 1].firstName : null;
         // this.state.isExpaned > 0 ? namePrev = this.props.names[this.state.isExpanded - 1].firstName : null;
         // console.log(namePrev);
         // return ( namePrev, nameNxt );
         console.log( nameNxt );
-        return [namePrev, nameNxt]
+        return [namePrev, nameNxt];
     }
 
     render() {
@@ -101,6 +101,7 @@ export default class App extends Component {
         const juryInfo = this.state.showJury ? ( <ExpandedCard info={{'key':1}} expandoHandler={this.expandoHandler} height='auto'>
             <ExpandedCardJury />
         </ExpandedCard> ) : null;
+
         return (
             <div className="App">
                 <FilterBox handleChange={this.handleChange} expandoHandler={this.expandoHandler}/>
