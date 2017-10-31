@@ -4,6 +4,7 @@ import {NodeBox} from './NodeBox.js';
 import {StockBox} from './StockBox.js';
 import {Subsidies} from './Subsidies';
 import {ParliamentBox} from './ParliamentBox';
+import {NewsLink} from './NewsLink';
 import Hammer from 'hammerjs';
 
 
@@ -70,6 +71,11 @@ export class ExpandedCardContent extends React.Component {
             <section className="infoCardExpandedColumn" style={{'justifyContent':'flex-start'}}>
                 <img src={this.props.info.img} className="bgrImgExpanded" alt={this.props.info.firstName} />
                 <div className="biographyText">{this.props.info.bio} </div>
+                <div className="newsLinkContainer">
+                    Les mer om {this.props.info.firstName}:
+                    <NewsLink id="pubNationen" name={this.props.info.firstName} publication="Nationen" />
+                    <NewsLink id="pubBondebladet" name={this.props.info.firstName} publication="Bondebladet" />
+                </div>
             </section>
 
             <hr/>
