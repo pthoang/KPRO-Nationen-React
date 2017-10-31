@@ -4,6 +4,7 @@ import {NodeBox} from './NodeBox.js';
 import {StockBox} from './StockBox.js';
 import {Subsidies} from './Subsidies';
 import {ParliamentBox} from './ParliamentBox';
+import Hammer from 'hammerjs';
 
 
 export class ExpandedCardContent extends React.Component {
@@ -23,9 +24,16 @@ export class ExpandedCardContent extends React.Component {
             }
         );
     }
+
     componentDidMount() {
         document.getElementById( 'expandedCard' + this.props.id ).focus();
         this.makeTweetButton( this.props.info.firstName, this.props.id );
+
+        const swipeElement = document.getElementById( 'expandedCard' + this.props.id );
+        const mc = new Hammer( swipeElement );
+
+        mc.on( 'swipeleft', () => this.props.expandoHandler( this.props.id ) );
+        mc.on( 'swiperight', () => this.props.expandoHandler( this.props.id - 2 ) );
     }
     componentWillReceiveProps( props ) {
         document.getElementById( 'tweetButton' ).innerHTML = '';
