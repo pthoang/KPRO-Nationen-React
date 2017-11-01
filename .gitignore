@@ -8,6 +8,9 @@
 
 # production
 /build
+/.idea
+*.iml
+package-lock.json
 
 # images
 /src/img
