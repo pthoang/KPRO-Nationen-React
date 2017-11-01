@@ -6,6 +6,31 @@ import {Subsidies} from './Subsidies';
 import {ParliamentBox} from './ParliamentBox';
 import {NewsLink} from './NewsLink';
 import Hammer from 'hammerjs';
+import { withScriptjs, withGoogleMap, GoogleMap} from "react-google-maps"
+import HeatmapLayer from "react-google-maps/lib/components/visualization/HeatmapLayer";
+
+/*global google*/
+
+
+
+const MyMapComponent = withScriptjs(withGoogleMap((props) =>
+
+  <GoogleMap
+    defaultZoom={4}
+    center={new google.maps.LatLng(63.416911, 10.402636)}
+
+  >
+    <HeatmapLayer
+            radius={300}
+            data={[{location: new google.maps.LatLng(63.416911, 10.402636),weight:100},
+                  {location: new google.maps.LatLng(59.913235, 10.751466),weight:200},
+                  {location: new google.maps.LatLng(60.389604, 5.323020),weight:100}
+              ]}
+        />
+
+  </GoogleMap>
+))
+
 
 
 export class ExpandedCardContent extends React.Component {
@@ -86,6 +111,12 @@ export class ExpandedCardContent extends React.Component {
                 <Subsidies subsidies={this.props.info.subsidies} />
             </section>
             <hr/>
+            <MyMapComponent
+  googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places,visualization"
+  loadingElement={<div style={{ height: `100%` }} />}
+  containerElement={<div style={{ height: `400px`,width: '70%', margin: '0 auto'}}/>}
+  mapElement={<div style={{ height: `100%` }} />}
+/>
             {/* <section className="newsFlex">
                 {news}
             </section>

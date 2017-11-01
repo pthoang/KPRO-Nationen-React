@@ -6,6 +6,7 @@ import {ExpandedCardContent} from './components/ExpandedCardContent.js';
 import {ExpandedCardJury} from './components/ExpandedCardJury';
 
 export default class App extends Component {
+
     constructor( props ) {
         super( props );
         this.handleChange = this.handleChange.bind( this );
