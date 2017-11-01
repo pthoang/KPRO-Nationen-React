@@ -6,9 +6,12 @@ export class SelectArea extends React.Component {
             <option value={item[0]} key={key}>{item[0]}</option>
         );
         return (
-            <select className="selectArea" onChange={this.props.onChange} style={this.props.style} name={this.props.name}>
-                {listItems}
-            </select>
+            <span className="selectBar">
+                <i className="material-icons">filter_list</i>
+                <select onChange={this.props.onChange} style={this.props.style} name={this.props.name}>
+                    {listItems}
+                </select>
+            </span>
         );
     }
 }

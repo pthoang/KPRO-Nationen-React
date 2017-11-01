@@ -1,39 +1,108 @@
 @import "./common.scss";
 
-.filterBox {
-    font-size: 2em;
-    font-family: $fontSerif;
-    font-weight: 900;
+$bgColor: #44af69;
 
-    select {
-        display: inline-block;
-        border: 0;
-        outline:none;
-        border-radius: 5px;
-        margin:2px;
-        border-bottom: 2px solid $commonGreen;
-        width: 250px;
-        font-family: inherit;
-        font-size: inherit;
-        font-weight: inherit;
-        background:#E3E6D6;
-        option{
-            font-family: inherit;
-            font-size: inherit;
-            font-weight: inherit;
+.filterBox {
+    background: $bgColor;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    width: 95%;
+    padding: 10px;
+    margin-bottom:10px;
+    display: flex;
+    flex-direction: column;
+    @media screen and (max-width:900px) {
+        & {
+            width:100%;
+            border-radius:0;
         }
     }
-    .searchArea{
-        padding-left:20px;
+    .filter{
+        margin-top:10px;
     }
+    .jury{
+        margin-top:10px;
+        button{
+            box-sizing: border-box;
+            background: #F7F5F5;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+            padding: 5px;
+            margin:4px;
+            border:none;
+            border-left:5px solid #9EE493;
+            cursor:pointer;
+            &:hover{
+                border-left:5px solid #FF3C38;
+            }
+        }
+    }
+    .info{
+        margin:4px;
+        color: #9EE493;
+    }
+}
 
+.searchBar {
+    width:80%;
+    flex: 0 0;
+    align-self: center;
+    margin:4px;
+    padding:0;
+    position:relative;
+    .material-icons{
+        vertical-align:middle;
+        position: absolute;
+        pointer-events: none;
+        left:  8px;
+        right: 0px;
+        color:$bgColor;
+    }
     input {
-        @extend select;
+        width: 20%;
+        box-sizing: border-box;
+        background: #F7F5F5;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+        padding: 5px;
+        border:none;
+        border-left:5px solid #9EE493;
+        padding-left: 30px;
+        transition: all 250ms;
+        &:focus{
+            width:80%;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+        }
+        &:hover{
+            box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+        }
+        @media screen and (max-width:900px) {
+            & {
+                width:80%;
+                border-radius:0;
+            }
+        }
     }
+}
 
-    ul {
-        list-style-type: none;
-        font-size: 1em;
+.selectBar{
+    margin:4px;
+    position:relative;
+    width:100%;
+    .material-icons{
+        vertical-align:middle;
+        position: absolute;
+        pointer-events: none;
+        left:  8px;
+        right: 0px;
+        color:$bgColor;
+    }
+    select{
+        width: 100%;
+        box-sizing: border-box;
+        background: #F7F5F5;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+        padding: 5px;
+        border:none;
+        border-left:5px solid #9EE493;
+        padding-left: 30px;
     }
 }
 

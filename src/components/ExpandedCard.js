@@ -1,5 +1,4 @@
 import React from 'react';
-import {ExpandedCardContent} from './ExpandedCardContent.js';
 
 
 export class ExpandedCard extends React.Component {
@@ -8,7 +7,6 @@ export class ExpandedCard extends React.Component {
         this.handleKeyPress = this.handleKeyPress.bind( this );
     }
     childClickhandler( e ) {
-        e.preventDefault();
         e.stopPropagation();
     }
 
@@ -16,12 +14,18 @@ export class ExpandedCard extends React.Component {
         if ( e.key === 'Escape' ) {
             this.props.expandoHandler( -1 );
         }
+        if ( e.key === 'ArrowRight' ) {
+            this.props.expandoHandler( this.props.info.key );
+        }
+        if ( e.key === 'ArrowLeft' ) {
+            this.props.expandoHandler( this.props.info.key - 2 );
+        }
     }
 
     render() {
         return ( <div className="infoCardExpandedBgr" onClick={() => this.props.expandoHandler( -1 )}>
-            <div className="infoCardExpanded" id={'expandedCard' + this.props.info.key} tabIndex="0" onKeyDown={this.handleKeyPress} onClick={this.childClickhandler}>
-                <ExpandedCardContent id={this.props.info.key} info={this.props.info} expandoHandler={this.props.expandoHandler}/>
+            <div className="infoCardExpanded" style={{'height':this.props.height}} id={'expandedCard' + this.props.info.key} tabIndex="0" onKeyDown={this.handleKeyPress} onClick={this.childClickhandler}>
+                {this.props.children}
             </div>
         </div> );
     }

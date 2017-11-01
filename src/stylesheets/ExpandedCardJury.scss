@@ -1,0 +1,37 @@
+@import "./common.scss";
+.juryGrid{
+    display:flex;
+    flex-wrap:wrap;
+    .juryContainer{
+        flex-basis:23%;
+        padding:10px;
+        .juryName{
+            font-family:$fontSerif;
+            font-weight:bold;
+            font-size: 14pt;
+        }
+        .juryDesc{
+            font-family: $fontSansSerif;
+        }
+        .juryImg{
+            max-width:150px;
+            flex-basis:auto;
+            margin-right: 10px;
+            border-radius: 50%;
+            align-self:center;
+            border:5px solid $commonGreen;
+            @media screen and (max-width: 650px) {
+                & {
+                    flex-basis: auto;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+    .juryText{
+        padding:10px;
+        margin-top:20px;
+        font-family: $fontSansSerif;
+        color:rgba(0,0,0,0.56);
+    }
+}

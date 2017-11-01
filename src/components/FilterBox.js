@@ -10,9 +10,11 @@ export class FilterBox extends React.Component {
     }
     render() {
         return (
-            <div className="filterBox">Filtrér: <SelectArea items = {this.state.types} style={{'width': 140}} name="genderBox" onChange={this.props.handleChange}/>
-                <br/>Søk: <SearchArea onChange={this.props.handleChange} name={'nameSearch'}/>
-                {/*som bor<SelectArea items = {counties} style={{width: 220}}/>*/}
+            <div className="filterBox">
+                <div className="info">Søk og filtrér:</div>
+                <div className="search"><SearchArea onChange={this.props.handleChange} name={'nameSearch'}/></div>
+                <div className="filter"><SelectArea items = {this.state.types} style={{'width': 140}} name="genderBox" onChange={this.props.handleChange}/></div>
+                <div className="jury"><button className="btnJury" type="button" onClick={() => this.props.expandoHandler( 'jury' )}>Om juryen</button></div>
             </div>
         );
     }

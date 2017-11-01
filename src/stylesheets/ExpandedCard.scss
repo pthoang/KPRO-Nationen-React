@@ -62,13 +62,18 @@ $trendingFlatClr: #FCD367;
 
     .infoCardExpandedColumn {
         display: flex;
-        flex-flow: row wrap;
+        // flex-flow: row wrap;
         margin: 20px;
         margin-top:0;
-        @media screen and (max-width: 650px) {
+        @media screen and (max-width: 1200px) {
             & {
                 flex-wrap: wrap;
+                flex-direction: column;
                 justify-content: center;
+                align-items:center;
+                > * {
+                    margin-top: 10px;
+                }
             }
         }
     }
@@ -93,6 +98,7 @@ $trendingFlatClr: #FCD367;
         color: $fontCol;
         flex-grow: 0;
         margin-left: 10px;
+        padding:15px;
         align-self: center;
         width: 60%;
         flex-basis: auto;
@@ -109,7 +115,11 @@ $trendingFlatClr: #FCD367;
         font-size: 2em;
         flex-grow: 1;
         flex-basis: auto;
-        .material-icons{
+        .underText{
+            color: lighten(black,30%);
+            font-size: 0.8em;
+        }
+        .listMove{
             border-radius: 50%;
             font-size:0.8em;
             vertical-align:middle;
@@ -129,10 +139,6 @@ $trendingFlatClr: #FCD367;
             color:$trendingFlatClr;
             background:lighten($trendingFlatClr, 20%);
             border: 3px solid lighten($trendingFlatClr, 20%);
-        }
-
-        .material-icons:hover{
-            transform:rotate(360deg);
         }
     }
 
@@ -163,6 +169,10 @@ $trendingFlatClr: #FCD367;
 
     .btnForward{
         float:right;
+        font-size:11pt;
+    }
+    .btnBack{
+        font-size:11pt;
     }
 
     .closeButton {
