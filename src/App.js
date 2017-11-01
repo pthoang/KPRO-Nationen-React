@@ -13,6 +13,7 @@ export default class App extends Component {
         this.filterName = this.filterName.bind( this );
         this.expandoHandler = this.expandoHandler.bind( this );
         this.getNames = this.getNames.bind( this );
+        this.resetHandler = this.resetHandler.bind( this );
         this.state = {'show':['m', 'f', 'none'],
             'nameSearch': '',
             'isExpanded': -1,
@@ -33,6 +34,13 @@ export default class App extends Component {
         } else if ( event.target.name === 'nameSearch' ) {
             this.setState( {'nameSearch':event.target.value} );
         }
+    }
+
+    resetHandler() {
+        document.getElementById( 'filterSearch' ).value = '';
+        document.getElementById( 'filterBoxSelect' ).selectedIndex = 0;
+
+        this.setState( {'nameSearch': '', 'show':['m', 'f', 'none']} );
     }
 
     filterGender( name ) {
@@ -104,7 +112,7 @@ export default class App extends Component {
 
         return (
             <div className="App">
-                <FilterBox handleChange={this.handleChange} expandoHandler={this.expandoHandler}/>
+                <FilterBox handleChange={this.handleChange} expandoHandler={this.expandoHandler} handleReset={this.resetHandler}/>
                 {cards}
                 {expando}
                 {juryInfo}

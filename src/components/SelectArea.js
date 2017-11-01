@@ -8,7 +8,7 @@ export class SelectArea extends React.Component {
         return (
             <span className="selectBar">
                 <i className="material-icons">filter_list</i>
-                <select onChange={this.props.onChange} style={this.props.style} name={this.props.name}>
+                <select onChange={this.props.onChange} id="filterBoxSelect" style={this.props.style} name={this.props.name}>
                     {listItems}
                 </select>
             </span>
