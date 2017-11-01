@@ -118,6 +118,15 @@ $trendingFlatClr: #FCD367;
         .underText{
             color: lighten(black,30%);
             font-size: 0.8em;
+            a{
+                text-decoration: none;
+                color:lighten(black,30%);
+            }
+            .svgTwitterLogo{
+                height:30px;
+                width:auto;
+                vertical-align:middle;
+            }
         }
         .listMove{
             border-radius: 50%;
