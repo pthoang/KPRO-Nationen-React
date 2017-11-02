@@ -8,6 +8,8 @@
 
 # production
 /build
+/.idea
+*.iml
 
 # images
 /src/img
