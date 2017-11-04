@@ -12,7 +12,9 @@ export class ExpandedCardContent extends React.Component {
     constructor( props ) {
         super( props );
         this.getMove = this.getMove.bind( this );
+        //this.defer = this.defer.bind( this );
     }
+
     makeTweetButton( name, pos ) {
         document.getElementById( 'tweetButton' ).innerHTML = '';
         window.twttr.widgets.createShareButton(
@@ -26,9 +28,20 @@ export class ExpandedCardContent extends React.Component {
         );
     }
 
+    defer( method, name, pos ) {
+        if ( window.twttr ) {
+            method( name, pos );
+        } else {
+            console.log( 'waiting for twitter' );
+            setTimeout( () => {
+                this.defer( method, name, pos );
+            }, 50 );
+        }
+    }
+
     componentDidMount() {
         document.getElementById( 'expandedCard' + this.props.id ).focus();
-        this.makeTweetButton( this.props.info.firstName, this.props.id );
+        this.defer( this.makeTweetButton, this.props.info.firstName, this.props.id );
 
         const swipeElement = document.getElementById( 'expandedCard' + this.props.id );
         const mc = new Hammer( swipeElement );
@@ -78,7 +91,7 @@ export class ExpandedCardContent extends React.Component {
         return ( <span>
             <button className="btnBack" type="button" onClick={() => this.props.expandoHandler( this.props.id - 2 )}><i className="material-icons md-36" style={{'verticalAlign':'middle'}}>arrow_back</i>{this.props.names[0]}</button>
             <i className="material-icons closeButton" onClick={() => this.props.expandoHandler( -1 )}>close</i>
-            <button className="btnForward" type="button" onClick={() => this.props.expandoHandler( this.props.id )}>{this.props.names[1]}<i className="material-icons md-36" style={{'verticalAlign':'middle', 'padding-bottom':5}}>arrow_forward</i></button>
+            <button className="btnForward" type="button" onClick={() => this.props.expandoHandler( this.props.id )}>{this.props.names[1]}<i className="material-icons md-36" style={{'verticalAlign':'middle', 'paddingBottom':5}}>arrow_forward</i></button>
 
             <section className="infoCardExpandedColumn" style={{'width':'85%'}}>
                 <div className = "biographyName">#{this.props.id} - {this.props.info.firstName} {this.getMove()} <div id="tweetButton" style={{'display':'inline'}}/><br/>

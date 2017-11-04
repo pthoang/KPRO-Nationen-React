@@ -12,18 +12,19 @@ export class FilterBox extends React.Component {
     render() {
         return (
             <div className="filterBox">
-                <div className="info">Søk og filtrér:</div>
-                <div className="search">
-                    <SearchArea onChange={this.props.handleChange} name={'nameSearch'}/>
-                </div>
+                {/* <div className="info">Søk og filtrér:</div> */}
+
                 <div className="filter">
                     <SelectArea items = {this.state.types} style={{'width': 140}} name="genderBox" onChange={this.props.handleChange}/>
-                    <span className="resetFilterButton">
+                    {/* <span className="resetFilterButton">
                         <i className="material-icons">youtube_searched_for</i>
                         <button className="filterBoxButton" type="button" onClick={() => this.props.handleReset()}>
                             Tilbakestill
                         </button>
-                    </span>
+                    </span> */}
+                </div>
+                <div className="search">
+                    <SearchArea onChange={this.props.handleChange} name={'nameSearch'}/>
                 </div>
                 <div className="jury">
                     <button className="filterBoxButton" type="button" onClick={() => this.props.expandoHandler( 'jury' )}>

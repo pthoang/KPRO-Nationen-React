@@ -14,9 +14,17 @@ export default class App extends Component {
         this.expandoHandler = this.expandoHandler.bind( this );
         this.getNames = this.getNames.bind( this );
         this.resetHandler = this.resetHandler.bind( this );
+
+        let query = window.location.search.substring( 1 ).split( '&' );
+        query = Number( query[0].split( '=' )[1] );
+        let expando = -1;
+        if ( !Number.isNaN( query ) && query > 0 && query < this.props.names.length ) {
+            expando = query - 1;
+        }
+
         this.state = {'show':['m', 'f', 'none'],
             'nameSearch': '',
-            'isExpanded': -1,
+            'isExpanded': expando,
             'showJury': false};
         console.log( '%c👋 Hello!\n', 'font-size:2em;' );
     }
@@ -100,6 +108,9 @@ export default class App extends Component {
 
         if ( cards.length < 1 ) {
             cards = ( <span role="img" aria-label="Person Shrugging" className="foundNothing"> 🤷 Fant ingen som heter det... </span> );
+        }
+        if ( this.state.nameSearch === '!developers' ) {
+            cards = ( <span role="img" aria-label="Person Shrugging" className="foundNothing"> Coded with 💚 by group 7 @ KPRO 2017 </span> );
         }
 
         const expando = this.state.isExpanded !== -1 ? ( <ExpandedCard info={this.props.names[this.state.isExpanded] } expandoHandler={this.expandoHandler}>
