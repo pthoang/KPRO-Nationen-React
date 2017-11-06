@@ -9,7 +9,7 @@ $bgColor: $commonGreen;
     width: 96%;
     padding: 10px;
     //border-bottom: 4px solid $commonGreen;
-    margin-bottom:7px;
+    margin-bottom:15px;
     display: flex;
     flex-direction: row;
     justify-content:space-between;
@@ -45,6 +45,7 @@ $bgColor: $commonGreen;
             width:100%;
             border-radius:0;
             margin:0;
+            margin-bottom:15px;
             flex-direction:column;
         }
     }

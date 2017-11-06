@@ -4,6 +4,7 @@ import {Card} from './components/Card';
 import {ExpandedCard} from './components/ExpandedCard';
 import {ExpandedCardContent} from './components/ExpandedCardContent.js';
 import {ExpandedCardJury} from './components/ExpandedCardJury';
+import {IntroText} from './components/IntroText';
 
 export default class App extends Component {
 
@@ -124,6 +125,7 @@ export default class App extends Component {
 
         return (
             <div className="App">
+                <IntroText />
                 <FilterBox handleChange={this.handleChange} expandoHandler={this.expandoHandler} handleReset={this.resetHandler}/>
                 {cards}
                 {expando}
