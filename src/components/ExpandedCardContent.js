@@ -8,7 +8,7 @@ import {NewsLink} from './NewsLink';
 import Hammer from 'hammerjs';
 import { withScriptjs, withGoogleMap, GoogleMap} from "react-google-maps"
 import HeatmapLayer from "react-google-maps/lib/components/visualization/HeatmapLayer";
-
+import {ScrollOn} from "./scrollon.js"
 /*global google*/
 
 
@@ -128,6 +128,7 @@ export class ExpandedCardContent extends React.Component {
         // );
         //console.log(this.props.names)
         return ( <span>
+            <ScrollOn />
             <button className="btnBack" type="button" onClick={() => this.props.expandoHandler( this.props.id - 2 )}><i className="material-icons md-36" style={{'verticalAlign':'middle'}}>arrow_back</i>{this.props.names[0]}</button>
             <i className="material-icons closeButton" onClick={() => this.props.expandoHandler( -1 )}>close</i>
             <button className="btnForward" type="button" onClick={() => this.props.expandoHandler( this.props.id )}>{this.props.names[1]}<i className="material-icons md-36" style={{'verticalAlign':'middle', 'paddingBottom':5}}>arrow_forward</i></button>
