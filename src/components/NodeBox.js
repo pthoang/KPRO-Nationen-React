@@ -38,7 +38,7 @@ export class NodeBox extends React.Component {
                     'width':'data(size)',
                     'height':'data(size)',
                     'border-width':'3',
-                    'border-color': '#618b25',
+                    'border-color': '#647075',
                     'background-fit':'cover',
                     //'background-image': 'data(img)'
                     'background-image': 'https://www.fylkesmannen.no/Images/Bilder%20FMNO/Landbruk%20bilder/LARAs%20prosjekter,%20konferanser,%20annet%20bilder/jgd.jpg'
@@ -49,8 +49,8 @@ export class NodeBox extends React.Component {
                     'control-point-distance': '20px',
                     'control-point-weight': '0.5', // '0': curve towards source node, '1': towards target node.
                     'width': 1, //
-                    'line-color': '#618B25',
-                    'target-arrow-color': '#618B25',
+                    'line-color': '#647075',
+                    'target-arrow-color': '#647075',
                     'target-arrow-shape': 'triangle'
                 } )
         }
