@@ -2,9 +2,9 @@
 
 $fontSerif: 'Playfair Display', serif;
 $fontSansSerif: 'Roboto', sans-serif;
-$commonGreen: #44af69;
-//$commonGreen: #F3B61F;
-$lighterGreen:#9EE493;
-//$lighterGreen: #FFD447;
 $darkerGreen: #546D51;
 $fontCol:#686868;
+
+$nationen: false;
+$commonGreen: if($nationen == true, #44af69,  #F3B61F  );
+$lighterGreen: if($nationen == true, #9EE493, #FFD447 );

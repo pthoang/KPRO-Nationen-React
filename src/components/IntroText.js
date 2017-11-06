@@ -1,5 +1,4 @@
 import React from 'react';
-import logotype from '../logotype.svg';
 
 export class IntroText extends React.Component {
 
