@@ -11,6 +11,7 @@ export class SelectArea extends React.Component {
                 <select onChange={this.props.onChange} id="filterBoxSelect" style={this.props.style} name={this.props.name}>
                     {listItems}
                 </select>
+                <i className="material-icons dropdownArrow" style={{'right':'8px'}}>arrow_drop_down</i>
             </span>
         );
     }
