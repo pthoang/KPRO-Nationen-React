@@ -16,7 +16,7 @@ export class Subsidies extends React.Component {
             <table>
                 <thead>
                     <tr>
-                        <th>Subsidier</th>
+                        <th>Driftstilskudd</th>
                         <th className="rightAlign">Verdi (NOK)</th>
                     </tr>
                 </thead>
