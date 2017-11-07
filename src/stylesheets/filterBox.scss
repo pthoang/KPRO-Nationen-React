@@ -13,7 +13,9 @@ $bgColor: $commonGreen;
     display: flex;
     flex-direction: row;
     justify-content:space-between;
+    font-size:13pt;
     .search{
+
         flex-basis:60%;
         @media screen and (max-width:1250px) {
             & {
@@ -73,6 +75,7 @@ $bgColor: $commonGreen;
         color:$bgColor;
     }
     input {
+        font-size:inherit;
         height:28px;
         width:100%;
         border-radius:0;
@@ -110,6 +113,7 @@ $bgColor: $commonGreen;
         color:$bgColor;
     }
     select{
+        font-size:inherit;
         font-family: $fontSansSerif;
         height:28px;
         box-sizing: border-box;
@@ -136,6 +140,7 @@ $bgColor: $commonGreen;
 }
 
 .filterBoxButton{
+    font-size:inherit;
     height:28px;
     width:100%;
     border-radius:0;
@@ -163,6 +168,7 @@ $bgColor: $commonGreen;
 }
 .resetFilterButton{
     position:relative;
+    font-size:inherit;
     .material-icons{
         vertical-align:middle;
         position: absolute;

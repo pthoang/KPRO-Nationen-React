@@ -1,11 +1,11 @@
 import React from 'react';
 export class ScrollOn extends React.Component {
-    constructor(props){
+    constructor(props) {
       super(props);
       this.state={isHide:false};
       this.hideBar = this.hideBar.bind(this)
     }
-    hideBar(){
+    hideBar() {
        let {isHide} = this.state
        window.scrollY > this.prev?
        !isHide && this.setState({isHide:true})
@@ -14,13 +14,13 @@ export class ScrollOn extends React.Component {
 
        this.prev = window.scrollY;
     }
-    componentDidMount(){
+    componentDidMount() {
         window.addEventListener('scroll',this.hideBar);
     }
-    componentWillUnmount(){
+    componentWillUnmount() {
          window.removeEventListener('scroll',this.hideBar);
     }
-    render(){
+    render() {
         let classHide=this.state.isHide?"hide":""
         return <div className={"topbar "+classHide}><div className="scrollon1"><div className={"scrollon"+classHide}>Mer innhold nedover → </div></div></div>;
     }

@@ -1,6 +1,7 @@
 @import "./common.scss";
 $nationenGreen: #406619;
 $bondebladetYellow: #c93;
+
 .newsLinkContainer{
     align-self:center;
     font-size:10pt;
@@ -15,23 +16,38 @@ $bondebladetYellow: #c93;
     a{
         text-decoration: none;
     }
+    .newsLogo{
+        width:80px;
+    }
     .newsLink{
-        padding:5px;
+        //padding:5px;
+        margin:10px;
+        //width:60px;
     }
     .pubNationen{
         background-color:$nationenGreen;
         color:white;
         text-decoration: none;
         margin-top:5px;
-        &:hover{
-            background-color:lighten($nationenGreen, 10%);
+        img{
+            &:hover{
+                filter: brightness(80%);
+            }
         }
     }
     .pubBondebladet{
         background-color:$bondebladetYellow;
         color:white;
-        &:hover{
-            background-color:lighten($bondebladetYellow, 10%);
+        img{
+            &:hover{
+                filter: brightness(80%);
+            }
         }
+    }
+
+    .linkContainer{
+        display:flex;
+        align-items:baseline;
+        justify-content: center;
     }
 }

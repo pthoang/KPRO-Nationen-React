@@ -13,7 +13,7 @@ export class IntroText extends React.Component {
         );
         return (
             <div className="introText">
-                <h1>Maktkåringen 2017</h1>
+                <h1>Maktkåringen</h1>
                 {text}
             </div>
         );

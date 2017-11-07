@@ -32,7 +32,7 @@ export class StockBox extends React.Component {
             </table>
         );
         return (
-            <span> {stocks} </span>
+            <span style={{'margin':30}}> {stocks} </span>
         );
     }
 }

@@ -69,6 +69,6 @@ export class NodeBox extends React.Component {
         this.createGraph( this.state.elements );
     }
     render() {
-        return <div> <div style ={{'height':300, 'width':'100%'}} id="cy"> </div><h3 id="desc" style={{'textAlign':'center'}}>{this.state.description}</h3></div>;
+        return <div> <div style ={{'height':300, 'width':'100%', 'margin':0}} id="cy"> </div><h3 id="desc" style={{'textAlign':'center'}}>{this.state.description}</h3></div>;
     }
 }
