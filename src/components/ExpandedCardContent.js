@@ -11,13 +11,16 @@ import HeatmapLayer from "react-google-maps/lib/components/visualization/Heatmap
 import {ScrollOn} from "./scrollon.js"
 /*global google*/
 
-
+const mapStyle = {
+    styles: [{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#444444"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#f2f2f2"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#44af69"},{"visibility":"on"}]}]
+};
 
 const MyMapComponent = withScriptjs(withGoogleMap((props) =>
 
   <GoogleMap
     defaultZoom={4}
     center={new google.maps.LatLng(65.080278, 15.731389)}
+    defaultOptions={{styles: mapStyle.styles}}
 
   >
     <HeatmapLayer
