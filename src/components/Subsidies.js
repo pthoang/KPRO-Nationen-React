@@ -5,7 +5,7 @@ export class Subsidies extends React.Component {
         const listItems = this.props.subsidies.map( sub => (
             <tr key={sub.id}>
                 <td>{sub.name}</td>
-                <td className="rightAlign">{( sub.value ).toLocaleString( 'no-NO' )}</td>
+                <td className="rightAlign">{( sub.value ).toLocaleString( 'no-NO' )},-</td>
             </tr>
         ) );
         return listItems;
@@ -16,7 +16,7 @@ export class Subsidies extends React.Component {
             <table>
                 <thead>
                     <tr>
-                        <th>Subsidie</th>
+                        <th>Subsidier</th>
                         <th className="rightAlign">Verdi (NOK)</th>
                     </tr>
                 </thead>
@@ -24,7 +24,7 @@ export class Subsidies extends React.Component {
             </table>
         );
         return (
-            <span> {stocks} </span>
+            <span style={{'margin':30}}> {stocks} </span>
         );
     }
 }
