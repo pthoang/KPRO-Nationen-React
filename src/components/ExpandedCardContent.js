@@ -51,7 +51,6 @@ export class ExpandedCardContent extends React.Component {
     constructor( props ) {
         super( props );
         this.getMove = this.getMove.bind( this );
-        //this.defer = this.defer.bind( this );
     }
 
     makeTweetButton( name, pos ) {
@@ -126,7 +125,6 @@ export class ExpandedCardContent extends React.Component {
         // const news = this.props.info.newsItems.map( item =>
         //     <NewsItem items={item} key={item.key} />
         // );
-        //console.log(this.props.names)
         return ( <span>
             <ScrollOn />
             <button className="btnBack" type="button" onClick={() => this.props.expandoHandler( this.props.id - 2 )}><i className="material-icons md-36" style={{'verticalAlign':'middle'}}>arrow_back</i>{this.props.names[0]}</button>

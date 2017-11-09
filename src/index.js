@@ -8,6 +8,5 @@ import App from './App';
 
 const names = require( './people.json' );
 
-
 ReactDOM.render( <App names={names.people} />, document.getElementById( 'root' ) );
 //registerServiceWorker();
