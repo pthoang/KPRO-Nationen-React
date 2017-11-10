@@ -31,7 +31,8 @@ export default class App extends Component {
             'isExpanded': expando,
             'showJury': false,
             'searchMessage':'Laster listen...',
-            'names':[]};
+            'names':[],
+          'fylker':[]};
         console.log( '%c👋 Hello!\n', 'font-size:2em;' );
     }
 
@@ -86,6 +87,7 @@ export default class App extends Component {
             } )
             .then( json => {
                 this.setState( { 'names': json.people } );
+                this.setState( {'fylker': json.fylker} );
                 this.setState( {'searchMessage': '🤷 Fant ingen som heter det... ' } );
             } );
     }
@@ -131,7 +133,7 @@ export default class App extends Component {
         }
 
         const expando = this.state.isExpanded !== -1 ? ( <ExpandedCard info={this.state.names[this.state.isExpanded] } expandoHandler={this.expandoHandler}>
-            <ExpandedCardContent id={this.state.names[this.state.isExpanded].key} info={this.state.names[this.state.isExpanded]} expandoHandler={this.expandoHandler} names={this.getNames()}/>
+            <ExpandedCardContent id={this.state.names[this.state.isExpanded].key} info={this.state.names[this.state.isExpanded]} fylker={this.state.fylker} expandoHandler={this.expandoHandler} names={this.getNames()}/>
         </ExpandedCard> ) : ( null );
 
         const juryInfo = this.state.showJury ? ( <ExpandedCard info={{'key':1}} expandoHandler={this.expandoHandler} height='auto'>

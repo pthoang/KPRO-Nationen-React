@@ -10,8 +10,10 @@ import Hammer from 'hammerjs';
 import { withScriptjs, withGoogleMap, GoogleMap} from 'react-google-maps';
 import HeatmapLayer from 'react-google-maps/lib/components/visualization/HeatmapLayer';
 import {ScrollOn} from './scrollon.js';
-/*global google*/
 
+
+/*global google*/
+var fylkene=[];
 const mapStyle = {
     'styles': [{'featureType':'administrative', 'elementType':'all', 'stylers':[{'saturation':'-100'}]},
         {'featureType':'administrative.province', 'elementType':'all', 'stylers':[{'visibility':'off'}]},
@@ -33,24 +35,24 @@ const MyMapComponent = withScriptjs( withGoogleMap( ( props ) =>
         defaultOptions={{'styles': mapStyle.styles}}
     >
         <HeatmapLayer
-            data={[{'location': new google.maps.LatLng( 63.416911, 10.402636 ), 'weight':100}, //Sør-Trøndelag
-                {'location': new google.maps.LatLng( 59.913235, 10.751466 ), 'weight':700}, //Oslo og Akershus
-                {'location': new google.maps.LatLng( 60.3925, 5.323333 ), 'weight':200}, //Hordaland
-                {'location': new google.maps.LatLng( 70.080278, 29.731389 ), 'weight':100}, //Finnmark
-                {'location': new google.maps.LatLng( 59.278889, 11.116389 ), 'weight':100}, //Østfold
-                {'location': new google.maps.LatLng( 60.794444, 11.078611 ), 'weight':100}, //Hedmark
-                {'location': new google.maps.LatLng( 61.114722, 10.467222 ), 'weight':100}, //Oppland
-                {'location': new google.maps.LatLng( 59.744722, 10.205556 ), 'weight':100}, //Buskerud
-                {'location': new google.maps.LatLng( 59.270278, 10.409722 ), 'weight':100}, //Vestfold
-                {'location': new google.maps.LatLng( 59.2075, 9.610556 ), 'weight':100}, //Telemark
-                {'location': new google.maps.LatLng( 58.461667, 8.766944 ), 'weight':100}, //Aust-Agder
-                {'location': new google.maps.LatLng( 58.140833, 8 ), 'weight':100}, //Vest-Agder
-                {'location': new google.maps.LatLng( 58.960833, 5.715556 ), 'weight':100}, //Rogaland
-                {'location': new google.maps.LatLng( 61.185833, 6.821944 ), 'weight':100}, //Sogn og fjordane
-                {'location': new google.maps.LatLng( 62.7375, 7.163056 ), 'weight':100}, //Møre og romsdal
-                {'location': new google.maps.LatLng( 64.013056, 11.496944 ), 'weight':100}, //Nord-Trøndelag
-                {'location': new google.maps.LatLng( 67.28, 14.405 ), 'weight':100}, //Nordland
-                {'location': new google.maps.LatLng( 69.651944, 18.953333 ), 'weight':100} //Troms
+            data={[{'location': new google.maps.LatLng( 63.416911, 10.402636 ), 'weight':fylkene[0]}, //Sør-Trøndelag
+                {'location': new google.maps.LatLng( 59.913235, 10.751466 ), 'weight':fylkene[1]}, //Oslo og Akershus
+                {'location': new google.maps.LatLng( 60.3925, 5.323333 ), 'weight':fylkene[2]}, //Hordaland
+                {'location': new google.maps.LatLng( 70.080278, 29.731389 ), 'weight':fylkene[3]}, //Finnmark
+                {'location': new google.maps.LatLng( 59.278889, 11.116389 ), 'weight':fylkene[4]}, //Østfold
+                {'location': new google.maps.LatLng( 60.794444, 11.078611 ), 'weight':fylkene[5]}, //Hedmark
+                {'location': new google.maps.LatLng( 61.114722, 10.467222 ), 'weight':fylkene[6]}, //Oppland
+                {'location': new google.maps.LatLng( 59.744722, 10.205556 ), 'weight':fylkene[7]}, //Buskerud
+                {'location': new google.maps.LatLng( 59.270278, 10.409722 ), 'weight':fylkene[8]}, //Vestfold
+                {'location': new google.maps.LatLng( 59.2075, 9.610556 ), 'weight':fylkene[9]}, //Telemark
+                {'location': new google.maps.LatLng( 58.461667, 8.766944 ), 'weight':fylkene[10]}, //Aust-Agder
+                {'location': new google.maps.LatLng( 58.140833, 8 ), 'weight':fylkene[11]}, //Vest-Agder
+                {'location': new google.maps.LatLng( 58.960833, 5.715556 ), 'weight':fylkene[12]}, //Rogaland
+                {'location': new google.maps.LatLng( 61.185833, 6.821944 ), 'weight':fylkene[13]}, //Sogn og fjordane
+                {'location': new google.maps.LatLng( 62.7375, 7.163056 ), 'weight':fylkene[14]}, //Møre og romsdal
+                {'location': new google.maps.LatLng( 64.013056, 11.496944 ), 'weight':fylkene[15]}, //Nord-Trøndelag
+                {'location': new google.maps.LatLng( 67.28, 14.405 ), 'weight':fylkene[16]}, //Nordland
+                {'location': new google.maps.LatLng( 69.651944, 18.953333 ), 'weight':fylkene[17]} //Troms
             ]}
         />
 
@@ -61,6 +63,7 @@ export class ExpandedCardContent extends React.Component {
     constructor( props ) {
         super( props );
         this.getMove = this.getMove.bind( this );
+        fylkene= this.props.fylker
     }
 
     makeTweetButton( name, pos ) {
@@ -139,7 +142,7 @@ export class ExpandedCardContent extends React.Component {
             <ThingHelper helpText = {'Boksene under viser hvilke aksjer og hvilke subsidier ' + this.props.info.firstName + ' eier og mottar' }/><br/>
         </section> ) : null;
 
-
+        console.log(this.props.fylker);
         return ( <span>
             <ScrollOn />
             <button className="btnBack" type="button" onClick={() => this.props.expandoHandler( this.props.id - 2 )}><i className="material-icons md-36" style={{'verticalAlign':'middle'}}>arrow_back</i>{this.props.names[0]}</button>
@@ -185,6 +188,7 @@ export class ExpandedCardContent extends React.Component {
                 loadingElement={<div style={{ 'height': '100%' }} />}
                 containerElement={<div className='gmaps' style={{ 'height': '400px', 'width': '62%', 'margin': '23px auto'}}/>}
                 mapElement={<div style={{ 'height': '100%' }} />}
+                fylker = {this.props.fylker}
             />
             {/* <section className="newsFlex">
                 {news}

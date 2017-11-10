@@ -1,4 +1,5 @@
 {
+    "fylker":[100,200,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
     "people": [{
             "firstName": "Jon Georg Dale",
             "img": "http://s3.amazonaws.com/tun-static/wp-content/uploads/sites/2/2016/11/18150811/1.-Jon-Georg-Dale.jpg",
