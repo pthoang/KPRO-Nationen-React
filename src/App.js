@@ -32,7 +32,7 @@ export default class App extends Component {
             'showJury': false,
             'searchMessage':'Laster listen...',
             'names':[],
-          'fylker':[]};
+            'fylker':[]};
         console.log( '%c👋 Hello!\n', 'font-size:2em;' );
     }
 
@@ -101,8 +101,9 @@ export default class App extends Component {
     }
 
     expandoHandler( clickedId ) {
+
         const clicked = clickedId;
-        if ( ( clicked !== this.state.isExpanded ) && ( typeof clicked === 'number' ) ) {
+        if ( ( clicked !== this.state.isExpanded ) && ( typeof clicked === 'number' ) || this.state.isExpanded === -1 ) {
             this.setState( {'isExpanded': ( clicked < this.state.names.length ? clicked : -1 )} );
         } else {
             this.setState( {'showJury': !this.state.showJury} );
