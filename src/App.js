@@ -18,9 +18,9 @@ export default class App extends Component {
         this.getNames = this.getNames.bind( this );
         this.resetHandler = this.resetHandler.bind( this );
 
-        let query = window.location.search.substring( 1 ).split( '&' );
-        query = Number( query[0].split( '=' )[1] );
-        let expando = -1;
+        // let query = window.location.search.substring( 1 ).split( '&' );
+        // query = Number( query[0].split( '=' )[1] );
+        // let expando = -1;
 
         // if ( !Number.isNaN( query ) && query > 0 && query < this.state.names.length ) {
         //     expando = query - 1;
@@ -28,7 +28,7 @@ export default class App extends Component {
 
         this.state = {'show':['m', 'f', 'none'],
             'nameSearch': '',
-            'isExpanded': expando,
+            'isExpanded': -1,
             'showJury': false,
             'searchMessage':'Laster listen...',
             'names':[]};
@@ -87,6 +87,14 @@ export default class App extends Component {
             .then( json => {
                 this.setState( { 'names': json.people } );
                 this.setState( {'searchMessage': '🤷 Fant ingen som heter det... ' } );
+
+                let query = window.location.search.substring( 1 ).split( '&' );
+                query = Number( query[0].split( '=' )[1] );
+                let expando = -1;
+                if ( !Number.isNaN( query ) && query > 0 && query < this.state.names.length ) {
+                    expando = query - 1;
+                }
+                this.expandoHandler( expando );
             } );
     }
 
@@ -96,7 +104,6 @@ export default class App extends Component {
             this.setState( {'isExpanded': ( clicked < this.state.names.length ? clicked : -1 )} );
         } else {
             this.setState( {'showJury': !this.state.showJury} );
-            console.log( this.state.showJury );
         }
     }
 
