@@ -45,7 +45,6 @@ $trendingFlatClr: #FCD367;
 }
 
 .infoCardExpanded {
-    overflow-x: hidden;
     background: $personCardBgrClr;
     /*transition: width 1s, height 1s;*/
     animation: 250ms ease-out 0s 1 slideInFromLeft;
@@ -63,6 +62,7 @@ $trendingFlatClr: #FCD367;
     margin-left: auto;
     margin-right: auto;
     border-radius: 5px;
+    overflow-x: hidden;
     @media screen and (max-width: 650px) {
         & {
             height: 100%;
