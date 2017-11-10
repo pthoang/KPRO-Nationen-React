@@ -1,0 +1,12 @@
+@import "./common.scss";
+
+.introText{
+    display:flex;
+    flex-direction: column;
+    padding:20px;
+    max-width:900px;
+    font-family: $fontSerif;
+    h1{
+        margin: auto;
+    }
+}

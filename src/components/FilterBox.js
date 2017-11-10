@@ -2,6 +2,7 @@ import React from 'react';
 
 import {SelectArea} from './SelectArea';
 import {SearchArea} from './SearchArea';
+import {ResetButton} from './ResetButton';
 
 export class FilterBox extends React.Component {
     constructor( props ) {
@@ -12,24 +13,26 @@ export class FilterBox extends React.Component {
     render() {
         return (
             <div className="filterBox">
-                <div className="info">Søk og filtrér:</div>
+                {/* <div className="info">Søk og filtrér:</div> */}
+
+                <div className="filter">
+                    <SelectArea items = {this.state.types} style={{'width': 140}} name="genderBox" onChange={this.props.handleChange}/>
+                </div>
+
                 <div className="search">
                     <SearchArea onChange={this.props.handleChange} name={'nameSearch'}/>
                 </div>
-                <div className="filter">
-                    <SelectArea items = {this.state.types} style={{'width': 140}} name="genderBox" onChange={this.props.handleChange}/>
-                    <span className="resetFilterButton">
-                        <i className="material-icons">youtube_searched_for</i>
-                        <button className="filterBoxButton" type="button" onClick={() => this.props.handleReset()}>
-                            Tilbakestill
-                        </button>
-                    </span>
+
+                <div className="reset">
+                    <ResetButton handleReset={() => this.props.handleReset()} />
                 </div>
+
                 <div className="jury">
                     <button className="filterBoxButton" type="button" onClick={() => this.props.expandoHandler( 'jury' )}>
                         Om juryen
                     </button>
                 </div>
+
             </div>
         );
     }

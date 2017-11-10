@@ -27,11 +27,11 @@
             }],
             "subsidies": [{
                 "id":1,
-                "name":"Dyr",
+                "name":"Dyrehold",
                 "value":2342
                 },{
                 "id":2,
-                "name":"Landbruk",
+                "name":"Areal",
                 "value":2342
                 },{
                 "id":3,
@@ -145,11 +145,11 @@
             }],
             "subsidies": [{
                 "id":1,
-                "name":"Dyr",
+                "name":"Dyrehold",
                 "value":23490
                 },{
                 "id":2,
-                "name":"Landbruk",
+                "name":"Areal",
                 "value":253092
                 },{
                 "id":3,
@@ -262,11 +262,11 @@
             }],
             "subsidies": [{
                 "id":1,
-                "name":"Dyr",
+                "name":"Dyrehold",
                 "value":2342
                 },{
                 "id":2,
-                "name":"Landbruk",
+                "name":"Areal",
                 "value":2342
                 },{
                 "id":3,
@@ -448,11 +448,11 @@
             }],
             "subsidies": [{
                 "id":1,
-                "name":"Dyr",
+                "name":"Dyrehold",
                 "value":2342
                 },{
                 "id":2,
-                "name":"Landbruk",
+                "name":"Areal",
                 "value":2342
                 },{
                 "id":3,
@@ -547,11 +547,11 @@
             }],
             "subsidies": [{
                 "id":1,
-                "name":"Dyr",
+                "name":"Dyrehold",
                 "value":2342
                 },{
                 "id":2,
-                "name":"Landbruk",
+                "name":"Areal",
                 "value":2342
                 },{
                 "id":3,
@@ -630,7 +630,7 @@
             "key": 7,
             "lastYear": "Ny",
             "gender": "none",
-            "profession": "Ålreit dyr",
+            "profession": "Rovdyr",
             "residence": "Norge",
             "bio": "Ulven er elsket og hatet. Som art har den både konkret og symbolsk makt over landbruket. I de ulvetette områdene er sauenæringa langt på vei lagt ned. Slik sett har ulven makt til å endre det norske kulturlandskapet. Ettersom bestanden har vokst, har ulven som art også økende betydning for landbruket. I tillegg har ulven stor symbolsk betydning. Den intense ulvekonflikten er i dag den fremste markøren for skillelinjen mellom by og land. Ulven, og den omstridte ulveforvaltningen, har potensial til å redusere landbrukets legitimitet blant byfolk. Det kan få betydelige konsekvenser for landbruksnæringas rammevilkår.",
             "newsItems": [{
@@ -646,11 +646,11 @@
             }],
             "subsidies": [{
                 "id":1,
-                "name":"Dyr",
+                "name":"Dyrehold",
                 "value":2342
                 },{
                 "id":2,
-                "name":"Landbruk",
+                "name":"Areal",
                 "value":2342
                 },{
                 "id":3,
@@ -745,11 +745,11 @@
             }],
             "subsidies": [{
                 "id":1,
-                "name":"Dyr",
+                "name":"Dyrehold",
                 "value":2342
                 },{
                 "id":2,
-                "name":"Landbruk",
+                "name":"Areal",
                 "value":2342
                 },{
                 "id":3,
@@ -844,11 +844,11 @@
             }],
             "subsidies": [{
                 "id":1,
-                "name":"Dyr",
+                "name":"Dyrehold",
                 "value":2342
                 },{
                 "id":2,
-                "name":"Landbruk",
+                "name":"Areal",
                 "value":2342
                 },{
                 "id":3,
@@ -943,11 +943,11 @@
             }],
             "subsidies": [{
                 "id":1,
-                "name":"Dyr",
+                "name":"Dyrehold",
                 "value":2342
                 },{
                 "id":2,
-                "name":"Landbruk",
+                "name":"Areal",
                 "value":2342
                 },{
                 "id":3,
@@ -1046,11 +1046,11 @@
             }],
             "subsidies": [{
                 "id":1,
-                "name":"Dyr",
+                "name":"Dyrehold",
                 "value":2342
                 },{
                 "id":2,
-                "name":"Landbruk",
+                "name":"Areal",
                 "value":2342
                 },{
                 "id":3,
@@ -1145,11 +1145,11 @@
             }],
             "subsidies": [{
                 "id":1,
-                "name":"Dyr",
+                "name":"Dyrehold",
                 "value":2342
                 },{
                 "id":2,
-                "name":"Landbruk",
+                "name":"Areal",
                 "value":2342
                 },{
                 "id":3,

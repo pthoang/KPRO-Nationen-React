@@ -30,8 +30,12 @@ export class ExpandedCardJury extends React.Component {
             <JuryMember key={person.key} info={person} />
         );
         return (
-            <div className="juryGrid"> {jury}  <div className="juryText">{juryMembers.slice( -1 )[0].juryText} </div>
+            <div>
+                <div className="juryHeader" style={{'display':'flex', 'justify-content':'center'}}>Om juryen</div>
+                <div className="juryGrid"> {jury}  <div className="juryText">{juryMembers.slice( -1 )[0].juryText} </div>
+                </div>
             </div>
+
         );
     }
 }
