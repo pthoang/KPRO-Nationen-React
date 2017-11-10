@@ -96,6 +96,7 @@ export class ExpandedCardContent extends React.Component {
 
         mc.on( 'swipeleft', () => this.props.expandoHandler( this.props.id ) );
         mc.on( 'swiperight', () => this.props.expandoHandler( this.props.id - 2 ) );
+        console.log(Hammer.defaults.cssProps.userSelect)
     }
     componentWillReceiveProps( props ) {
         document.getElementById( 'tweetButton' ).innerHTML = '';
