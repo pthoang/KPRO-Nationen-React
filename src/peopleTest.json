@@ -1,0 +1,4580 @@
+{
+    "people": [{
+        "fullName": "Leif Forsell",
+        "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png",
+        "key": 1,
+        "lastYear": 1,
+        "gender": "m",
+        "profession": null,
+        "residence": "",
+        "twitterAcnt": null,
+        "bio": "aflkjsdfkjsdkljf",
+        "subsidies": [{
+            "id": 1,
+            "name": "Dyrehold",
+            "value": 0
+        }, {
+            "id": 2,
+            "name": "Areal",
+            "value": 0
+        }, {
+            "id": 3,
+            "name": "Avløser",
+            "value": 0
+        }],
+        "stocks": [{
+            "id": 252589945,
+            "company": "P/F BAKKAFROST",
+            "numStocksCompany": 48858065,
+            "numStocks": 1400,
+            "candidateYearOfBirth": "1954"
+        }, {
+            "id": 886581432,
+            "company": "AKER ASA",
+            "numStocksCompany": 74321862,
+            "numStocks": 230,
+            "candidateYearOfBirth": "1954"
+        }, {
+            "id": 917103801,
+            "company": "VEIDEKKE ASA",
+            "numStocksCompany": 133704942,
+            "numStocks": 500,
+            "candidateYearOfBirth": "1954"
+        }, {
+            "id": 964118191,
+            "company": "MARINE HARVEST ASA",
+            "numStocksCompany": 450085652,
+            "numStocks": 400,
+            "candidateYearOfBirth": "1954"
+        }, {
+            "id": 981276957,
+            "company": "DNB ASA",
+            "numStocksCompany": 1628798861,
+            "numStocks": 979,
+            "candidateYearOfBirth": "1954"
+        }, {
+            "id": 982463718,
+            "company": "TELENOR ASA",
+            "numStocksCompany": 1501458030,
+            "numStocks": 500,
+            "candidateYearOfBirth": "1954"
+        }, {
+            "id": 991844562,
+            "company": "OCEAN YIELD ASA",
+            "numStocksCompany": 148351432,
+            "numStocks": 740,
+            "candidateYearOfBirth": "1954"
+        }, {
+            "id": 995568217,
+            "company": "GJENSIDIGE FORSIKRING ASA",
+            "numStocksCompany": 500000000,
+            "numStocks": 890,
+            "candidateYearOfBirth": "1954"
+        }, {
+            "id": 999296432,
+            "company": "ENTRA ASA",
+            "numStocksCompany": 183732461,
+            "numStocks": 1163,
+            "candidateYearOfBirth": "1954"
+        }],
+        "elements": [{
+            "nodes": [{
+                "id": "1",
+                "name": "Leif Forsell",
+                "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                "size": "60",
+                "description": ""
+            }, {
+                "data": {
+                    "id": "2s",
+                    "name": "Lars Petter Bartnes",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "Lars Petter Bartnes eier aksjer i samme selskap som Leif Forsell"
+                }
+            }, {
+                "data": {
+                    "id": "9s",
+                    "name": "Geir Inge Stokke",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "Geir Inge Stokke eier aksjer i samme selskap som Leif Forsell"
+                }
+            }, {
+                "data": {
+                    "id": "14s",
+                    "name": "John Arne Ulvan",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "John Arne Ulvan eier aksjer i samme selskap som Leif Forsell"
+                }
+            }, {
+                "data": {
+                    "id": "16s",
+                    "name": "Arne Kristian Kolberg",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "Arne Kristian Kolberg eier aksjer i samme selskap som Leif Forsell"
+                }
+            }, {
+                "data": {
+                    "id": "30s",
+                    "name": "Anne Skuterud",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "Anne Skuterud eier aksjer i samme selskap som Leif Forsell"
+                }
+            }, {
+                "data": {
+                    "id": "37s",
+                    "name": "Erik Lahnstein",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "Erik Lahnstein eier aksjer i samme selskap som Leif Forsell"
+                }
+            }, {
+                "data": {
+                    "id": "38s",
+                    "name": "Odd Magne Harstad",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "Odd Magne Harstad eier aksjer i samme selskap som Leif Forsell"
+                }
+            }, {
+                "data": {
+                    "id": "39s",
+                    "name": "Bjørn Gimming",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "Bjørn Gimming eier aksjer i samme selskap som Leif Forsell"
+                }
+            }, {
+                "data": {
+                    "id": "41s",
+                    "name": "Per Roskifte",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "Per Roskifte eier aksjer i samme selskap som Leif Forsell"
+                }
+            }, {
+                "data": {
+                    "id": "42s",
+                    "name": "John Arne Moen",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "John Arne Moen eier aksjer i samme selskap som Leif Forsell"
+                }
+            }]
+        }, {
+            "edges": [{
+                "data": {
+                    "source": "1",
+                    "target": "2s"
+                }
+            }, {
+                "data": {
+                    "source": "1",
+                    "target": "9s"
+                }
+            }, {
+                "data": {
+                    "source": "1",
+                    "target": "14s"
+                }
+            }, {
+                "data": {
+                    "source": "1",
+                    "target": "16s"
+                }
+            }, {
+                "data": {
+                    "source": "1",
+                    "target": "30s"
+                }
+            }, {
+                "data": {
+                    "source": "1",
+                    "target": "37s"
+                }
+            }, {
+                "data": {
+                    "source": "1",
+                    "target": "38s"
+                }
+            }, {
+                "data": {
+                    "source": "1",
+                    "target": "39s"
+                }
+            }, {
+                "data": {
+                    "source": "1",
+                    "target": "41s"
+                }
+            }, {
+                "data": {
+                    "source": "1",
+                    "target": "42s"
+                }
+            }]
+        }]
+    }, {
+        "fullName": "Lars Petter Bartnes",
+        "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+        "key": 2,
+        "lastYear": 2,
+        "gender": "m",
+        "profession": null,
+        "residence": "",
+        "twitterAcnt": null,
+        "bio": "",
+        "subsidies": [{
+            "id": 1,
+            "name": "Dyrehold",
+            "value": 0
+        }, {
+            "id": 2,
+            "name": "Areal",
+            "value": 0
+        }, {
+            "id": 3,
+            "name": "Avløser",
+            "value": 0
+        }],
+        "stocks": [{
+            "id": 917103801,
+            "company": "VEIDEKKE ASA",
+            "numStocksCompany": 133704942,
+            "numStocks": 5000,
+            "candidateYearOfBirth": "1978"
+        }, {
+            "id": 921061838,
+            "company": "AS BØNDERNES HUS",
+            "numStocksCompany": 3828,
+            "numStocks": 2,
+            "candidateYearOfBirth": "1969"
+        }, {
+            "id": 931326791,
+            "company": "AS NORD TRØNDELAG",
+            "numStocksCompany": 400,
+            "numStocks": 2,
+            "candidateYearOfBirth": "1978"
+        }, {
+            "id": 931326791,
+            "company": "AS NORD TRØNDELAG",
+            "numStocksCompany": 400,
+            "numStocks": 1,
+            "candidateYearOfBirth": "1969"
+        }, {
+            "id": 997029682,
+            "company": "SPERMVITAL INVEST AS",
+            "numStocksCompany": 3200,
+            "numStocks": 10,
+            "candidateYearOfBirth": "1969"
+        }],
+        "elements": [{
+            "nodes": [{
+                "id": "1",
+                "name": "Lars Petter Bartnes",
+                "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                "size": "60",
+                "description": ""
+            }, {
+                "data": {
+                    "id": "2s",
+                    "name": "Leif Forsell",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "Leif Forsell eier aksjer i samme selskap som Lars Petter Bartnes"
+                }
+            }, {
+                "data": {
+                    "id": "9s",
+                    "name": "Geir Inge Stokke",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "Geir Inge Stokke eier aksjer i samme selskap som Lars Petter Bartnes"
+                }
+            }, {
+                "data": {
+                    "id": "41s",
+                    "name": "Per Roskifte",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "Per Roskifte eier aksjer i samme selskap som Lars Petter Bartnes"
+                }
+            }, {
+                "data": {
+                    "id": "53s",
+                    "name": "Harald Lein",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "Harald Lein eier aksjer i samme selskap som Lars Petter Bartnes"
+                }
+            }]
+        }, {
+            "edges": [{
+                "data": {
+                    "source": "1",
+                    "target": "2s"
+                }
+            }, {
+                "data": {
+                    "source": "1",
+                    "target": "9s"
+                }
+            }, {
+                "data": {
+                    "source": "1",
+                    "target": "41s"
+                }
+            }, {
+                "data": {
+                    "source": "1",
+                    "target": "53s"
+                }
+            }]
+        }]
+    }, {
+        "fullName": "Knut Arild Hareide",
+        "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+        "key": 3,
+        "lastYear": 3,
+        "gender": "m",
+        "profession": null,
+        "residence": "",
+        "twitterAcnt": null,
+        "bio": "",
+        "subsidies": [{
+            "id": 1,
+            "name": "Dyrehold",
+            "value": 0
+        }, {
+            "id": 2,
+            "name": "Areal",
+            "value": 0
+        }, {
+            "id": 3,
+            "name": "Avløser",
+            "value": 0
+        }],
+        "stocks": [{
+            "id": 933739384,
+            "company": "SCHIBSTED ASA",
+            "numStocksCompany": 226807591,
+            "numStocks": 39,
+            "candidateYearOfBirth": "1972"
+        }, {
+            "id": 933739384,
+            "company": "SCHIBSTED ASA",
+            "numStocksCompany": 226807591,
+            "numStocks": 39,
+            "candidateYearOfBirth": "1972"
+        }, {
+            "id": 937899319,
+            "company": "SPAREBANKEN MØRE",
+            "numStocksCompany": 9886954,
+            "numStocks": 44,
+            "candidateYearOfBirth": "1951"
+        }],
+        "elements": [{
+            "nodes": [{
+                "id": "1",
+                "name": "Knut Arild Hareide",
+                "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                "size": "60",
+                "description": ""
+            }, {
+                "data": {
+                    "id": "7s",
+                    "name": "Stein Erik Hagen",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "Stein Erik Hagen eier aksjer i samme selskap som Knut Arild Hareide"
+                }
+            }, {
+                "data": {
+                    "id": "10p",
+                    "name": "Trygve Slagsvold Vedum",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "Trygve Slagsvold Vedum sitter i Stortinget eller i regjering sammen med Knut Arild Hareide"
+                }
+            }, {
+                "data": {
+                    "id": "12p",
+                    "name": "Jonas Gahr Støre",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "Jonas Gahr Støre sitter i Stortinget eller i regjering sammen med Knut Arild Hareide"
+                }
+            }]
+        }, {
+            "edges": [{
+                "data": {
+                    "source": "1",
+                    "target": "7s"
+                }
+            }, {
+                "data": {
+                    "source": "1",
+                    "target": "10p"
+                }
+            }, {
+                "data": {
+                    "source": "1",
+                    "target": "12p"
+                }
+            }]
+        }]
+    }, {
+        "fullName": "Per Gunnar Skorge",
+        "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+        "key": 4,
+        "lastYear": 4,
+        "gender": "m",
+        "profession": null,
+        "residence": "",
+        "twitterAcnt": null,
+        "bio": "",
+        "subsidies": [{
+            "id": 1,
+            "name": "Dyrehold",
+            "value": 0
+        }, {
+            "id": 2,
+            "name": "Areal",
+            "value": 0
+        }, {
+            "id": 3,
+            "name": "Avløser",
+            "value": 0
+        }],
+        "stocks": [],
+        "elements": [{
+            "nodes": [{
+                "id": "1",
+                "name": "Per Gunnar Skorge",
+                "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                "size": "60",
+                "description": ""
+            }]
+        }, {
+            "edges": []
+        }]
+    }, {
+        "fullName": "Hanne Refsholt",
+        "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+        "key": 5,
+        "lastYear": 5,
+        "gender": "m",
+        "profession": null,
+        "residence": "",
+        "twitterAcnt": null,
+        "bio": "",
+        "subsidies": [{
+            "id": 1,
+            "name": "Dyrehold",
+            "value": 0
+        }, {
+            "id": 2,
+            "name": "Areal",
+            "value": 0
+        }, {
+            "id": 3,
+            "name": "Avløser",
+            "value": 0
+        }],
+        "stocks": [],
+        "elements": [{
+            "nodes": [{
+                "id": "1",
+                "name": "Hanne Refsholt",
+                "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                "size": "60",
+                "description": ""
+            }]
+        }, {
+            "edges": []
+        }]
+    }, {
+        "fullName": "Siv Jensen",
+        "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+        "key": 6,
+        "lastYear": 6,
+        "gender": "m",
+        "profession": null,
+        "residence": "",
+        "twitterAcnt": null,
+        "bio": "",
+        "subsidies": [{
+            "id": 1,
+            "name": "Dyrehold",
+            "value": 0
+        }, {
+            "id": 2,
+            "name": "Areal",
+            "value": 0
+        }, {
+            "id": 3,
+            "name": "Avløser",
+            "value": 0
+        }],
+        "stocks": [{
+            "id": 913259416,
+            "company": "KRAFT-VERKET INVEST AS",
+            "numStocksCompany": 100000,
+            "numStocks": 100000,
+            "candidateYearOfBirth": "1963"
+        }, {
+            "id": 979709269,
+            "company": "NORTELMO NORSK TELEMONTASJE AS",
+            "numStocksCompany": 100,
+            "numStocks": 9,
+            "candidateYearOfBirth": "1978"
+        }, {
+            "id": 998269709,
+            "company": "KRAFT-VERKET AS",
+            "numStocksCompany": 100000,
+            "numStocks": 75000,
+            "candidateYearOfBirth": "1963"
+        }],
+        "elements": [{
+            "nodes": [{
+                "id": "1",
+                "name": "Siv Jensen",
+                "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                "size": "60",
+                "description": ""
+            }]
+        }, {
+            "edges": []
+        }]
+    }, {
+        "fullName": "Stein Erik Hagen",
+        "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+        "key": 7,
+        "lastYear": 7,
+        "gender": "m",
+        "profession": null,
+        "residence": "",
+        "twitterAcnt": null,
+        "bio": "",
+        "subsidies": [{
+            "id": 1,
+            "name": "Dyrehold",
+            "value": 0
+        }, {
+            "id": 2,
+            "name": "Areal",
+            "value": 0
+        }, {
+            "id": 3,
+            "name": "Avløser",
+            "value": 0
+        }],
+        "stocks": [{
+            "id": 883742192,
+            "company": "APPTIX ASA",
+            "numStocksCompany": 81430178,
+            "numStocks": 40,
+            "candidateYearOfBirth": "1956"
+        }, {
+            "id": 885648312,
+            "company": "CANICA INVESTOR AS",
+            "numStocksCompany": 120,
+            "numStocks": 9,
+            "candidateYearOfBirth": "1956"
+        }, {
+            "id": 910747711,
+            "company": "ORKLA ASA",
+            "numStocksCompany": 1018930970,
+            "numStocks": 11,
+            "candidateYearOfBirth": "1958"
+        }, {
+            "id": 915259340,
+            "company": "SH SERVICE OG MONTASJE AS",
+            "numStocksCompany": 1000,
+            "numStocks": 1000,
+            "candidateYearOfBirth": "1964"
+        }, {
+            "id": 933739384,
+            "company": "SCHIBSTED ASA",
+            "numStocksCompany": 226807591,
+            "numStocks": 479,
+            "candidateYearOfBirth": "1953"
+        }, {
+            "id": 933739384,
+            "company": "SCHIBSTED ASA",
+            "numStocksCompany": 226807591,
+            "numStocks": 479,
+            "candidateYearOfBirth": "1953"
+        }, {
+            "id": 952721860,
+            "company": "AS TEAM",
+            "numStocksCompany": 140,
+            "numStocks": 20,
+            "candidateYearOfBirth": "1956"
+        }, {
+            "id": 976838416,
+            "company": "NØISOMHED AS",
+            "numStocksCompany": 4602,
+            "numStocks": 1534,
+            "candidateYearOfBirth": "1956"
+        }, {
+            "id": 977047587,
+            "company": "STEIN ERIK HAGEN AS",
+            "numStocksCompany": 900,
+            "numStocks": 900,
+            "candidateYearOfBirth": "1956"
+        }, {
+            "id": 979603525,
+            "company": "REHAB EIENDOM AS",
+            "numStocksCompany": 100,
+            "numStocks": 50,
+            "candidateYearOfBirth": "1957"
+        }, {
+            "id": 980975525,
+            "company": "GUMØY GOLF AS",
+            "numStocksCompany": 204,
+            "numStocks": 8,
+            "candidateYearOfBirth": "1956"
+        }, {
+            "id": 984812051,
+            "company": "STEIN HAGEN CONSULTING AS",
+            "numStocksCompany": 100,
+            "numStocks": 100,
+            "candidateYearOfBirth": "1966"
+        }, {
+            "id": 988844322,
+            "company": "TVIST 1 AS",
+            "numStocksCompany": 120,
+            "numStocks": 3,
+            "candidateYearOfBirth": "1956"
+        }],
+        "elements": [{
+            "nodes": [{
+                "id": "1",
+                "name": "Stein Erik Hagen",
+                "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                "size": "60",
+                "description": ""
+            }, {
+                "data": {
+                    "id": "4s",
+                    "name": "Knut Arild Hareide",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "Knut Arild Hareide eier aksjer i samme selskap som Stein Erik Hagen"
+                }
+            }, {
+                "data": {
+                    "id": "32s",
+                    "name": "Kathrine Kleveland",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "Kathrine Kleveland eier aksjer i samme selskap som Stein Erik Hagen"
+                }
+            }, {
+                "data": {
+                    "id": "37s",
+                    "name": "Erik Lahnstein",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "Erik Lahnstein eier aksjer i samme selskap som Stein Erik Hagen"
+                }
+            }, {
+                "data": {
+                    "id": "39s",
+                    "name": "Bjørn Gimming",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "Bjørn Gimming eier aksjer i samme selskap som Stein Erik Hagen"
+                }
+            }, {
+                "data": {
+                    "id": "42s",
+                    "name": "John Arne Moen",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "John Arne Moen eier aksjer i samme selskap som Stein Erik Hagen"
+                }
+            }, {
+                "data": {
+                    "id": "50s",
+                    "name": "Anders Huus",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "Anders Huus eier aksjer i samme selskap som Stein Erik Hagen"
+                }
+            }]
+        }, {
+            "edges": [{
+                "data": {
+                    "source": "1",
+                    "target": "4s"
+                }
+            }, {
+                "data": {
+                    "source": "1",
+                    "target": "32s"
+                }
+            }, {
+                "data": {
+                    "source": "1",
+                    "target": "37s"
+                }
+            }, {
+                "data": {
+                    "source": "1",
+                    "target": "39s"
+                }
+            }, {
+                "data": {
+                    "source": "1",
+                    "target": "42s"
+                }
+            }, {
+                "data": {
+                    "source": "1",
+                    "target": "50s"
+                }
+            }]
+        }]
+    }, {
+        "fullName": "Trond Reierstad",
+        "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+        "key": 8,
+        "lastYear": 8,
+        "gender": "m",
+        "profession": null,
+        "residence": "",
+        "twitterAcnt": null,
+        "bio": "",
+        "subsidies": [{
+            "id": 1,
+            "name": "Dyrehold",
+            "value": 0
+        }, {
+            "id": 2,
+            "name": "Areal",
+            "value": 0
+        }, {
+            "id": 3,
+            "name": "Avløser",
+            "value": 0
+        }],
+        "stocks": [{
+            "id": 913382145,
+            "company": "SAGVEIEN TOWER INVEST AS",
+            "numStocksCompany": 22000000,
+            "numStocks": 1050000,
+            "candidateYearOfBirth": "1958"
+        }, {
+            "id": 915636713,
+            "company": "NORDRE HOLEN 15-21 AS",
+            "numStocksCompany": 100000,
+            "numStocks": 2147,
+            "candidateYearOfBirth": "1958"
+        }, {
+            "id": 917320438,
+            "company": "BOGANES EIENDOM HOLDING AS",
+            "numStocksCompany": 40700,
+            "numStocks": 1000,
+            "candidateYearOfBirth": "1958"
+        }, {
+            "id": 986876219,
+            "company": "IPHONE AS",
+            "numStocksCompany": 29004002,
+            "numStocks": 363637,
+            "candidateYearOfBirth": "1958"
+        }, {
+            "id": 997410440,
+            "company": "AEGA ASA",
+            "numStocksCompany": 35890957,
+            "numStocks": 367890,
+            "candidateYearOfBirth": "1958"
+        }],
+        "elements": [{
+            "nodes": [{
+                "id": "1",
+                "name": "Trond Reierstad",
+                "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                "size": "60",
+                "description": ""
+            }]
+        }, {
+            "edges": []
+        }]
+    }, {
+        "fullName": "Geir Inge Stokke",
+        "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+        "key": 9,
+        "lastYear": 9,
+        "gender": "m",
+        "profession": null,
+        "residence": "",
+        "twitterAcnt": null,
+        "bio": "",
+        "subsidies": [{
+            "id": 1,
+            "name": "Dyrehold",
+            "value": 0
+        }, {
+            "id": 2,
+            "name": "Areal",
+            "value": 0
+        }, {
+            "id": 3,
+            "name": "Avløser",
+            "value": 0
+        }],
+        "stocks": [{
+            "id": 914778271,
+            "company": "NORSK HYDRO ASA",
+            "numStocksCompany": 2068998276,
+            "numStocks": 2500,
+            "candidateYearOfBirth": "1957"
+        }, {
+            "id": 916235291,
+            "company": "PETROLEUM GEO-SERVICES ASA",
+            "numStocksCompany": 325079996,
+            "numStocks": 100,
+            "candidateYearOfBirth": "1957"
+        }, {
+            "id": 916300484,
+            "company": "STOREBRAND ASA",
+            "numStocksCompany": 449909891,
+            "numStocks": 1000,
+            "candidateYearOfBirth": "1957"
+        }, {
+            "id": 917788545,
+            "company": "FINE LINE HOLDING AS",
+            "numStocksCompany": 5000000,
+            "numStocks": 5000000,
+            "candidateYearOfBirth": "1962"
+        }, {
+            "id": 952706365,
+            "company": "SPAREBANK 1 NORD-NORGE",
+            "numStocksCompany": 100398016,
+            "numStocks": 2500,
+            "candidateYearOfBirth": "1957"
+        }, {
+            "id": 964118191,
+            "company": "MARINE HARVEST ASA",
+            "numStocksCompany": 450085652,
+            "numStocks": 80,
+            "candidateYearOfBirth": "1956"
+        }, {
+            "id": 964118191,
+            "company": "MARINE HARVEST ASA",
+            "numStocksCompany": 450085652,
+            "numStocks": 50,
+            "candidateYearOfBirth": "1957"
+        }, {
+            "id": 974529459,
+            "company": "OPERA SOFTWARE ASA",
+            "numStocksCompany": 149477429,
+            "numStocks": 500,
+            "candidateYearOfBirth": "1957"
+        }, {
+            "id": 982463718,
+            "company": "TELENOR ASA",
+            "numStocksCompany": 1501458030,
+            "numStocks": 132,
+            "candidateYearOfBirth": "1968"
+        }, {
+            "id": 984468741,
+            "company": "GEIR STOKKE AS",
+            "numStocksCompany": 42,
+            "numStocks": 42,
+            "candidateYearOfBirth": "1974"
+        }, {
+            "id": 991101152,
+            "company": "IMPERIET AS",
+            "numStocksCompany": 210,
+            "numStocks": 70,
+            "candidateYearOfBirth": "1973"
+        }, {
+            "id": 993430196,
+            "company": "LISEMA INVEST AS",
+            "numStocksCompany": 1000,
+            "numStocks": 1000,
+            "candidateYearOfBirth": "1956"
+        }, {
+            "id": 995568217,
+            "company": "GJENSIDIGE FORSIKRING ASA",
+            "numStocksCompany": 500000000,
+            "numStocks": 890,
+            "candidateYearOfBirth": "1957"
+        }, {
+            "id": 997029682,
+            "company": "SPERMVITAL INVEST AS",
+            "numStocksCompany": 3200,
+            "numStocks": 2,
+            "candidateYearOfBirth": "1968"
+        }, {
+            "id": 999296432,
+            "company": "ENTRA ASA",
+            "numStocksCompany": 183732461,
+            "numStocks": 1552,
+            "candidateYearOfBirth": "1957"
+        }],
+        "elements": [{
+            "nodes": [{
+                "id": "1",
+                "name": "Geir Inge Stokke",
+                "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                "size": "60",
+                "description": ""
+            }, {
+                "data": {
+                    "id": "2s",
+                    "name": "Leif Forsell",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "Leif Forsell eier aksjer i samme selskap som Geir Inge Stokke"
+                }
+            }, {
+                "data": {
+                    "id": "3s",
+                    "name": "Lars Petter Bartnes",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "Lars Petter Bartnes eier aksjer i samme selskap som Geir Inge Stokke"
+                }
+            }, {
+                "data": {
+                    "id": "14s",
+                    "name": "John Arne Ulvan",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "John Arne Ulvan eier aksjer i samme selskap som Geir Inge Stokke"
+                }
+            }, {
+                "data": {
+                    "id": "21s",
+                    "name": "Stein Rune Flaen",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "Stein Rune Flaen eier aksjer i samme selskap som Geir Inge Stokke"
+                }
+            }, {
+                "data": {
+                    "id": "30s",
+                    "name": "Anne Skuterud",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "Anne Skuterud eier aksjer i samme selskap som Geir Inge Stokke"
+                }
+            }, {
+                "data": {
+                    "id": "37s",
+                    "name": "Erik Lahnstein",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "Erik Lahnstein eier aksjer i samme selskap som Geir Inge Stokke"
+                }
+            }, {
+                "data": {
+                    "id": "39s",
+                    "name": "Bjørn Gimming",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "Bjørn Gimming eier aksjer i samme selskap som Geir Inge Stokke"
+                }
+            }, {
+                "data": {
+                    "id": "41s",
+                    "name": "Per Roskifte",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "Per Roskifte eier aksjer i samme selskap som Geir Inge Stokke"
+                }
+            }, {
+                "data": {
+                    "id": "42s",
+                    "name": "John Arne Moen",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "John Arne Moen eier aksjer i samme selskap som Geir Inge Stokke"
+                }
+            }]
+        }, {
+            "edges": [{
+                "data": {
+                    "source": "1",
+                    "target": "2s"
+                }
+            }, {
+                "data": {
+                    "source": "1",
+                    "target": "3s"
+                }
+            }, {
+                "data": {
+                    "source": "1",
+                    "target": "14s"
+                }
+            }, {
+                "data": {
+                    "source": "1",
+                    "target": "21s"
+                }
+            }, {
+                "data": {
+                    "source": "1",
+                    "target": "30s"
+                }
+            }, {
+                "data": {
+                    "source": "1",
+                    "target": "37s"
+                }
+            }, {
+                "data": {
+                    "source": "1",
+                    "target": "39s"
+                }
+            }, {
+                "data": {
+                    "source": "1",
+                    "target": "41s"
+                }
+            }, {
+                "data": {
+                    "source": "1",
+                    "target": "42s"
+                }
+            }]
+        }]
+    }, {
+        "fullName": "Trygve Slagsvold Vedum",
+        "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+        "key": 10,
+        "lastYear": 10,
+        "gender": "m",
+        "profession": null,
+        "residence": "",
+        "twitterAcnt": null,
+        "bio": "",
+        "subsidies": [{
+            "id": 1,
+            "name": "Dyrehold",
+            "value": 0
+        }, {
+            "id": 2,
+            "name": "Areal",
+            "value": 0
+        }, {
+            "id": 3,
+            "name": "Avløser",
+            "value": 0
+        }],
+        "stocks": [{
+            "id": 992851724,
+            "company": "ATNA ØL AS",
+            "numStocksCompany": 694,
+            "numStocks": 1,
+            "candidateYearOfBirth": "1978"
+        }],
+        "elements": [{
+            "nodes": [{
+                "id": "1",
+                "name": "Trygve Slagsvold Vedum",
+                "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                "size": "60",
+                "description": ""
+            }, {
+                "data": {
+                    "id": "4p",
+                    "name": "Knut Arild Hareide",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "Knut Arild Hareide sitter i Stortinget eller i regjering sammen med Trygve Slagsvold Vedum"
+                }
+            }, {
+                "data": {
+                    "id": "12p",
+                    "name": "Jonas Gahr Støre",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "Jonas Gahr Støre sitter i Stortinget eller i regjering sammen med Trygve Slagsvold Vedum"
+                }
+            }]
+        }, {
+            "edges": [{
+                "data": {
+                    "source": "1",
+                    "target": "4p"
+                }
+            }, {
+                "data": {
+                    "source": "1",
+                    "target": "12p"
+                }
+            }]
+        }]
+    }, {
+        "fullName": "Erna Solberg",
+        "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+        "key": 11,
+        "lastYear": 11,
+        "gender": "m",
+        "profession": null,
+        "residence": "",
+        "twitterAcnt": null,
+        "bio": "",
+        "subsidies": [{
+            "id": 1,
+            "name": "Dyrehold",
+            "value": 0
+        }, {
+            "id": 2,
+            "name": "Areal",
+            "value": 0
+        }, {
+            "id": 3,
+            "name": "Avløser",
+            "value": 0
+        }],
+        "stocks": [{
+            "id": 993586749,
+            "company": "BEST TREUNGEN AS",
+            "numStocksCompany": 500,
+            "numStocks": 100,
+            "candidateYearOfBirth": "1951"
+        }],
+        "elements": [{
+            "nodes": [{
+                "id": "1",
+                "name": "Erna Solberg",
+                "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                "size": "60",
+                "description": ""
+            }]
+        }, {
+            "edges": []
+        }]
+    }, {
+        "fullName": "Jonas Gahr Støre",
+        "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+        "key": 12,
+        "lastYear": 12,
+        "gender": "m",
+        "profession": null,
+        "residence": "",
+        "twitterAcnt": null,
+        "bio": "",
+        "subsidies": [{
+            "id": 1,
+            "name": "Dyrehold",
+            "value": 0
+        }, {
+            "id": 2,
+            "name": "Areal",
+            "value": 0
+        }, {
+            "id": 3,
+            "name": "Avløser",
+            "value": 0
+        }],
+        "stocks": [{
+            "id": 913418328,
+            "company": "HUGIN SOLUTIONS AS",
+            "numStocksCompany": 1000,
+            "numStocks": 1000,
+            "candidateYearOfBirth": "1979"
+        }, {
+            "id": 931693670,
+            "company": "AKVA GROUP ASA",
+            "numStocksCompany": 25834303,
+            "numStocks": 190,
+            "candidateYearOfBirth": "1979"
+        }, {
+            "id": 980702073,
+            "company": "FEMSTØ AS",
+            "numStocksCompany": 19210,
+            "numStocks": 14644,
+            "candidateYearOfBirth": "1960"
+        }],
+        "elements": [{
+            "nodes": [{
+                "id": "1",
+                "name": "Jonas Gahr Støre",
+                "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                "size": "60",
+                "description": ""
+            }, {
+                "data": {
+                    "id": "4p",
+                    "name": "Knut Arild Hareide",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "Knut Arild Hareide sitter i Stortinget eller i regjering sammen med Jonas Gahr Støre"
+                }
+            }, {
+                "data": {
+                    "id": "11p",
+                    "name": "Trygve Slagsvold Vedum",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "Trygve Slagsvold Vedum sitter i Stortinget eller i regjering sammen med Jonas Gahr Støre"
+                }
+            }]
+        }, {
+            "edges": [{
+                "data": {
+                    "source": "1",
+                    "target": "4p"
+                }
+            }, {
+                "data": {
+                    "source": "1",
+                    "target": "11p"
+                }
+            }]
+        }]
+    }, {
+        "fullName": "Randi Flesland",
+        "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+        "key": 13,
+        "lastYear": 13,
+        "gender": "m",
+        "profession": null,
+        "residence": "",
+        "twitterAcnt": null,
+        "bio": "",
+        "subsidies": [{
+            "id": 1,
+            "name": "Dyrehold",
+            "value": 0
+        }, {
+            "id": 2,
+            "name": "Areal",
+            "value": 0
+        }, {
+            "id": 3,
+            "name": "Avløser",
+            "value": 0
+        }],
+        "stocks": [],
+        "elements": [{
+            "nodes": [{
+                "id": "1",
+                "name": "Randi Flesland",
+                "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                "size": "60",
+                "description": ""
+            }]
+        }, {
+            "edges": []
+        }]
+    }, {
+        "fullName": "John Arne Ulvan",
+        "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+        "key": 14,
+        "lastYear": 14,
+        "gender": "m",
+        "profession": null,
+        "residence": "",
+        "twitterAcnt": null,
+        "bio": "",
+        "subsidies": [{
+            "id": 1,
+            "name": "Dyrehold",
+            "value": 0
+        }, {
+            "id": 2,
+            "name": "Areal",
+            "value": 0
+        }, {
+            "id": 3,
+            "name": "Avløser",
+            "value": 0
+        }],
+        "stocks": [{
+            "id": 882811972,
+            "company": "HAVILA SHIPPING ASA",
+            "numStocksCompany": 30179599,
+            "numStocks": 10000,
+            "candidateYearOfBirth": "1965"
+        }, {
+            "id": 886581432,
+            "company": "AKER ASA",
+            "numStocksCompany": 74321862,
+            "numStocks": 104,
+            "candidateYearOfBirth": "1965"
+        }, {
+            "id": 914778271,
+            "company": "NORSK HYDRO ASA",
+            "numStocksCompany": 2068998276,
+            "numStocks": 2000,
+            "candidateYearOfBirth": "1965"
+        }, {
+            "id": 916235291,
+            "company": "PETROLEUM GEO-SERVICES ASA",
+            "numStocksCompany": 325079996,
+            "numStocks": 2000,
+            "candidateYearOfBirth": "1965"
+        }, {
+            "id": 923609016,
+            "company": "STATOIL ASA",
+            "numStocksCompany": 3245049411,
+            "numStocks": 350,
+            "candidateYearOfBirth": "1965"
+        }, {
+            "id": 984058373,
+            "company": "BYGNINGSKULTUR RØROS AS",
+            "numStocksCompany": 100,
+            "numStocks": 34,
+            "candidateYearOfBirth": "1942"
+        }, {
+            "id": 998753562,
+            "company": "BORREGAARD ASA",
+            "numStocksCompany": 100000000,
+            "numStocks": 500,
+            "candidateYearOfBirth": "1965"
+        }],
+        "elements": [{
+            "nodes": [{
+                "id": "1",
+                "name": "John Arne Ulvan",
+                "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                "size": "60",
+                "description": ""
+            }, {
+                "data": {
+                    "id": "2s",
+                    "name": "Leif Forsell",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "Leif Forsell eier aksjer i samme selskap som John Arne Ulvan"
+                }
+            }, {
+                "data": {
+                    "id": "10s",
+                    "name": "Geir Inge Stokke",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "Geir Inge Stokke eier aksjer i samme selskap som John Arne Ulvan"
+                }
+            }, {
+                "data": {
+                    "id": "37s",
+                    "name": "Erik Lahnstein",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "Erik Lahnstein eier aksjer i samme selskap som John Arne Ulvan"
+                }
+            }, {
+                "data": {
+                    "id": "39s",
+                    "name": "Bjørn Gimming",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "Bjørn Gimming eier aksjer i samme selskap som John Arne Ulvan"
+                }
+            }, {
+                "data": {
+                    "id": "41s",
+                    "name": "Per Roskifte",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "Per Roskifte eier aksjer i samme selskap som John Arne Ulvan"
+                }
+            }, {
+                "data": {
+                    "id": "42s",
+                    "name": "John Arne Moen",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "John Arne Moen eier aksjer i samme selskap som John Arne Ulvan"
+                }
+            }]
+        }, {
+            "edges": [{
+                "data": {
+                    "source": "1",
+                    "target": "2s"
+                }
+            }, {
+                "data": {
+                    "source": "1",
+                    "target": "10s"
+                }
+            }, {
+                "data": {
+                    "source": "1",
+                    "target": "37s"
+                }
+            }, {
+                "data": {
+                    "source": "1",
+                    "target": "39s"
+                }
+            }, {
+                "data": {
+                    "source": "1",
+                    "target": "41s"
+                }
+            }, {
+                "data": {
+                    "source": "1",
+                    "target": "42s"
+                }
+            }]
+        }]
+    }, {
+        "fullName": "Petter Haas Brubakk",
+        "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+        "key": 15,
+        "lastYear": 15,
+        "gender": "m",
+        "profession": null,
+        "residence": "",
+        "twitterAcnt": null,
+        "bio": "",
+        "subsidies": [{
+            "id": 1,
+            "name": "Dyrehold",
+            "value": 0
+        }, {
+            "id": 2,
+            "name": "Areal",
+            "value": 0
+        }, {
+            "id": 3,
+            "name": "Avløser",
+            "value": 0
+        }],
+        "stocks": [],
+        "elements": [{
+            "nodes": [{
+                "id": "1",
+                "name": "Petter Haas Brubakk",
+                "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                "size": "60",
+                "description": ""
+            }]
+        }, {
+            "edges": []
+        }]
+    }, {
+        "fullName": "Arne Kristian Kolberg",
+        "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+        "key": 16,
+        "lastYear": 16,
+        "gender": "m",
+        "profession": null,
+        "residence": "",
+        "twitterAcnt": null,
+        "bio": "",
+        "subsidies": [{
+            "id": 1,
+            "name": "Dyrehold",
+            "value": 0
+        }, {
+            "id": 2,
+            "name": "Areal",
+            "value": 0
+        }, {
+            "id": 3,
+            "name": "Avløser",
+            "value": 0
+        }],
+        "stocks": [{
+            "id": 911750961,
+            "company": "NORSKE SKOGINDUSTRIER ASA",
+            "numStocksCompany": 278994995,
+            "numStocks": 89,
+            "candidateYearOfBirth": "1955"
+        }, {
+            "id": 942593821,
+            "company": "KONGSBERG AUTOMOTIVE ASA",
+            "numStocksCompany": 406768131,
+            "numStocks": 2000,
+            "candidateYearOfBirth": "1955"
+        }, {
+            "id": 981276957,
+            "company": "DNB ASA",
+            "numStocksCompany": 1628798861,
+            "numStocks": 161,
+            "candidateYearOfBirth": "1955"
+        }, {
+            "id": 990080437,
+            "company": "ONSØYFJØSET AS",
+            "numStocksCompany": 100,
+            "numStocks": 25,
+            "candidateYearOfBirth": "1955"
+        }],
+        "elements": [{
+            "nodes": [{
+                "id": "1",
+                "name": "Arne Kristian Kolberg",
+                "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                "size": "60",
+                "description": ""
+            }, {
+                "data": {
+                    "id": "2s",
+                    "name": "Leif Forsell",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "Leif Forsell eier aksjer i samme selskap som Arne Kristian Kolberg"
+                }
+            }, {
+                "data": {
+                    "id": "30s",
+                    "name": "Anne Skuterud",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "Anne Skuterud eier aksjer i samme selskap som Arne Kristian Kolberg"
+                }
+            }, {
+                "data": {
+                    "id": "38s",
+                    "name": "Odd Magne Harstad",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "Odd Magne Harstad eier aksjer i samme selskap som Arne Kristian Kolberg"
+                }
+            }, {
+                "data": {
+                    "id": "39s",
+                    "name": "Bjørn Gimming",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "Bjørn Gimming eier aksjer i samme selskap som Arne Kristian Kolberg"
+                }
+            }, {
+                "data": {
+                    "id": "42s",
+                    "name": "John Arne Moen",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "John Arne Moen eier aksjer i samme selskap som Arne Kristian Kolberg"
+                }
+            }, {
+                "data": {
+                    "id": "50s",
+                    "name": "Anders Huus",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "Anders Huus eier aksjer i samme selskap som Arne Kristian Kolberg"
+                }
+            }, {
+                "data": {
+                    "id": "53s",
+                    "name": "Harald Lein",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "Harald Lein eier aksjer i samme selskap som Arne Kristian Kolberg"
+                }
+            }]
+        }, {
+            "edges": [{
+                "data": {
+                    "source": "1",
+                    "target": "2s"
+                }
+            }, {
+                "data": {
+                    "source": "1",
+                    "target": "30s"
+                }
+            }, {
+                "data": {
+                    "source": "1",
+                    "target": "38s"
+                }
+            }, {
+                "data": {
+                    "source": "1",
+                    "target": "39s"
+                }
+            }, {
+                "data": {
+                    "source": "1",
+                    "target": "42s"
+                }
+            }, {
+                "data": {
+                    "source": "1",
+                    "target": "50s"
+                }
+            }, {
+                "data": {
+                    "source": "1",
+                    "target": "53s"
+                }
+            }]
+        }]
+    }, {
+        "fullName": "Anita Krohn Traaseth",
+        "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+        "key": 17,
+        "lastYear": 17,
+        "gender": "m",
+        "profession": null,
+        "residence": "",
+        "twitterAcnt": null,
+        "bio": "",
+        "subsidies": [{
+            "id": 1,
+            "name": "Dyrehold",
+            "value": 0
+        }, {
+            "id": 2,
+            "name": "Areal",
+            "value": 0
+        }, {
+            "id": 3,
+            "name": "Avløser",
+            "value": 0
+        }],
+        "stocks": [],
+        "elements": [{
+            "nodes": [{
+                "id": "1",
+                "name": "Anita Krohn Traaseth",
+                "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                "size": "60",
+                "description": ""
+            }]
+        }, {
+            "edges": []
+        }]
+    }, {
+        "fullName": "Jan-Egil Pedersen",
+        "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+        "key": 18,
+        "lastYear": 18,
+        "gender": "m",
+        "profession": null,
+        "residence": "",
+        "twitterAcnt": null,
+        "bio": "",
+        "subsidies": [{
+            "id": 1,
+            "name": "Dyrehold",
+            "value": 0
+        }, {
+            "id": 2,
+            "name": "Areal",
+            "value": 0
+        }, {
+            "id": 3,
+            "name": "Avløser",
+            "value": 0
+        }],
+        "stocks": [],
+        "elements": [{
+            "nodes": [{
+                "id": "1",
+                "name": "Jan-Egil Pedersen",
+                "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                "size": "60",
+                "description": ""
+            }]
+        }, {
+            "edges": []
+        }]
+    }, {
+        "fullName": "Ståle Gausen",
+        "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+        "key": 19,
+        "lastYear": 19,
+        "gender": "m",
+        "profession": null,
+        "residence": "",
+        "twitterAcnt": null,
+        "bio": "",
+        "subsidies": [{
+            "id": 1,
+            "name": "Dyrehold",
+            "value": 0
+        }, {
+            "id": 2,
+            "name": "Areal",
+            "value": 0
+        }, {
+            "id": 3,
+            "name": "Avløser",
+            "value": 0
+        }],
+        "stocks": [{
+            "id": 914240026,
+            "company": "VINTER INVEST AS",
+            "numStocksCompany": 56,
+            "numStocks": 1,
+            "candidateYearOfBirth": "1964"
+        }, {
+            "id": 918578722,
+            "company": "GAUS INVEST AS",
+            "numStocksCompany": 7000,
+            "numStocks": 1650,
+            "candidateYearOfBirth": "1964"
+        }],
+        "elements": [{
+            "nodes": [{
+                "id": "1",
+                "name": "Ståle Gausen",
+                "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                "size": "60",
+                "description": ""
+            }]
+        }, {
+            "edges": []
+        }]
+    }, {
+        "fullName": "Ola Hedstein",
+        "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+        "key": 20,
+        "lastYear": 20,
+        "gender": "m",
+        "profession": null,
+        "residence": "",
+        "twitterAcnt": null,
+        "bio": "",
+        "subsidies": [{
+            "id": 1,
+            "name": "Dyrehold",
+            "value": 0
+        }, {
+            "id": 2,
+            "name": "Areal",
+            "value": 0
+        }, {
+            "id": 3,
+            "name": "Avløser",
+            "value": 0
+        }],
+        "stocks": [],
+        "elements": [{
+            "nodes": [{
+                "id": "1",
+                "name": "Ola Hedstein",
+                "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                "size": "60",
+                "description": ""
+            }]
+        }, {
+            "edges": []
+        }]
+    }, {
+        "fullName": "Stein Rune Flaen",
+        "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+        "key": 21,
+        "lastYear": 21,
+        "gender": "m",
+        "profession": null,
+        "residence": "",
+        "twitterAcnt": null,
+        "bio": "",
+        "subsidies": [{
+            "id": 1,
+            "name": "Dyrehold",
+            "value": 0
+        }, {
+            "id": 2,
+            "name": "Areal",
+            "value": 0
+        }, {
+            "id": 3,
+            "name": "Avløser",
+            "value": 0
+        }],
+        "stocks": [{
+            "id": 916300484,
+            "company": "STOREBRAND ASA",
+            "numStocksCompany": 449909891,
+            "numStocks": 9,
+            "candidateYearOfBirth": "1956"
+        }, {
+            "id": 979967683,
+            "company": "MACASE AS",
+            "numStocksCompany": 100,
+            "numStocks": 100,
+            "candidateYearOfBirth": "1956"
+        }],
+        "elements": [{
+            "nodes": [{
+                "id": "1",
+                "name": "Stein Rune Flaen",
+                "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                "size": "60",
+                "description": ""
+            }, {
+                "data": {
+                    "id": "10s",
+                    "name": "Geir Inge Stokke",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "Geir Inge Stokke eier aksjer i samme selskap som Stein Rune Flaen"
+                }
+            }, {
+                "data": {
+                    "id": "42s",
+                    "name": "John Arne Moen",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "John Arne Moen eier aksjer i samme selskap som Stein Rune Flaen"
+                }
+            }]
+        }, {
+            "edges": [{
+                "data": {
+                    "source": "1",
+                    "target": "10s"
+                }
+            }, {
+                "data": {
+                    "source": "1",
+                    "target": "42s"
+                }
+            }]
+        }]
+    }, {
+        "fullName": "Merete Furuberg",
+        "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+        "key": 22,
+        "lastYear": 22,
+        "gender": "m",
+        "profession": null,
+        "residence": "",
+        "twitterAcnt": null,
+        "bio": "",
+        "subsidies": [{
+            "id": 1,
+            "name": "Dyrehold",
+            "value": 0
+        }, {
+            "id": 2,
+            "name": "Areal",
+            "value": 0
+        }, {
+            "id": 3,
+            "name": "Avløser",
+            "value": 0
+        }],
+        "stocks": [],
+        "elements": [{
+            "nodes": [{
+                "id": "1",
+                "name": "Merete Furuberg",
+                "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                "size": "60",
+                "description": ""
+            }]
+        }, {
+            "edges": []
+        }]
+    }, {
+        "fullName": "Olav Veum",
+        "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+        "key": 23,
+        "lastYear": 23,
+        "gender": "m",
+        "profession": null,
+        "residence": "",
+        "twitterAcnt": null,
+        "bio": "",
+        "subsidies": [{
+            "id": 1,
+            "name": "Dyrehold",
+            "value": 0
+        }, {
+            "id": 2,
+            "name": "Areal",
+            "value": 0
+        }, {
+            "id": 3,
+            "name": "Avløser",
+            "value": 0
+        }],
+        "stocks": [{
+            "id": 914425980,
+            "company": "SILVA CONSULT AS",
+            "numStocksCompany": 50,
+            "numStocks": 50,
+            "candidateYearOfBirth": "1972"
+        }],
+        "elements": [{
+            "nodes": [{
+                "id": "1",
+                "name": "Olav Veum",
+                "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                "size": "60",
+                "description": ""
+            }]
+        }, {
+            "edges": []
+        }]
+    }, {
+        "fullName": "Hans-Christian Gabrielsen",
+        "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+        "key": 24,
+        "lastYear": 24,
+        "gender": "m",
+        "profession": null,
+        "residence": "",
+        "twitterAcnt": null,
+        "bio": "",
+        "subsidies": [{
+            "id": 1,
+            "name": "Dyrehold",
+            "value": 0
+        }, {
+            "id": 2,
+            "name": "Areal",
+            "value": 0
+        }, {
+            "id": 3,
+            "name": "Avløser",
+            "value": 0
+        }],
+        "stocks": [],
+        "elements": [{
+            "nodes": [{
+                "id": "1",
+                "name": "Hans-Christian Gabrielsen",
+                "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                "size": "60",
+                "description": ""
+            }]
+        }, {
+            "edges": []
+        }]
+    }, {
+        "fullName": "Irene Halvorsen",
+        "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+        "key": 25,
+        "lastYear": 25,
+        "gender": "m",
+        "profession": null,
+        "residence": "",
+        "twitterAcnt": null,
+        "bio": "",
+        "subsidies": [{
+            "id": 1,
+            "name": "Dyrehold",
+            "value": 0
+        }, {
+            "id": 2,
+            "name": "Areal",
+            "value": 0
+        }, {
+            "id": 3,
+            "name": "Avløser",
+            "value": 0
+        }],
+        "stocks": [],
+        "elements": [{
+            "nodes": [{
+                "id": "1",
+                "name": "Irene Halvorsen",
+                "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                "size": "60",
+                "description": ""
+            }]
+        }, {
+            "edges": []
+        }]
+    }, {
+        "fullName": "Chr. Anton Smedshaug",
+        "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+        "key": 26,
+        "lastYear": 26,
+        "gender": "m",
+        "profession": null,
+        "residence": "",
+        "twitterAcnt": null,
+        "bio": "",
+        "subsidies": [{
+            "id": 1,
+            "name": "Dyrehold",
+            "value": 0
+        }, {
+            "id": 2,
+            "name": "Areal",
+            "value": 0
+        }, {
+            "id": 3,
+            "name": "Avløser",
+            "value": 0
+        }],
+        "stocks": [],
+        "elements": [{
+            "nodes": [{
+                "id": "1",
+                "name": "Chr. Anton Smedshaug",
+                "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                "size": "60",
+                "description": ""
+            }]
+        }, {
+            "edges": []
+        }]
+    }, {
+        "fullName": "Bernt Myrdahl",
+        "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+        "key": 27,
+        "lastYear": 27,
+        "gender": "m",
+        "profession": null,
+        "residence": "",
+        "twitterAcnt": null,
+        "bio": "",
+        "subsidies": [{
+            "id": 1,
+            "name": "Dyrehold",
+            "value": 0
+        }, {
+            "id": 2,
+            "name": "Areal",
+            "value": 0
+        }, {
+            "id": 3,
+            "name": "Avløser",
+            "value": 0
+        }],
+        "stocks": [],
+        "elements": [{
+            "nodes": [{
+                "id": "1",
+                "name": "Bernt Myrdahl",
+                "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                "size": "60",
+                "description": ""
+            }]
+        }, {
+            "edges": []
+        }]
+    }, {
+        "fullName": "Mari Sundli Tveit",
+        "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+        "key": 28,
+        "lastYear": 28,
+        "gender": "m",
+        "profession": null,
+        "residence": "",
+        "twitterAcnt": null,
+        "bio": "",
+        "subsidies": [{
+            "id": 1,
+            "name": "Dyrehold",
+            "value": 0
+        }, {
+            "id": 2,
+            "name": "Areal",
+            "value": 0
+        }, {
+            "id": 3,
+            "name": "Avløser",
+            "value": 0
+        }],
+        "stocks": [],
+        "elements": [{
+            "nodes": [{
+                "id": "1",
+                "name": "Mari Sundli Tveit",
+                "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                "size": "60",
+                "description": ""
+            }]
+        }, {
+            "edges": []
+        }]
+    }, {
+        "fullName": "Lars Fredrik Stuve",
+        "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+        "key": 29,
+        "lastYear": 29,
+        "gender": "m",
+        "profession": null,
+        "residence": "",
+        "twitterAcnt": null,
+        "bio": "",
+        "subsidies": [{
+            "id": 1,
+            "name": "Dyrehold",
+            "value": 0
+        }, {
+            "id": 2,
+            "name": "Areal",
+            "value": 0
+        }, {
+            "id": 3,
+            "name": "Avløser",
+            "value": 0
+        }],
+        "stocks": [],
+        "elements": [{
+            "nodes": [{
+                "id": "1",
+                "name": "Lars Fredrik Stuve",
+                "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                "size": "60",
+                "description": ""
+            }]
+        }, {
+            "edges": []
+        }]
+    }, {
+        "fullName": "Anne Skuterud",
+        "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+        "key": 30,
+        "lastYear": 30,
+        "gender": "m",
+        "profession": null,
+        "residence": "",
+        "twitterAcnt": null,
+        "bio": "",
+        "subsidies": [{
+            "id": 1,
+            "name": "Dyrehold",
+            "value": 0
+        }, {
+            "id": 2,
+            "name": "Areal",
+            "value": 0
+        }, {
+            "id": 3,
+            "name": "Avløser",
+            "value": 0
+        }],
+        "stocks": [{
+            "id": 811981052,
+            "company": "GJERDRUM AKTIEMØLLE AS",
+            "numStocksCompany": 100,
+            "numStocks": 1,
+            "candidateYearOfBirth": "1970"
+        }, {
+            "id": 915924751,
+            "company": "SKI BYGG GRUPPEN AS",
+            "numStocksCompany": 12072,
+            "numStocks": 743,
+            "candidateYearOfBirth": "1945"
+        }, {
+            "id": 954223302,
+            "company": "AL QUDS AS",
+            "numStocksCompany": 5208,
+            "numStocks": 3,
+            "candidateYearOfBirth": "1952"
+        }, {
+            "id": 981276957,
+            "company": "DNB ASA",
+            "numStocksCompany": 1628798861,
+            "numStocks": 378,
+            "candidateYearOfBirth": "1945"
+        }, {
+            "id": 989995898,
+            "company": "RINGERIKSFRUKT AS",
+            "numStocksCompany": 606,
+            "numStocks": 4,
+            "candidateYearOfBirth": "1940"
+        }, {
+            "id": 995568217,
+            "company": "GJENSIDIGE FORSIKRING ASA",
+            "numStocksCompany": 500000000,
+            "numStocks": 1213,
+            "candidateYearOfBirth": "1970"
+        }, {
+            "id": 998569443,
+            "company": "ASKTUNET EIENDOM AS",
+            "numStocksCompany": 200,
+            "numStocks": 75,
+            "candidateYearOfBirth": "1970"
+        }],
+        "elements": [{
+            "nodes": [{
+                "id": "1",
+                "name": "Anne Skuterud",
+                "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                "size": "60",
+                "description": ""
+            }, {
+                "data": {
+                    "id": "2s",
+                    "name": "Leif Forsell",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "Leif Forsell eier aksjer i samme selskap som Anne Skuterud"
+                }
+            }, {
+                "data": {
+                    "id": "10s",
+                    "name": "Geir Inge Stokke",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "Geir Inge Stokke eier aksjer i samme selskap som Anne Skuterud"
+                }
+            }, {
+                "data": {
+                    "id": "17s",
+                    "name": "Arne Kristian Kolberg",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "Arne Kristian Kolberg eier aksjer i samme selskap som Anne Skuterud"
+                }
+            }, {
+                "data": {
+                    "id": "37s",
+                    "name": "Erik Lahnstein",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "Erik Lahnstein eier aksjer i samme selskap som Anne Skuterud"
+                }
+            }, {
+                "data": {
+                    "id": "38s",
+                    "name": "Odd Magne Harstad",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "Odd Magne Harstad eier aksjer i samme selskap som Anne Skuterud"
+                }
+            }, {
+                "data": {
+                    "id": "39s",
+                    "name": "Bjørn Gimming",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "Bjørn Gimming eier aksjer i samme selskap som Anne Skuterud"
+                }
+            }, {
+                "data": {
+                    "id": "41s",
+                    "name": "Per Roskifte",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "Per Roskifte eier aksjer i samme selskap som Anne Skuterud"
+                }
+            }, {
+                "data": {
+                    "id": "42s",
+                    "name": "John Arne Moen",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "John Arne Moen eier aksjer i samme selskap som Anne Skuterud"
+                }
+            }]
+        }, {
+            "edges": [{
+                "data": {
+                    "source": "1",
+                    "target": "2s"
+                }
+            }, {
+                "data": {
+                    "source": "1",
+                    "target": "10s"
+                }
+            }, {
+                "data": {
+                    "source": "1",
+                    "target": "17s"
+                }
+            }, {
+                "data": {
+                    "source": "1",
+                    "target": "37s"
+                }
+            }, {
+                "data": {
+                    "source": "1",
+                    "target": "38s"
+                }
+            }, {
+                "data": {
+                    "source": "1",
+                    "target": "39s"
+                }
+            }, {
+                "data": {
+                    "source": "1",
+                    "target": "41s"
+                }
+            }, {
+                "data": {
+                    "source": "1",
+                    "target": "42s"
+                }
+            }]
+        }]
+    }, {
+        "fullName": "Bård Gultvedt",
+        "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+        "key": 31,
+        "lastYear": 31,
+        "gender": "m",
+        "profession": null,
+        "residence": "",
+        "twitterAcnt": null,
+        "bio": "",
+        "subsidies": [{
+            "id": 1,
+            "name": "Dyrehold",
+            "value": 0
+        }, {
+            "id": 2,
+            "name": "Areal",
+            "value": 0
+        }, {
+            "id": 3,
+            "name": "Avløser",
+            "value": 0
+        }],
+        "stocks": [],
+        "elements": [{
+            "nodes": [{
+                "id": "1",
+                "name": "Bård Gultvedt",
+                "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                "size": "60",
+                "description": ""
+            }]
+        }, {
+            "edges": []
+        }]
+    }, {
+        "fullName": "Kathrine Kleveland",
+        "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+        "key": 32,
+        "lastYear": 32,
+        "gender": "m",
+        "profession": null,
+        "residence": "",
+        "twitterAcnt": null,
+        "bio": "",
+        "subsidies": [{
+            "id": 1,
+            "name": "Dyrehold",
+            "value": 0
+        }, {
+            "id": 2,
+            "name": "Areal",
+            "value": 0
+        }, {
+            "id": 3,
+            "name": "Avløser",
+            "value": 0
+        }],
+        "stocks": [{
+            "id": 910747711,
+            "company": "ORKLA ASA",
+            "numStocksCompany": 1018930970,
+            "numStocks": 940,
+            "candidateYearOfBirth": "1966"
+        }],
+        "elements": [{
+            "nodes": [{
+                "id": "1",
+                "name": "Kathrine Kleveland",
+                "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                "size": "60",
+                "description": ""
+            }, {
+                "data": {
+                    "id": "8s",
+                    "name": "Stein Erik Hagen",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "Stein Erik Hagen eier aksjer i samme selskap som Kathrine Kleveland"
+                }
+            }, {
+                "data": {
+                    "id": "37s",
+                    "name": "Erik Lahnstein",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "Erik Lahnstein eier aksjer i samme selskap som Kathrine Kleveland"
+                }
+            }, {
+                "data": {
+                    "id": "39s",
+                    "name": "Bjørn Gimming",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "Bjørn Gimming eier aksjer i samme selskap som Kathrine Kleveland"
+                }
+            }, {
+                "data": {
+                    "id": "42s",
+                    "name": "John Arne Moen",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "John Arne Moen eier aksjer i samme selskap som Kathrine Kleveland"
+                }
+            }, {
+                "data": {
+                    "id": "50s",
+                    "name": "Anders Huus",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "Anders Huus eier aksjer i samme selskap som Kathrine Kleveland"
+                }
+            }]
+        }, {
+            "edges": [{
+                "data": {
+                    "source": "1",
+                    "target": "8s"
+                }
+            }, {
+                "data": {
+                    "source": "1",
+                    "target": "37s"
+                }
+            }, {
+                "data": {
+                    "source": "1",
+                    "target": "39s"
+                }
+            }, {
+                "data": {
+                    "source": "1",
+                    "target": "42s"
+                }
+            }, {
+                "data": {
+                    "source": "1",
+                    "target": "50s"
+                }
+            }]
+        }]
+    }, {
+        "fullName": "Brødrene Fatland",
+        "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+        "key": 33,
+        "lastYear": 33,
+        "gender": "m",
+        "profession": null,
+        "residence": "",
+        "twitterAcnt": null,
+        "bio": "",
+        "subsidies": [{
+            "id": 1,
+            "name": "Dyrehold",
+            "value": 0
+        }, {
+            "id": 2,
+            "name": "Areal",
+            "value": 0
+        }, {
+            "id": 3,
+            "name": "Avløser",
+            "value": 0
+        }],
+        "stocks": [],
+        "elements": [{
+            "nodes": [{
+                "id": "1",
+                "name": "Brødrene Fatland",
+                "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                "size": "60",
+                "description": ""
+            }]
+        }, {
+            "edges": []
+        }]
+    }, {
+        "fullName": "Peter Ruzicka",
+        "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+        "key": 34,
+        "lastYear": 34,
+        "gender": "m",
+        "profession": null,
+        "residence": "",
+        "twitterAcnt": null,
+        "bio": "",
+        "subsidies": [{
+            "id": 1,
+            "name": "Dyrehold",
+            "value": 0
+        }, {
+            "id": 2,
+            "name": "Areal",
+            "value": 0
+        }, {
+            "id": 3,
+            "name": "Avløser",
+            "value": 0
+        }],
+        "stocks": [{
+            "id": 984696876,
+            "company": "VENTOTENE HOLDING AS",
+            "numStocksCompany": 1,
+            "numStocks": 1,
+            "candidateYearOfBirth": "1964"
+        }],
+        "elements": [{
+            "nodes": [{
+                "id": "1",
+                "name": "Peter Ruzicka",
+                "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                "size": "60",
+                "description": ""
+            }]
+        }, {
+            "edges": []
+        }]
+    }, {
+        "fullName": "Harald Gjein",
+        "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+        "key": 35,
+        "lastYear": 35,
+        "gender": "m",
+        "profession": null,
+        "residence": "",
+        "twitterAcnt": null,
+        "bio": "",
+        "subsidies": [{
+            "id": 1,
+            "name": "Dyrehold",
+            "value": 0
+        }, {
+            "id": 2,
+            "name": "Areal",
+            "value": 0
+        }, {
+            "id": 3,
+            "name": "Avløser",
+            "value": 0
+        }],
+        "stocks": [],
+        "elements": [{
+            "nodes": [{
+                "id": "1",
+                "name": "Harald Gjein",
+                "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                "size": "60",
+                "description": ""
+            }]
+        }, {
+            "edges": []
+        }]
+    }, {
+        "fullName": "Lars Sørgård",
+        "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+        "key": 36,
+        "lastYear": 36,
+        "gender": "m",
+        "profession": null,
+        "residence": "",
+        "twitterAcnt": null,
+        "bio": "",
+        "subsidies": [{
+            "id": 1,
+            "name": "Dyrehold",
+            "value": 0
+        }, {
+            "id": 2,
+            "name": "Areal",
+            "value": 0
+        }, {
+            "id": 3,
+            "name": "Avløser",
+            "value": 0
+        }],
+        "stocks": [{
+            "id": 910301268,
+            "company": "ASKER OG BÆRUMS BUDSTIKKE AS",
+            "numStocksCompany": 9700000,
+            "numStocks": 600,
+            "candidateYearOfBirth": "1923"
+        }, {
+            "id": 915717268,
+            "company": "LOYNT INVEST AS",
+            "numStocksCompany": 2000,
+            "numStocks": 1000,
+            "candidateYearOfBirth": "1992"
+        }, {
+            "id": 976745493,
+            "company": "NORDIC PETROLEUM AS",
+            "numStocksCompany": 397369166,
+            "numStocks": 11649,
+            "candidateYearOfBirth": "1923"
+        }, {
+            "id": 989307606,
+            "company": "ARACA ENERGY ASA",
+            "numStocksCompany": 1479145808,
+            "numStocks": 83,
+            "candidateYearOfBirth": "1923"
+        }],
+        "elements": [{
+            "nodes": [{
+                "id": "1",
+                "name": "Lars Sørgård",
+                "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                "size": "60",
+                "description": ""
+            }]
+        }, {
+            "edges": []
+        }]
+    }, {
+        "fullName": "Erik Lahnstein",
+        "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+        "key": 37,
+        "lastYear": 37,
+        "gender": "m",
+        "profession": null,
+        "residence": "",
+        "twitterAcnt": null,
+        "bio": "",
+        "subsidies": [{
+            "id": 1,
+            "name": "Dyrehold",
+            "value": 0
+        }, {
+            "id": 2,
+            "name": "Areal",
+            "value": 0
+        }, {
+            "id": 3,
+            "name": "Avløser",
+            "value": 0
+        }],
+        "stocks": [{
+            "id": 910747711,
+            "company": "ORKLA ASA",
+            "numStocksCompany": 1018930970,
+            "numStocks": 185,
+            "candidateYearOfBirth": "1972"
+        }, {
+            "id": 979165285,
+            "company": "BYGGMA ASA",
+            "numStocksCompany": 7159866,
+            "numStocks": 272,
+            "candidateYearOfBirth": "1972"
+        }, {
+            "id": 981598717,
+            "company": "DIMENSIONS AGRI TECHNOLOGIES AS",
+            "numStocksCompany": 210382,
+            "numStocks": 1700,
+            "candidateYearOfBirth": "1972"
+        }, {
+            "id": 995568217,
+            "company": "GJENSIDIGE FORSIKRING ASA",
+            "numStocksCompany": 500000000,
+            "numStocks": 1381,
+            "candidateYearOfBirth": "1972"
+        }, {
+            "id": 998753562,
+            "company": "BORREGAARD ASA",
+            "numStocksCompany": 100000000,
+            "numStocks": 386,
+            "candidateYearOfBirth": "1972"
+        }],
+        "elements": [{
+            "nodes": [{
+                "id": "1",
+                "name": "Erik Lahnstein",
+                "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                "size": "60",
+                "description": ""
+            }, {
+                "data": {
+                    "id": "2s",
+                    "name": "Leif Forsell",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "Leif Forsell eier aksjer i samme selskap som Erik Lahnstein"
+                }
+            }, {
+                "data": {
+                    "id": "8s",
+                    "name": "Stein Erik Hagen",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "Stein Erik Hagen eier aksjer i samme selskap som Erik Lahnstein"
+                }
+            }, {
+                "data": {
+                    "id": "10s",
+                    "name": "Geir Inge Stokke",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "Geir Inge Stokke eier aksjer i samme selskap som Erik Lahnstein"
+                }
+            }, {
+                "data": {
+                    "id": "15s",
+                    "name": "John Arne Ulvan",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "John Arne Ulvan eier aksjer i samme selskap som Erik Lahnstein"
+                }
+            }, {
+                "data": {
+                    "id": "31s",
+                    "name": "Anne Skuterud",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "Anne Skuterud eier aksjer i samme selskap som Erik Lahnstein"
+                }
+            }, {
+                "data": {
+                    "id": "33s",
+                    "name": "Kathrine Kleveland",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "Kathrine Kleveland eier aksjer i samme selskap som Erik Lahnstein"
+                }
+            }, {
+                "data": {
+                    "id": "39s",
+                    "name": "Bjørn Gimming",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "Bjørn Gimming eier aksjer i samme selskap som Erik Lahnstein"
+                }
+            }, {
+                "data": {
+                    "id": "41s",
+                    "name": "Per Roskifte",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "Per Roskifte eier aksjer i samme selskap som Erik Lahnstein"
+                }
+            }, {
+                "data": {
+                    "id": "42s",
+                    "name": "John Arne Moen",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "John Arne Moen eier aksjer i samme selskap som Erik Lahnstein"
+                }
+            }, {
+                "data": {
+                    "id": "50s",
+                    "name": "Anders Huus",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "Anders Huus eier aksjer i samme selskap som Erik Lahnstein"
+                }
+            }]
+        }, {
+            "edges": [{
+                "data": {
+                    "source": "1",
+                    "target": "2s"
+                }
+            }, {
+                "data": {
+                    "source": "1",
+                    "target": "8s"
+                }
+            }, {
+                "data": {
+                    "source": "1",
+                    "target": "10s"
+                }
+            }, {
+                "data": {
+                    "source": "1",
+                    "target": "15s"
+                }
+            }, {
+                "data": {
+                    "source": "1",
+                    "target": "31s"
+                }
+            }, {
+                "data": {
+                    "source": "1",
+                    "target": "33s"
+                }
+            }, {
+                "data": {
+                    "source": "1",
+                    "target": "39s"
+                }
+            }, {
+                "data": {
+                    "source": "1",
+                    "target": "41s"
+                }
+            }, {
+                "data": {
+                    "source": "1",
+                    "target": "42s"
+                }
+            }, {
+                "data": {
+                    "source": "1",
+                    "target": "50s"
+                }
+            }]
+        }]
+    }, {
+        "fullName": "Odd Magne Harstad",
+        "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+        "key": 38,
+        "lastYear": 38,
+        "gender": "m",
+        "profession": null,
+        "residence": "",
+        "twitterAcnt": null,
+        "bio": "",
+        "subsidies": [{
+            "id": 1,
+            "name": "Dyrehold",
+            "value": 0
+        }, {
+            "id": 2,
+            "name": "Areal",
+            "value": 0
+        }, {
+            "id": 3,
+            "name": "Avløser",
+            "value": 0
+        }],
+        "stocks": [{
+            "id": 915814581,
+            "company": "LL SETESDAL BILRUTER",
+            "numStocksCompany": 33132,
+            "numStocks": 5,
+            "candidateYearOfBirth": "1958"
+        }, {
+            "id": 980118223,
+            "company": "FINSPAR AS",
+            "numStocksCompany": 1000,
+            "numStocks": 500,
+            "candidateYearOfBirth": "1958"
+        }, {
+            "id": 981276957,
+            "company": "DNB ASA",
+            "numStocksCompany": 1628798861,
+            "numStocks": 100,
+            "candidateYearOfBirth": "1969"
+        }, {
+            "id": 992457120,
+            "company": "MARENSETER HOLDING AS",
+            "numStocksCompany": 100,
+            "numStocks": 100,
+            "candidateYearOfBirth": "1969"
+        }],
+        "elements": [{
+            "nodes": [{
+                "id": "1",
+                "name": "Odd Magne Harstad",
+                "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                "size": "60",
+                "description": ""
+            }, {
+                "data": {
+                    "id": "2s",
+                    "name": "Leif Forsell",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "Leif Forsell eier aksjer i samme selskap som Odd Magne Harstad"
+                }
+            }, {
+                "data": {
+                    "id": "17s",
+                    "name": "Arne Kristian Kolberg",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "Arne Kristian Kolberg eier aksjer i samme selskap som Odd Magne Harstad"
+                }
+            }, {
+                "data": {
+                    "id": "31s",
+                    "name": "Anne Skuterud",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "Anne Skuterud eier aksjer i samme selskap som Odd Magne Harstad"
+                }
+            }, {
+                "data": {
+                    "id": "39s",
+                    "name": "Bjørn Gimming",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "Bjørn Gimming eier aksjer i samme selskap som Odd Magne Harstad"
+                }
+            }, {
+                "data": {
+                    "id": "42s",
+                    "name": "John Arne Moen",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "John Arne Moen eier aksjer i samme selskap som Odd Magne Harstad"
+                }
+            }]
+        }, {
+            "edges": [{
+                "data": {
+                    "source": "1",
+                    "target": "2s"
+                }
+            }, {
+                "data": {
+                    "source": "1",
+                    "target": "17s"
+                }
+            }, {
+                "data": {
+                    "source": "1",
+                    "target": "31s"
+                }
+            }, {
+                "data": {
+                    "source": "1",
+                    "target": "39s"
+                }
+            }, {
+                "data": {
+                    "source": "1",
+                    "target": "42s"
+                }
+            }]
+        }]
+    }, {
+        "fullName": "Bjørn Gimming",
+        "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+        "key": 39,
+        "lastYear": 39,
+        "gender": "m",
+        "profession": null,
+        "residence": "",
+        "twitterAcnt": null,
+        "bio": "",
+        "subsidies": [{
+            "id": 1,
+            "name": "Dyrehold",
+            "value": 0
+        }, {
+            "id": 2,
+            "name": "Areal",
+            "value": 0
+        }, {
+            "id": 3,
+            "name": "Avløser",
+            "value": 0
+        }],
+        "stocks": [{
+            "id": 910747711,
+            "company": "ORKLA ASA",
+            "numStocksCompany": 1018930970,
+            "numStocks": 3000,
+            "candidateYearOfBirth": "1972"
+        }, {
+            "id": 911750961,
+            "company": "NORSKE SKOGINDUSTRIER ASA",
+            "numStocksCompany": 278994995,
+            "numStocks": 1211,
+            "candidateYearOfBirth": "1972"
+        }, {
+            "id": 916235291,
+            "company": "PETROLEUM GEO-SERVICES ASA",
+            "numStocksCompany": 325079996,
+            "numStocks": 9,
+            "candidateYearOfBirth": "1972"
+        }, {
+            "id": 920237126,
+            "company": "ATEA ASA",
+            "numStocksCompany": 105769672,
+            "numStocks": 561,
+            "candidateYearOfBirth": "1972"
+        }, {
+            "id": 927124238,
+            "company": "TOMRA SYSTEMS ASA",
+            "numStocksCompany": 148020078,
+            "numStocks": 200,
+            "candidateYearOfBirth": "1972"
+        }, {
+            "id": 981276957,
+            "company": "DNB ASA",
+            "numStocksCompany": 1628798861,
+            "numStocks": 2000,
+            "candidateYearOfBirth": "1972"
+        }, {
+            "id": 982463718,
+            "company": "TELENOR ASA",
+            "numStocksCompany": 1501458030,
+            "numStocks": 100,
+            "candidateYearOfBirth": "1972"
+        }],
+        "elements": [{
+            "nodes": [{
+                "id": "1",
+                "name": "Bjørn Gimming",
+                "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                "size": "60",
+                "description": ""
+            }, {
+                "data": {
+                    "id": "2s",
+                    "name": "Leif Forsell",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "Leif Forsell eier aksjer i samme selskap som Bjørn Gimming"
+                }
+            }, {
+                "data": {
+                    "id": "8s",
+                    "name": "Stein Erik Hagen",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "Stein Erik Hagen eier aksjer i samme selskap som Bjørn Gimming"
+                }
+            }, {
+                "data": {
+                    "id": "10s",
+                    "name": "Geir Inge Stokke",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "Geir Inge Stokke eier aksjer i samme selskap som Bjørn Gimming"
+                }
+            }, {
+                "data": {
+                    "id": "15s",
+                    "name": "John Arne Ulvan",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "John Arne Ulvan eier aksjer i samme selskap som Bjørn Gimming"
+                }
+            }, {
+                "data": {
+                    "id": "17s",
+                    "name": "Arne Kristian Kolberg",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "Arne Kristian Kolberg eier aksjer i samme selskap som Bjørn Gimming"
+                }
+            }, {
+                "data": {
+                    "id": "31s",
+                    "name": "Anne Skuterud",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "Anne Skuterud eier aksjer i samme selskap som Bjørn Gimming"
+                }
+            }, {
+                "data": {
+                    "id": "33s",
+                    "name": "Kathrine Kleveland",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "Kathrine Kleveland eier aksjer i samme selskap som Bjørn Gimming"
+                }
+            }, {
+                "data": {
+                    "id": "38s",
+                    "name": "Erik Lahnstein",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "Erik Lahnstein eier aksjer i samme selskap som Bjørn Gimming"
+                }
+            }, {
+                "data": {
+                    "id": "39s",
+                    "name": "Odd Magne Harstad",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "Odd Magne Harstad eier aksjer i samme selskap som Bjørn Gimming"
+                }
+            }, {
+                "data": {
+                    "id": "41s",
+                    "name": "Per Roskifte",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "Per Roskifte eier aksjer i samme selskap som Bjørn Gimming"
+                }
+            }, {
+                "data": {
+                    "id": "42s",
+                    "name": "John Arne Moen",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "John Arne Moen eier aksjer i samme selskap som Bjørn Gimming"
+                }
+            }, {
+                "data": {
+                    "id": "50s",
+                    "name": "Anders Huus",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "Anders Huus eier aksjer i samme selskap som Bjørn Gimming"
+                }
+            }, {
+                "data": {
+                    "id": "53s",
+                    "name": "Harald Lein",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "Harald Lein eier aksjer i samme selskap som Bjørn Gimming"
+                }
+            }]
+        }, {
+            "edges": [{
+                "data": {
+                    "source": "1",
+                    "target": "2s"
+                }
+            }, {
+                "data": {
+                    "source": "1",
+                    "target": "8s"
+                }
+            }, {
+                "data": {
+                    "source": "1",
+                    "target": "10s"
+                }
+            }, {
+                "data": {
+                    "source": "1",
+                    "target": "15s"
+                }
+            }, {
+                "data": {
+                    "source": "1",
+                    "target": "17s"
+                }
+            }, {
+                "data": {
+                    "source": "1",
+                    "target": "31s"
+                }
+            }, {
+                "data": {
+                    "source": "1",
+                    "target": "33s"
+                }
+            }, {
+                "data": {
+                    "source": "1",
+                    "target": "38s"
+                }
+            }, {
+                "data": {
+                    "source": "1",
+                    "target": "39s"
+                }
+            }, {
+                "data": {
+                    "source": "1",
+                    "target": "41s"
+                }
+            }, {
+                "data": {
+                    "source": "1",
+                    "target": "42s"
+                }
+            }, {
+                "data": {
+                    "source": "1",
+                    "target": "50s"
+                }
+            }, {
+                "data": {
+                    "source": "1",
+                    "target": "53s"
+                }
+            }]
+        }]
+    }, {
+        "fullName": "Olaf Godli",
+        "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+        "key": 40,
+        "lastYear": 40,
+        "gender": "m",
+        "profession": null,
+        "residence": "",
+        "twitterAcnt": null,
+        "bio": "",
+        "subsidies": [{
+            "id": 1,
+            "name": "Dyrehold",
+            "value": 0
+        }, {
+            "id": 2,
+            "name": "Areal",
+            "value": 0
+        }, {
+            "id": 3,
+            "name": "Avløser",
+            "value": 0
+        }],
+        "stocks": [],
+        "elements": [{
+            "nodes": [{
+                "id": "1",
+                "name": "Olaf Godli",
+                "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                "size": "60",
+                "description": ""
+            }]
+        }, {
+            "edges": []
+        }]
+    }, {
+        "fullName": "Per Roskifte",
+        "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+        "key": 41,
+        "lastYear": 41,
+        "gender": "m",
+        "profession": null,
+        "residence": "",
+        "twitterAcnt": null,
+        "bio": "",
+        "subsidies": [{
+            "id": 1,
+            "name": "Dyrehold",
+            "value": 0
+        }, {
+            "id": 2,
+            "name": "Areal",
+            "value": 0
+        }, {
+            "id": 3,
+            "name": "Avløser",
+            "value": 0
+        }],
+        "stocks": [{
+            "id": 912508978,
+            "company": "PIROL INVEST AS",
+            "numStocksCompany": 340,
+            "numStocks": 340,
+            "candidateYearOfBirth": "1956"
+        }, {
+            "id": 917103801,
+            "company": "VEIDEKKE ASA",
+            "numStocksCompany": 133704942,
+            "numStocks": 1650,
+            "candidateYearOfBirth": "1956"
+        }, {
+            "id": 923609016,
+            "company": "STATOIL ASA",
+            "numStocksCompany": 3245049411,
+            "numStocks": 630,
+            "candidateYearOfBirth": "1956"
+        }, {
+            "id": 937889275,
+            "company": "SPAREBANK 1 RINGERIKE HADELAND",
+            "numStocksCompany": 13946652,
+            "numStocks": 450,
+            "candidateYearOfBirth": "1956"
+        }, {
+            "id": 960514718,
+            "company": "SALMAR ASA",
+            "numStocksCompany": 113299999,
+            "numStocks": 1600,
+            "candidateYearOfBirth": "1956"
+        }, {
+            "id": 964118191,
+            "company": "MARINE HARVEST ASA",
+            "numStocksCompany": 450085652,
+            "numStocks": 200,
+            "candidateYearOfBirth": "1956"
+        }, {
+            "id": 982463718,
+            "company": "TELENOR ASA",
+            "numStocksCompany": 1501458030,
+            "numStocks": 900,
+            "candidateYearOfBirth": "1956"
+        }, {
+            "id": 986228608,
+            "company": "YARA INTERNATIONAL ASA",
+            "numStocksCompany": 273217830,
+            "numStocks": 150,
+            "candidateYearOfBirth": "1956"
+        }, {
+            "id": 989193309,
+            "company": "FJELLENDIN AS",
+            "numStocksCompany": 1300,
+            "numStocks": 1,
+            "candidateYearOfBirth": "1956"
+        }, {
+            "id": 992587776,
+            "company": "SELVAAG BOLIG ASA",
+            "numStocksCompany": 93765688,
+            "numStocks": 3000,
+            "candidateYearOfBirth": "1956"
+        }, {
+            "id": 995277905,
+            "company": "WILH. WILHELMSEN HOLDING ASA",
+            "numStocksCompany": 46503824,
+            "numStocks": 400,
+            "candidateYearOfBirth": "1956"
+        }, {
+            "id": 995306158,
+            "company": "XXL ASA",
+            "numStocksCompany": 138512123,
+            "numStocks": 369,
+            "candidateYearOfBirth": "1956"
+        }, {
+            "id": 995568217,
+            "company": "GJENSIDIGE FORSIKRING ASA",
+            "numStocksCompany": 500000000,
+            "numStocks": 250,
+            "candidateYearOfBirth": "1956"
+        }],
+        "elements": [{
+            "nodes": [{
+                "id": "1",
+                "name": "Per Roskifte",
+                "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                "size": "60",
+                "description": ""
+            }, {
+                "data": {
+                    "id": "2s",
+                    "name": "Leif Forsell",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "Leif Forsell eier aksjer i samme selskap som Per Roskifte"
+                }
+            }, {
+                "data": {
+                    "id": "3s",
+                    "name": "Lars Petter Bartnes",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "Lars Petter Bartnes eier aksjer i samme selskap som Per Roskifte"
+                }
+            }, {
+                "data": {
+                    "id": "10s",
+                    "name": "Geir Inge Stokke",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "Geir Inge Stokke eier aksjer i samme selskap som Per Roskifte"
+                }
+            }, {
+                "data": {
+                    "id": "15s",
+                    "name": "John Arne Ulvan",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "John Arne Ulvan eier aksjer i samme selskap som Per Roskifte"
+                }
+            }, {
+                "data": {
+                    "id": "31s",
+                    "name": "Anne Skuterud",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "Anne Skuterud eier aksjer i samme selskap som Per Roskifte"
+                }
+            }, {
+                "data": {
+                    "id": "38s",
+                    "name": "Erik Lahnstein",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "Erik Lahnstein eier aksjer i samme selskap som Per Roskifte"
+                }
+            }, {
+                "data": {
+                    "id": "40s",
+                    "name": "Bjørn Gimming",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "Bjørn Gimming eier aksjer i samme selskap som Per Roskifte"
+                }
+            }, {
+                "data": {
+                    "id": "42s",
+                    "name": "John Arne Moen",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "John Arne Moen eier aksjer i samme selskap som Per Roskifte"
+                }
+            }]
+        }, {
+            "edges": [{
+                "data": {
+                    "source": "1",
+                    "target": "2s"
+                }
+            }, {
+                "data": {
+                    "source": "1",
+                    "target": "3s"
+                }
+            }, {
+                "data": {
+                    "source": "1",
+                    "target": "10s"
+                }
+            }, {
+                "data": {
+                    "source": "1",
+                    "target": "15s"
+                }
+            }, {
+                "data": {
+                    "source": "1",
+                    "target": "31s"
+                }
+            }, {
+                "data": {
+                    "source": "1",
+                    "target": "38s"
+                }
+            }, {
+                "data": {
+                    "source": "1",
+                    "target": "40s"
+                }
+            }, {
+                "data": {
+                    "source": "1",
+                    "target": "42s"
+                }
+            }]
+        }]
+    }, {
+        "fullName": "John Arne Moen",
+        "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+        "key": 42,
+        "lastYear": 42,
+        "gender": "m",
+        "profession": null,
+        "residence": "",
+        "twitterAcnt": null,
+        "bio": "",
+        "subsidies": [{
+            "id": 1,
+            "name": "Dyrehold",
+            "value": 0
+        }, {
+            "id": 2,
+            "name": "Areal",
+            "value": 0
+        }, {
+            "id": 3,
+            "name": "Avløser",
+            "value": 0
+        }],
+        "stocks": [{
+            "id": 200332849,
+            "company": "DEEP SEA SUPPLY PLC",
+            "numStocksCompany": 291330216,
+            "numStocks": 2000,
+            "candidateYearOfBirth": "1967"
+        }, {
+            "id": 252539018,
+            "company": "SONGA OFFSHORE SE",
+            "numStocksCompany": 112775810,
+            "numStocks": 580,
+            "candidateYearOfBirth": "1967"
+        }, {
+            "id": 260000276,
+            "company": "PETROLIA SE",
+            "numStocksCompany": 27235867,
+            "numStocks": 180,
+            "candidateYearOfBirth": "1967"
+        }, {
+            "id": 260001256,
+            "company": "GOLDEN OCEAN GROUP LIMITED",
+            "numStocksCompany": 97539725,
+            "numStocks": 167,
+            "candidateYearOfBirth": "1967"
+        }, {
+            "id": 815603702,
+            "company": "JB ANLEGGSSERVICE AS",
+            "numStocksCompany": 30,
+            "numStocks": 15,
+            "candidateYearOfBirth": "1979"
+        }, {
+            "id": 910747711,
+            "company": "ORKLA ASA",
+            "numStocksCompany": 1018930970,
+            "numStocks": 1000,
+            "candidateYearOfBirth": "1967"
+        }, {
+            "id": 911750961,
+            "company": "NORSKE SKOGINDUSTRIER ASA",
+            "numStocksCompany": 278994995,
+            "numStocks": 296,
+            "candidateYearOfBirth": "1946"
+        }, {
+            "id": 912007782,
+            "company": "GLAMOX AS",
+            "numStocksCompany": 65988668,
+            "numStocks": 40,
+            "candidateYearOfBirth": "1940"
+        }, {
+            "id": 914778271,
+            "company": "NORSK HYDRO ASA",
+            "numStocksCompany": 2068998276,
+            "numStocks": 95,
+            "candidateYearOfBirth": "1932"
+        }, {
+            "id": 915126731,
+            "company": "FROHEIM AS",
+            "numStocksCompany": 10000,
+            "numStocks": 200,
+            "candidateYearOfBirth": "1965"
+        }, {
+            "id": 916300484,
+            "company": "STOREBRAND ASA",
+            "numStocksCompany": 449909891,
+            "numStocks": 47,
+            "candidateYearOfBirth": "1927"
+        }, {
+            "id": 920237126,
+            "company": "ATEA ASA",
+            "numStocksCompany": 105769672,
+            "numStocks": 500,
+            "candidateYearOfBirth": "1967"
+        }, {
+            "id": 923609016,
+            "company": "STATOIL ASA",
+            "numStocksCompany": 3245049411,
+            "numStocks": 158,
+            "candidateYearOfBirth": "1932"
+        }, {
+            "id": 923609016,
+            "company": "STATOIL ASA",
+            "numStocksCompany": 3245049411,
+            "numStocks": 1277,
+            "candidateYearOfBirth": "1939"
+        }, {
+            "id": 937900864,
+            "company": "NESSET SPAREBANK",
+            "numStocksCompany": 800000,
+            "numStocks": 400,
+            "candidateYearOfBirth": "1930"
+        }, {
+            "id": 942593821,
+            "company": "KONGSBERG AUTOMOTIVE ASA",
+            "numStocksCompany": 406768131,
+            "numStocks": 16000,
+            "candidateYearOfBirth": "1967"
+        }, {
+            "id": 964118191,
+            "company": "MARINE HARVEST ASA",
+            "numStocksCompany": 450085652,
+            "numStocks": 250,
+            "candidateYearOfBirth": "1967"
+        }, {
+            "id": 965920358,
+            "company": "NORWEGIAN AIR SHUTTLE ASA",
+            "numStocksCompany": 35759639,
+            "numStocks": 156,
+            "candidateYearOfBirth": "1967"
+        }, {
+            "id": 965920358,
+            "company": "NORWEGIAN AIR SHUTTLE ASA",
+            "numStocksCompany": 35759639,
+            "numStocks": 35,
+            "candidateYearOfBirth": "1965"
+        }, {
+            "id": 966011726,
+            "company": "NORDIC SEMICONDUCTOR ASA",
+            "numStocksCompany": 163481600,
+            "numStocks": 2000,
+            "candidateYearOfBirth": "1967"
+        }, {
+            "id": 966033967,
+            "company": "SOLON EIENDOM ASA",
+            "numStocksCompany": 9052344387,
+            "numStocks": 18000,
+            "candidateYearOfBirth": "1967"
+        }, {
+            "id": 974529459,
+            "company": "OPERA SOFTWARE ASA",
+            "numStocksCompany": 149477429,
+            "numStocks": 1000,
+            "candidateYearOfBirth": "1967"
+        }, {
+            "id": 975350940,
+            "company": "LERØY SEAFOOD GROUP ASA",
+            "numStocksCompany": 59577368,
+            "numStocks": 20,
+            "candidateYearOfBirth": "1965"
+        }, {
+            "id": 977258561,
+            "company": "REC SILICON ASA",
+            "numStocksCompany": 2543818785,
+            "numStocks": 4450,
+            "candidateYearOfBirth": "1967"
+        }, {
+            "id": 979938799,
+            "company": "NEL ASA",
+            "numStocksCompany": 683678252,
+            "numStocks": 78341,
+            "candidateYearOfBirth": "1967"
+        }, {
+            "id": 981276957,
+            "company": "DNB ASA",
+            "numStocksCompany": 1628798861,
+            "numStocks": 460,
+            "candidateYearOfBirth": "1967"
+        }, {
+            "id": 981953134,
+            "company": "ZALARIS ASA",
+            "numStocksCompany": 19124263,
+            "numStocks": 900,
+            "candidateYearOfBirth": "1967"
+        }, {
+            "id": 982463718,
+            "company": "TELENOR ASA",
+            "numStocksCompany": 1501458030,
+            "numStocks": 31,
+            "candidateYearOfBirth": "1965"
+        }, {
+            "id": 983218180,
+            "company": "SEVAN MARINE ASA",
+            "numStocksCompany": 52606999,
+            "numStocks": 22,
+            "candidateYearOfBirth": "1967"
+        }, {
+            "id": 984195486,
+            "company": "ELECTROMAGNETIC GEOSERVICES ASA",
+            "numStocksCompany": 32794139,
+            "numStocks": 1100,
+            "candidateYearOfBirth": "1967"
+        }, {
+            "id": 986228608,
+            "company": "YARA INTERNATIONAL ASA",
+            "numStocksCompany": 273217830,
+            "numStocks": 19,
+            "candidateYearOfBirth": "1932"
+        }, {
+            "id": 987470569,
+            "company": "ARCUS ASA",
+            "numStocksCompany": 68023255,
+            "numStocks": 844,
+            "candidateYearOfBirth": "1967"
+        }, {
+            "id": 990746869,
+            "company": "NEMO BRØNNBORING OG MASKIN AS",
+            "numStocksCompany": 100,
+            "numStocks": 25,
+            "candidateYearOfBirth": "1978"
+        }, {
+            "id": 991356568,
+            "company": "FURUTANGEN AKTIVITETSSENTER AS",
+            "numStocksCompany": 2963,
+            "numStocks": 3,
+            "candidateYearOfBirth": "1963"
+        }, {
+            "id": 991356568,
+            "company": "FURUTANGEN AKTIVITETSSENTER AS",
+            "numStocksCompany": 2963,
+            "numStocks": 1,
+            "candidateYearOfBirth": "1939"
+        }, {
+            "id": 994051067,
+            "company": "PANORO ENERGY ASA",
+            "numStocksCompany": 42502196,
+            "numStocks": 52,
+            "candidateYearOfBirth": "1967"
+        }, {
+            "id": 994297422,
+            "company": "NORDIC NANOVECTOR ASA",
+            "numStocksCompany": 48974618,
+            "numStocks": 2200,
+            "candidateYearOfBirth": "1967"
+        }, {
+            "id": 998753562,
+            "company": "BORREGAARD ASA",
+            "numStocksCompany": 100000000,
+            "numStocks": 1785,
+            "candidateYearOfBirth": "1967"
+        }, {
+            "id": 999296432,
+            "company": "ENTRA ASA",
+            "numStocksCompany": 183732461,
+            "numStocks": 775,
+            "candidateYearOfBirth": "1967"
+        }],
+        "elements": [{
+            "nodes": [{
+                "id": "1",
+                "name": "John Arne Moen",
+                "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                "size": "60",
+                "description": ""
+            }, {
+                "data": {
+                    "id": "2s",
+                    "name": "Leif Forsell",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "Leif Forsell eier aksjer i samme selskap som John Arne Moen"
+                }
+            }, {
+                "data": {
+                    "id": "8s",
+                    "name": "Stein Erik Hagen",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "Stein Erik Hagen eier aksjer i samme selskap som John Arne Moen"
+                }
+            }, {
+                "data": {
+                    "id": "10s",
+                    "name": "Geir Inge Stokke",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "Geir Inge Stokke eier aksjer i samme selskap som John Arne Moen"
+                }
+            }, {
+                "data": {
+                    "id": "15s",
+                    "name": "John Arne Ulvan",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "John Arne Ulvan eier aksjer i samme selskap som John Arne Moen"
+                }
+            }, {
+                "data": {
+                    "id": "17s",
+                    "name": "Arne Kristian Kolberg",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "Arne Kristian Kolberg eier aksjer i samme selskap som John Arne Moen"
+                }
+            }, {
+                "data": {
+                    "id": "22s",
+                    "name": "Stein Rune Flaen",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "Stein Rune Flaen eier aksjer i samme selskap som John Arne Moen"
+                }
+            }, {
+                "data": {
+                    "id": "31s",
+                    "name": "Anne Skuterud",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "Anne Skuterud eier aksjer i samme selskap som John Arne Moen"
+                }
+            }, {
+                "data": {
+                    "id": "33s",
+                    "name": "Kathrine Kleveland",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "Kathrine Kleveland eier aksjer i samme selskap som John Arne Moen"
+                }
+            }, {
+                "data": {
+                    "id": "38s",
+                    "name": "Erik Lahnstein",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "Erik Lahnstein eier aksjer i samme selskap som John Arne Moen"
+                }
+            }, {
+                "data": {
+                    "id": "39s",
+                    "name": "Odd Magne Harstad",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "Odd Magne Harstad eier aksjer i samme selskap som John Arne Moen"
+                }
+            }, {
+                "data": {
+                    "id": "40s",
+                    "name": "Bjørn Gimming",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "Bjørn Gimming eier aksjer i samme selskap som John Arne Moen"
+                }
+            }, {
+                "data": {
+                    "id": "42s",
+                    "name": "Per Roskifte",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "Per Roskifte eier aksjer i samme selskap som John Arne Moen"
+                }
+            }, {
+                "data": {
+                    "id": "50s",
+                    "name": "Anders Huus",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "Anders Huus eier aksjer i samme selskap som John Arne Moen"
+                }
+            }, {
+                "data": {
+                    "id": "53s",
+                    "name": "Harald Lein",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "Harald Lein eier aksjer i samme selskap som John Arne Moen"
+                }
+            }]
+        }, {
+            "edges": [{
+                "data": {
+                    "source": "1",
+                    "target": "2s"
+                }
+            }, {
+                "data": {
+                    "source": "1",
+                    "target": "8s"
+                }
+            }, {
+                "data": {
+                    "source": "1",
+                    "target": "10s"
+                }
+            }, {
+                "data": {
+                    "source": "1",
+                    "target": "15s"
+                }
+            }, {
+                "data": {
+                    "source": "1",
+                    "target": "17s"
+                }
+            }, {
+                "data": {
+                    "source": "1",
+                    "target": "22s"
+                }
+            }, {
+                "data": {
+                    "source": "1",
+                    "target": "31s"
+                }
+            }, {
+                "data": {
+                    "source": "1",
+                    "target": "33s"
+                }
+            }, {
+                "data": {
+                    "source": "1",
+                    "target": "38s"
+                }
+            }, {
+                "data": {
+                    "source": "1",
+                    "target": "39s"
+                }
+            }, {
+                "data": {
+                    "source": "1",
+                    "target": "40s"
+                }
+            }, {
+                "data": {
+                    "source": "1",
+                    "target": "42s"
+                }
+            }, {
+                "data": {
+                    "source": "1",
+                    "target": "50s"
+                }
+            }, {
+                "data": {
+                    "source": "1",
+                    "target": "53s"
+                }
+            }]
+        }]
+    }, {
+        "fullName": "Ellen Hambro",
+        "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+        "key": 43,
+        "lastYear": 43,
+        "gender": "m",
+        "profession": null,
+        "residence": "",
+        "twitterAcnt": null,
+        "bio": "",
+        "subsidies": [{
+            "id": 1,
+            "name": "Dyrehold",
+            "value": 0
+        }, {
+            "id": 2,
+            "name": "Areal",
+            "value": 0
+        }, {
+            "id": 3,
+            "name": "Avløser",
+            "value": 0
+        }],
+        "stocks": [],
+        "elements": [{
+            "nodes": [{
+                "id": "1",
+                "name": "Ellen Hambro",
+                "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                "size": "60",
+                "description": ""
+            }]
+        }, {
+            "edges": []
+        }]
+    }, {
+        "fullName": "Aina Bartmann",
+        "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+        "key": 44,
+        "lastYear": 44,
+        "gender": "m",
+        "profession": null,
+        "residence": "",
+        "twitterAcnt": null,
+        "bio": "",
+        "subsidies": [{
+            "id": 1,
+            "name": "Dyrehold",
+            "value": 0
+        }, {
+            "id": 2,
+            "name": "Areal",
+            "value": 0
+        }, {
+            "id": 3,
+            "name": "Avløser",
+            "value": 0
+        }],
+        "stocks": [{
+            "id": 925350605,
+            "company": "KLASSEKAMPEN AS",
+            "numStocksCompany": 51705,
+            "numStocks": 2,
+            "candidateYearOfBirth": "1959"
+        }],
+        "elements": [{
+            "nodes": [{
+                "id": "1",
+                "name": "Aina Bartmann",
+                "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                "size": "60",
+                "description": ""
+            }]
+        }, {
+            "edges": []
+        }]
+    }, {
+        "fullName": "Trond Kjempekjenn",
+        "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+        "key": 45,
+        "lastYear": 45,
+        "gender": "m",
+        "profession": null,
+        "residence": "",
+        "twitterAcnt": null,
+        "bio": "",
+        "subsidies": [{
+            "id": 1,
+            "name": "Dyrehold",
+            "value": 0
+        }, {
+            "id": 2,
+            "name": "Areal",
+            "value": 0
+        }, {
+            "id": 3,
+            "name": "Avløser",
+            "value": 0
+        }],
+        "stocks": [{
+            "id": 938803595,
+            "company": "CECON ASA",
+            "numStocksCompany": 181311889,
+            "numStocks": 66800,
+            "candidateYearOfBirth": "1973"
+        }],
+        "elements": [{
+            "nodes": [{
+                "id": "1",
+                "name": "Trond Kjempekjenn",
+                "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                "size": "60",
+                "description": ""
+            }]
+        }, {
+            "edges": []
+        }]
+    }, {
+        "fullName": "Iver Gamme",
+        "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+        "key": 46,
+        "lastYear": 46,
+        "gender": "m",
+        "profession": null,
+        "residence": "",
+        "twitterAcnt": null,
+        "bio": "",
+        "subsidies": [{
+            "id": 1,
+            "name": "Dyrehold",
+            "value": 0
+        }, {
+            "id": 2,
+            "name": "Areal",
+            "value": 0
+        }, {
+            "id": 3,
+            "name": "Avløser",
+            "value": 0
+        }],
+        "stocks": [{
+            "id": 252590064,
+            "company": "THE SCOTTISH SALMON COMPANY PLC",
+            "numStocksCompany": 193445171,
+            "numStocks": 175,
+            "candidateYearOfBirth": "1975"
+        }, {
+            "id": 889186232,
+            "company": "THIN FILM ELECTRONICS ASA",
+            "numStocksCompany": 816759117,
+            "numStocks": 7199,
+            "candidateYearOfBirth": "1975"
+        }, {
+            "id": 916329717,
+            "company": "STRAND UNIKORN AS",
+            "numStocksCompany": 2273189,
+            "numStocks": 176,
+            "candidateYearOfBirth": "1975"
+        }, {
+            "id": 916329717,
+            "company": "STRAND UNIKORN AS",
+            "numStocksCompany": 2273189,
+            "numStocks": 623,
+            "candidateYearOfBirth": "1952"
+        }],
+        "elements": [{
+            "nodes": [{
+                "id": "1",
+                "name": "Iver Gamme",
+                "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                "size": "60",
+                "description": ""
+            }]
+        }, {
+            "edges": []
+        }]
+    }, {
+        "fullName": "Einar Frogner",
+        "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+        "key": 47,
+        "lastYear": 47,
+        "gender": "m",
+        "profession": null,
+        "residence": "",
+        "twitterAcnt": null,
+        "bio": "",
+        "subsidies": [{
+            "id": 1,
+            "name": "Dyrehold",
+            "value": 0
+        }, {
+            "id": 2,
+            "name": "Areal",
+            "value": 0
+        }, {
+            "id": 3,
+            "name": "Avløser",
+            "value": 0
+        }],
+        "stocks": [],
+        "elements": [{
+            "nodes": [{
+                "id": "1",
+                "name": "Einar Frogner",
+                "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                "size": "60",
+                "description": ""
+            }]
+        }, {
+            "edges": []
+        }]
+    }, {
+        "fullName": "Anne Marie Glosli",
+        "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+        "key": 48,
+        "lastYear": 48,
+        "gender": "m",
+        "profession": null,
+        "residence": "",
+        "twitterAcnt": null,
+        "bio": "",
+        "subsidies": [{
+            "id": 1,
+            "name": "Dyrehold",
+            "value": 0
+        }, {
+            "id": 2,
+            "name": "Areal",
+            "value": 0
+        }, {
+            "id": 3,
+            "name": "Avløser",
+            "value": 0
+        }],
+        "stocks": [],
+        "elements": [{
+            "nodes": [{
+                "id": "1",
+                "name": "Anne Marie Glosli",
+                "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                "size": "60",
+                "description": ""
+            }]
+        }, {
+            "edges": []
+        }]
+    }, {
+        "fullName": "Johnny Ødegård",
+        "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+        "key": 49,
+        "lastYear": 49,
+        "gender": "m",
+        "profession": null,
+        "residence": "",
+        "twitterAcnt": null,
+        "bio": "",
+        "subsidies": [{
+            "id": 1,
+            "name": "Dyrehold",
+            "value": 0
+        }, {
+            "id": 2,
+            "name": "Areal",
+            "value": 0
+        }, {
+            "id": 3,
+            "name": "Avløser",
+            "value": 0
+        }],
+        "stocks": [],
+        "elements": [{
+            "nodes": [{
+                "id": "1",
+                "name": "Johnny Ødegård",
+                "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                "size": "60",
+                "description": ""
+            }]
+        }, {
+            "edges": []
+        }]
+    }, {
+        "fullName": "Anders Huus",
+        "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+        "key": 50,
+        "lastYear": 50,
+        "gender": "m",
+        "profession": null,
+        "residence": "",
+        "twitterAcnt": null,
+        "bio": "",
+        "subsidies": [{
+            "id": 1,
+            "name": "Dyrehold",
+            "value": 0
+        }, {
+            "id": 2,
+            "name": "Areal",
+            "value": 0
+        }, {
+            "id": 3,
+            "name": "Avløser",
+            "value": 0
+        }],
+        "stocks": [{
+            "id": 910747711,
+            "company": "ORKLA ASA",
+            "numStocksCompany": 1018930970,
+            "numStocks": 4500,
+            "candidateYearOfBirth": "1966"
+        }, {
+            "id": 911750961,
+            "company": "NORSKE SKOGINDUSTRIER ASA",
+            "numStocksCompany": 278994995,
+            "numStocks": 90,
+            "candidateYearOfBirth": "1966"
+        }, {
+            "id": 937885644,
+            "company": "AURSKOG SPAREBANK",
+            "numStocksCompany": 1653574,
+            "numStocks": 1050,
+            "candidateYearOfBirth": "1966"
+        }],
+        "elements": [{
+            "nodes": [{
+                "id": "1",
+                "name": "Anders Huus",
+                "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                "size": "60",
+                "description": ""
+            }, {
+                "data": {
+                    "id": "8s",
+                    "name": "Stein Erik Hagen",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "Stein Erik Hagen eier aksjer i samme selskap som Anders Huus"
+                }
+            }, {
+                "data": {
+                    "id": "17s",
+                    "name": "Arne Kristian Kolberg",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "Arne Kristian Kolberg eier aksjer i samme selskap som Anders Huus"
+                }
+            }, {
+                "data": {
+                    "id": "33s",
+                    "name": "Kathrine Kleveland",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "Kathrine Kleveland eier aksjer i samme selskap som Anders Huus"
+                }
+            }, {
+                "data": {
+                    "id": "38s",
+                    "name": "Erik Lahnstein",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "Erik Lahnstein eier aksjer i samme selskap som Anders Huus"
+                }
+            }, {
+                "data": {
+                    "id": "40s",
+                    "name": "Bjørn Gimming",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "Bjørn Gimming eier aksjer i samme selskap som Anders Huus"
+                }
+            }, {
+                "data": {
+                    "id": "43s",
+                    "name": "John Arne Moen",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "John Arne Moen eier aksjer i samme selskap som Anders Huus"
+                }
+            }, {
+                "data": {
+                    "id": "53s",
+                    "name": "Harald Lein",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "Harald Lein eier aksjer i samme selskap som Anders Huus"
+                }
+            }]
+        }, {
+            "edges": [{
+                "data": {
+                    "source": "1",
+                    "target": "8s"
+                }
+            }, {
+                "data": {
+                    "source": "1",
+                    "target": "17s"
+                }
+            }, {
+                "data": {
+                    "source": "1",
+                    "target": "33s"
+                }
+            }, {
+                "data": {
+                    "source": "1",
+                    "target": "38s"
+                }
+            }, {
+                "data": {
+                    "source": "1",
+                    "target": "40s"
+                }
+            }, {
+                "data": {
+                    "source": "1",
+                    "target": "43s"
+                }
+            }, {
+                "data": {
+                    "source": "1",
+                    "target": "53s"
+                }
+            }]
+        }]
+    }, {
+        "fullName": "Live Kleveland",
+        "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+        "key": 51,
+        "lastYear": 51,
+        "gender": "m",
+        "profession": null,
+        "residence": "",
+        "twitterAcnt": null,
+        "bio": "",
+        "subsidies": [{
+            "id": 1,
+            "name": "Dyrehold",
+            "value": 0
+        }, {
+            "id": 2,
+            "name": "Areal",
+            "value": 0
+        }, {
+            "id": 3,
+            "name": "Avløser",
+            "value": 0
+        }],
+        "stocks": [],
+        "elements": [{
+            "nodes": [{
+                "id": "1",
+                "name": "Live Kleveland",
+                "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                "size": "60",
+                "description": ""
+            }]
+        }, {
+            "edges": []
+        }]
+    }, {
+        "fullName": "Bjørn-Ole Juul-Hansen",
+        "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+        "key": 52,
+        "lastYear": 52,
+        "gender": "m",
+        "profession": null,
+        "residence": "",
+        "twitterAcnt": null,
+        "bio": "",
+        "subsidies": [{
+            "id": 1,
+            "name": "Dyrehold",
+            "value": 0
+        }, {
+            "id": 2,
+            "name": "Areal",
+            "value": 0
+        }, {
+            "id": 3,
+            "name": "Avløser",
+            "value": 0
+        }],
+        "stocks": [],
+        "elements": [{
+            "nodes": [{
+                "id": "1",
+                "name": "Bjørn-Ole Juul-Hansen",
+                "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                "size": "60",
+                "description": ""
+            }]
+        }, {
+            "edges": []
+        }]
+    }, {
+        "fullName": "Harald Lein",
+        "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+        "key": 53,
+        "lastYear": 53,
+        "gender": "m",
+        "profession": null,
+        "residence": "",
+        "twitterAcnt": null,
+        "bio": "",
+        "subsidies": [{
+            "id": 1,
+            "name": "Dyrehold",
+            "value": 0
+        }, {
+            "id": 2,
+            "name": "Areal",
+            "value": 0
+        }, {
+            "id": 3,
+            "name": "Avløser",
+            "value": 0
+        }],
+        "stocks": [{
+            "id": 911750961,
+            "company": "NORSKE SKOGINDUSTRIER ASA",
+            "numStocksCompany": 278994995,
+            "numStocks": 13,
+            "candidateYearOfBirth": "1956"
+        }, {
+            "id": 931326791,
+            "company": "AS NORD TRØNDELAG",
+            "numStocksCompany": 400,
+            "numStocks": 1,
+            "candidateYearOfBirth": "1956"
+        }, {
+            "id": 937901003,
+            "company": "SPAREBANK 1 SMN",
+            "numStocksCompany": 129836443,
+            "numStocks": 27619,
+            "candidateYearOfBirth": "1956"
+        }, {
+            "id": 977050472,
+            "company": "LEVANGER-AVISA AS",
+            "numStocksCompany": 10008,
+            "numStocks": 1,
+            "candidateYearOfBirth": "1956"
+        }],
+        "elements": [{
+            "nodes": [{
+                "id": "1",
+                "name": "Harald Lein",
+                "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                "size": "60",
+                "description": ""
+            }, {
+                "data": {
+                    "id": "3s",
+                    "name": "Lars Petter Bartnes",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "Lars Petter Bartnes eier aksjer i samme selskap som Harald Lein"
+                }
+            }, {
+                "data": {
+                    "id": "17s",
+                    "name": "Arne Kristian Kolberg",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "Arne Kristian Kolberg eier aksjer i samme selskap som Harald Lein"
+                }
+            }, {
+                "data": {
+                    "id": "40s",
+                    "name": "Bjørn Gimming",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "Bjørn Gimming eier aksjer i samme selskap som Harald Lein"
+                }
+            }, {
+                "data": {
+                    "id": "43s",
+                    "name": "John Arne Moen",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "John Arne Moen eier aksjer i samme selskap som Harald Lein"
+                }
+            }, {
+                "data": {
+                    "id": "51s",
+                    "name": "Anders Huus",
+                    "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                    "size": "30",
+                    "description": "Anders Huus eier aksjer i samme selskap som Harald Lein"
+                }
+            }]
+        }, {
+            "edges": [{
+                "data": {
+                    "source": "1",
+                    "target": "3s"
+                }
+            }, {
+                "data": {
+                    "source": "1",
+                    "target": "17s"
+                }
+            }, {
+                "data": {
+                    "source": "1",
+                    "target": "40s"
+                }
+            }, {
+                "data": {
+                    "source": "1",
+                    "target": "43s"
+                }
+            }, {
+                "data": {
+                    "source": "1",
+                    "target": "51s"
+                }
+            }]
+        }]
+    }, {
+        "fullName": "Nina Sundqvist",
+        "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+        "key": 54,
+        "lastYear": 54,
+        "gender": "m",
+        "profession": null,
+        "residence": "",
+        "twitterAcnt": null,
+        "bio": "",
+        "subsidies": [{
+            "id": 1,
+            "name": "Dyrehold",
+            "value": 0
+        }, {
+            "id": 2,
+            "name": "Areal",
+            "value": 0
+        }, {
+            "id": 3,
+            "name": "Avløser",
+            "value": 0
+        }],
+        "stocks": [],
+        "elements": [{
+            "nodes": [{
+                "id": "1",
+                "name": "Nina Sundqvist",
+                "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                "size": "60",
+                "description": ""
+            }]
+        }, {
+            "edges": []
+        }]
+    }, {
+        "fullName": "Trine Hafsvang Vaag",
+        "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+        "key": 55,
+        "lastYear": 55,
+        "gender": "m",
+        "profession": null,
+        "residence": "",
+        "twitterAcnt": null,
+        "bio": "",
+        "subsidies": [{
+            "id": 1,
+            "name": "Dyrehold",
+            "value": 0
+        }, {
+            "id": 2,
+            "name": "Areal",
+            "value": 0
+        }, {
+            "id": 3,
+            "name": "Avløser",
+            "value": 0
+        }],
+        "stocks": [{
+            "id": 911583844,
+            "company": "MEDIAAS TRANSPORT AS",
+            "numStocksCompany": 695,
+            "numStocks": 330,
+            "candidateYearOfBirth": "1970"
+        }],
+        "elements": [{
+            "nodes": [{
+                "id": "1",
+                "name": "Trine Hafsvang Vaag",
+                "img": "https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/resources/standard.png.png",
+                "size": "60",
+                "description": ""
+            }]
+        }, {
+            "edges": []
+        }]
+    }]
+}

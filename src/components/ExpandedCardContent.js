@@ -13,7 +13,7 @@ import {ScrollOn} from './scrollon.js';
 
 
 /*global google*/
-var fylkene=[];
+let fylkene = [];
 const mapStyle = {
     'styles': [{'featureType':'administrative', 'elementType':'all', 'stylers':[{'saturation':'-100'}]},
         {'featureType':'administrative.province', 'elementType':'all', 'stylers':[{'visibility':'off'}]},
@@ -63,7 +63,7 @@ export class ExpandedCardContent extends React.Component {
     constructor( props ) {
         super( props );
         this.getMove = this.getMove.bind( this );
-        fylkene= this.props.fylker
+        fylkene = this.props.fylker;
     }
 
     makeTweetButton( name, pos ) {
@@ -94,13 +94,14 @@ export class ExpandedCardContent extends React.Component {
         document.getElementById( 'expandedCard' + this.props.id ).focus();
         this.defer( this.makeTweetButton, this.props.info.firstName, this.props.id );
 
-        const swipeElement = document.getElementById( 'expandedCard' + this.props.id );
-        const mc = new Hammer( swipeElement );
+        const isTouch = 'ontouchstart' in document.documentElement;
+        if ( isTouch ) {
+            const swipeElement = document.getElementById( 'expandedCard' + this.props.id );
+            const mc = new Hammer( swipeElement );
 
-        mc.on( 'swipeleft', () => this.props.expandoHandler( this.props.id ) );
-        mc.on( 'swiperight', () => this.props.expandoHandler( this.props.id - 2 ) );
-        Hammer.defaults.props.userSelect = false;
-        console.log( Hammer.defaults.cssProps.userSelect )
+            mc.on( 'swipeleft', () => this.props.expandoHandler( this.props.id ) );
+            mc.on( 'swiperight', () => this.props.expandoHandler( this.props.id - 2 ) );
+        }
     }
     componentWillReceiveProps( props ) {
         document.getElementById( 'tweetButton' ).innerHTML = '';
@@ -144,7 +145,6 @@ export class ExpandedCardContent extends React.Component {
             <ThingHelper helpText = {'Boksene under viser hvilke aksjer og hvilke subsidier ' + this.props.info.firstName + ' eier og mottar' }/><br/>
         </section> ) : null;
 
-        console.log(this.props.fylker);
         return ( <span>
             <ScrollOn />
             <button className="btnBack" type="button" onClick={() => this.props.expandoHandler( this.props.id - 2 )}><i className="material-icons md-36" style={{'verticalAlign':'middle'}}>arrow_back</i>{this.props.names[0]}</button>

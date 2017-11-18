@@ -87,6 +87,7 @@ export default class App extends Component {
             } )
             .then( json => {
                 this.setState( { 'names': json.people } );
+                //this.setState({'names': this.props.names})
                 this.setState( {'fylker': json.fylker} );
                 this.setState( {'searchMessage': '🤷 Fant ingen som heter det... ' } );
 
