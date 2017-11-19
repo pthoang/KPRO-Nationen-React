@@ -7,57 +7,57 @@ import {ParliamentBox} from './ParliamentBox';
 import {NewsLink} from './NewsLink';
 import {ThingHelper} from './ThingHelper';
 import Hammer from 'hammerjs';
-import { withScriptjs, withGoogleMap, GoogleMap} from 'react-google-maps';
-import HeatmapLayer from 'react-google-maps/lib/components/visualization/HeatmapLayer';
+// import { withScriptjs, withGoogleMap, GoogleMap} from 'react-google-maps';
+// import HeatmapLayer from 'react-google-maps/lib/components/visualization/HeatmapLayer';
 import {ScrollOn} from './scrollon.js';
 
 
-/*global google*/
+// /*global google*/
 let fylkene = [];
-const mapStyle = {
-    'styles': [{'featureType':'administrative', 'elementType':'all', 'stylers':[{'saturation':'-100'}]},
-        {'featureType':'administrative.province', 'elementType':'all', 'stylers':[{'visibility':'off'}]},
-        {'featureType':'landscape', 'elementType':'all',
-            'stylers':[{'saturation':-100}, {'lightness':65}, {'visibility':'on'}]},
-        {'featureType':'poi', 'elementType':'all', 'stylers':[{'saturation':-100}, {'lightness':'50'}, {'visibility':'simplified'}]},
-        {'featureType':'road', 'elementType':'all', 'stylers':[{'saturation':'-100'}]},
-        {'featureType':'road.highway', 'elementType':'all', 'stylers':[{'visibility':'simplified'}]},
-        {'featureType':'road.arterial', 'elementType':'all', 'stylers':[{'lightness':'30'}]},
-        {'featureType':'road.local', 'elementType':'all', 'stylers':[{'lightness':'40'}]},
-        {'featureType':'transit', 'elementType':'all', 'stylers':[{'saturation':-100}, {'visibility':'simplified'}]},
-        {'featureType':'water', 'elementType':'geometry', 'stylers':[{'hue':'#ffff00'}, {'lightness':-25}, {'saturation':-97}]},
-        {'featureType':'water', 'elementType':'labels', 'stylers':[{'lightness':-25}, {'saturation':-100}]}]};
-
-const MyMapComponent = withScriptjs( withGoogleMap( ( props ) =>
-    <GoogleMap
-        defaultZoom={4}
-        center={new google.maps.LatLng( 65.080278, 15.731389 )}
-        defaultOptions={{'styles': mapStyle.styles}}
-    >
-        <HeatmapLayer
-            data={[{'location': new google.maps.LatLng( 63.416911, 10.402636 ), 'weight':fylkene[0]}, //Sør-Trøndelag
-                {'location': new google.maps.LatLng( 59.913235, 10.751466 ), 'weight':fylkene[1]}, //Oslo og Akershus
-                {'location': new google.maps.LatLng( 60.3925, 5.323333 ), 'weight':fylkene[2]}, //Hordaland
-                {'location': new google.maps.LatLng( 70.080278, 29.731389 ), 'weight':fylkene[3]}, //Finnmark
-                {'location': new google.maps.LatLng( 59.278889, 11.116389 ), 'weight':fylkene[4]}, //Østfold
-                {'location': new google.maps.LatLng( 60.794444, 11.078611 ), 'weight':fylkene[5]}, //Hedmark
-                {'location': new google.maps.LatLng( 61.114722, 10.467222 ), 'weight':fylkene[6]}, //Oppland
-                {'location': new google.maps.LatLng( 59.744722, 10.205556 ), 'weight':fylkene[7]}, //Buskerud
-                {'location': new google.maps.LatLng( 59.270278, 10.409722 ), 'weight':fylkene[8]}, //Vestfold
-                {'location': new google.maps.LatLng( 59.2075, 9.610556 ), 'weight':fylkene[9]}, //Telemark
-                {'location': new google.maps.LatLng( 58.461667, 8.766944 ), 'weight':fylkene[10]}, //Aust-Agder
-                {'location': new google.maps.LatLng( 58.140833, 8 ), 'weight':fylkene[11]}, //Vest-Agder
-                {'location': new google.maps.LatLng( 58.960833, 5.715556 ), 'weight':fylkene[12]}, //Rogaland
-                {'location': new google.maps.LatLng( 61.185833, 6.821944 ), 'weight':fylkene[13]}, //Sogn og fjordane
-                {'location': new google.maps.LatLng( 62.7375, 7.163056 ), 'weight':fylkene[14]}, //Møre og romsdal
-                {'location': new google.maps.LatLng( 64.013056, 11.496944 ), 'weight':fylkene[15]}, //Nord-Trøndelag
-                {'location': new google.maps.LatLng( 67.28, 14.405 ), 'weight':fylkene[16]}, //Nordland
-                {'location': new google.maps.LatLng( 69.651944, 18.953333 ), 'weight':fylkene[17]} //Troms
-            ]}
-        />
-
-    </GoogleMap>
-) );
+// const mapStyle = {
+//     'styles': [{'featureType':'administrative', 'elementType':'all', 'stylers':[{'saturation':'-100'}]},
+//         {'featureType':'administrative.province', 'elementType':'all', 'stylers':[{'visibility':'off'}]},
+//         {'featureType':'landscape', 'elementType':'all',
+//             'stylers':[{'saturation':-100}, {'lightness':65}, {'visibility':'on'}]},
+//         {'featureType':'poi', 'elementType':'all', 'stylers':[{'saturation':-100}, {'lightness':'50'}, {'visibility':'simplified'}]},
+//         {'featureType':'road', 'elementType':'all', 'stylers':[{'saturation':'-100'}]},
+//         {'featureType':'road.highway', 'elementType':'all', 'stylers':[{'visibility':'simplified'}]},
+//         {'featureType':'road.arterial', 'elementType':'all', 'stylers':[{'lightness':'30'}]},
+//         {'featureType':'road.local', 'elementType':'all', 'stylers':[{'lightness':'40'}]},
+//         {'featureType':'transit', 'elementType':'all', 'stylers':[{'saturation':-100}, {'visibility':'simplified'}]},
+//         {'featureType':'water', 'elementType':'geometry', 'stylers':[{'hue':'#ffff00'}, {'lightness':-25}, {'saturation':-97}]},
+//         {'featureType':'water', 'elementType':'labels', 'stylers':[{'lightness':-25}, {'saturation':-100}]}]};
+//
+// const MyMapComponent = withScriptjs( withGoogleMap( ( props ) =>
+//     <GoogleMap
+//         defaultZoom={4}
+//         center={new google.maps.LatLng( 65.080278, 15.731389 )}
+//         defaultOptions={{'styles': mapStyle.styles}}
+//     >
+//         <HeatmapLayer
+//             data={[{'location': new google.maps.LatLng( 63.416911, 10.402636 ), 'weight':fylkene[0]}, //Sør-Trøndelag
+//                 {'location': new google.maps.LatLng( 59.913235, 10.751466 ), 'weight':fylkene[1]}, //Oslo og Akershus
+//                 {'location': new google.maps.LatLng( 60.3925, 5.323333 ), 'weight':fylkene[2]}, //Hordaland
+//                 {'location': new google.maps.LatLng( 70.080278, 29.731389 ), 'weight':fylkene[3]}, //Finnmark
+//                 {'location': new google.maps.LatLng( 59.278889, 11.116389 ), 'weight':fylkene[4]}, //Østfold
+//                 {'location': new google.maps.LatLng( 60.794444, 11.078611 ), 'weight':fylkene[5]}, //Hedmark
+//                 {'location': new google.maps.LatLng( 61.114722, 10.467222 ), 'weight':fylkene[6]}, //Oppland
+//                 {'location': new google.maps.LatLng( 59.744722, 10.205556 ), 'weight':fylkene[7]}, //Buskerud
+//                 {'location': new google.maps.LatLng( 59.270278, 10.409722 ), 'weight':fylkene[8]}, //Vestfold
+//                 {'location': new google.maps.LatLng( 59.2075, 9.610556 ), 'weight':fylkene[9]}, //Telemark
+//                 {'location': new google.maps.LatLng( 58.461667, 8.766944 ), 'weight':fylkene[10]}, //Aust-Agder
+//                 {'location': new google.maps.LatLng( 58.140833, 8 ), 'weight':fylkene[11]}, //Vest-Agder
+//                 {'location': new google.maps.LatLng( 58.960833, 5.715556 ), 'weight':fylkene[12]}, //Rogaland
+//                 {'location': new google.maps.LatLng( 61.185833, 6.821944 ), 'weight':fylkene[13]}, //Sogn og fjordane
+//                 {'location': new google.maps.LatLng( 62.7375, 7.163056 ), 'weight':fylkene[14]}, //Møre og romsdal
+//                 {'location': new google.maps.LatLng( 64.013056, 11.496944 ), 'weight':fylkene[15]}, //Nord-Trøndelag
+//                 {'location': new google.maps.LatLng( 67.28, 14.405 ), 'weight':fylkene[16]}, //Nordland
+//                 {'location': new google.maps.LatLng( 69.651944, 18.953333 ), 'weight':fylkene[17]} //Troms
+//             ]}
+//         />
+//
+//     </GoogleMap>
+// ) );
 
 export class ExpandedCardContent extends React.Component {
     constructor( props ) {
@@ -181,17 +181,17 @@ export class ExpandedCardContent extends React.Component {
                 <StockBox stocks={this.props.info.stocks}/>
                 <Subsidies subsidies={this.props.info.subsidies} />
             </section>
-            <hr/>
+            {/* <hr/>
             <section className = "infoCardExpandedColumn" style={{'margin':0}}>
                 <ThingHelper helpText = "Kartet viser tettheten av hvor de 100 mektigste i landbruket bor"/><br/>
-            </section>
-            <MyMapComponent
+            </section> */}
+            {/* <MyMapComponent
                 googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places,visualization"
                 loadingElement={<div style={{ 'height': '100%' }} />}
                 containerElement={<div className='gmaps' style={{ 'height': '400px', 'width': '62%', 'margin': '23px auto'}}/>}
                 mapElement={<div style={{ 'height': '100%' }} />}
                 fylker = {this.props.fylker}
-            />
+            /> */}
             {/* <section className="newsFlex">
                 {news}
             </section>

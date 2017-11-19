@@ -5,7 +5,7 @@ import {ExpandedCard} from './components/ExpandedCard';
 import {ExpandedCardContent} from './components/ExpandedCardContent.js';
 import {ExpandedCardJury} from './components/ExpandedCardJury';
 import {IntroText} from './components/IntroText';
-import {BetaNotice} from './components/BetaNotice';
+// import {BetaNotice} from './components/BetaNotice';
 
 export default class App extends Component {
 
@@ -102,10 +102,10 @@ export default class App extends Component {
     }
 
     expandoHandler( clickedId ) {
-
         const clicked = clickedId;
-        if ( ( clicked !== this.state.isExpanded ) && ( typeof clicked === 'number' ) || this.state.isExpanded === -1 ) {
+        if ( ( ( clicked !== this.state.isExpanded ) && ( typeof clicked === 'number' ) ) || clickedId === -1 ) {
             this.setState( {'isExpanded': ( clicked < this.state.names.length ? clicked : -1 )} );
+            this.setState( {'showJury': false} );
         } else {
             this.setState( {'showJury': !this.state.showJury} );
         }
@@ -146,12 +146,11 @@ export default class App extends Component {
         </ExpandedCard> ) : ( null );
 
         const juryInfo = this.state.showJury ? ( <ExpandedCard info={{'key':1}} expandoHandler={this.expandoHandler} height='auto'>
-            <ExpandedCardJury />
+            <ExpandedCardJury expandoHandler={this.expandoHandler} />
         </ExpandedCard> ) : null;
 
         return (
             <div className="App">
-                <BetaNotice />
                 <IntroText />
                 <FilterBox handleChange={this.handleChange} expandoHandler={this.expandoHandler} handleReset={this.resetHandler}/>
                 {cards}
