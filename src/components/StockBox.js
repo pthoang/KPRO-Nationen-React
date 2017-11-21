@@ -12,7 +12,7 @@ export class StockBox extends React.Component {
             <tr key={stock.id}>
                 <td>{stock.company}</td>
                 <td className="rightAlign">{( stock.numStocks ).toLocaleString( 'no-NO' )}</td>
-                <td className="rightAlign">{( stock.stockValueNok ).toLocaleString( 'no-NO' )},-</td>
+                <td className="rightAlign">{( "N/A" )},-</td>
             </tr>
         ) );
         return listItems;

@@ -1,6 +1,6 @@
 @import "./common.scss";
 $personCardBgrClr: white;
-$infoCardExpandedBgrClr: rgba(black, 0.7);
+$infoCardExpandedBgrClr: rgba(black, 0.5);
 $closeButtonClr: #FF3C38;
 
 $trendingDwnClr: #E87A7A;
@@ -24,7 +24,7 @@ $trendingFlatClr: #FCD367;
     width: 100%;
     height: 100%;
     background-color: $infoCardExpandedBgrClr;
-    z-index: 9;
+    z-index: 2000;
     overflow: hidden;
 }
 
@@ -39,13 +39,13 @@ $trendingFlatClr: #FCD367;
 	transform-origin: left top 0;
   position: fixed;
   top: 200px;
+  color:darkgrey;
 }
 .scrollonhide{
   visibility: hidden;
 }
 
 .infoCardExpanded {
-    overflow-x: hidden;
     background: $personCardBgrClr;
     /*transition: width 1s, height 1s;*/
     animation: 250ms ease-out 0s 1 slideInFromLeft;
@@ -63,6 +63,7 @@ $trendingFlatClr: #FCD367;
     margin-left: auto;
     margin-right: auto;
     border-radius: 5px;
+    overflow-x: hidden;
     @media screen and (max-width: 650px) {
         & {
             height: 100%;

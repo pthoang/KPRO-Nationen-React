@@ -5,7 +5,7 @@ import {ExpandedCard} from './components/ExpandedCard';
 import {ExpandedCardContent} from './components/ExpandedCardContent.js';
 import {ExpandedCardJury} from './components/ExpandedCardJury';
 import {IntroText} from './components/IntroText';
-import {BetaNotice} from './components/BetaNotice';
+// import {BetaNotice} from './components/BetaNotice';
 
 export default class App extends Component {
 
@@ -18,9 +18,9 @@ export default class App extends Component {
         this.getNames = this.getNames.bind( this );
         this.resetHandler = this.resetHandler.bind( this );
 
-        let query = window.location.search.substring( 1 ).split( '&' );
-        query = Number( query[0].split( '=' )[1] );
-        let expando = -1;
+        // let query = window.location.search.substring( 1 ).split( '&' );
+        // query = Number( query[0].split( '=' )[1] );
+        // let expando = -1;
 
         // if ( !Number.isNaN( query ) && query > 0 && query < this.state.names.length ) {
         //     expando = query - 1;
@@ -28,10 +28,11 @@ export default class App extends Component {
 
         this.state = {'show':['m', 'f', 'none'],
             'nameSearch': '',
-            'isExpanded': expando,
+            'isExpanded': -1,
             'showJury': false,
             'searchMessage':'Laster listen...',
-            'names':[]};
+            'names':[],
+            'fylker':[]};
         console.log( '%c👋 Hello!\n', 'font-size:2em;' );
     }
 
@@ -86,17 +87,27 @@ export default class App extends Component {
             } )
             .then( json => {
                 this.setState( { 'names': json.people } );
+                //this.setState({'names': this.props.names})
+                this.setState( {'fylker': json.fylker} );
                 this.setState( {'searchMessage': '🤷 Fant ingen som heter det... ' } );
+
+                let query = window.location.search.substring( 1 ).split( '&' );
+                query = Number( query[0].split( '=' )[1] );
+                let expando = -1;
+                if ( !Number.isNaN( query ) && query > 0 && query < this.state.names.length ) {
+                    expando = query - 1;
+                }
+                this.expandoHandler( expando );
             } );
     }
 
     expandoHandler( clickedId ) {
         const clicked = clickedId;
-        if ( ( clicked !== this.state.isExpanded ) && ( typeof clicked === 'number' ) ) {
+        if ( ( ( clicked !== this.state.isExpanded ) && ( typeof clicked === 'number' ) ) || clickedId === -1 ) {
             this.setState( {'isExpanded': ( clicked < this.state.names.length ? clicked : -1 )} );
+            this.setState( {'showJury': false} );
         } else {
             this.setState( {'showJury': !this.state.showJury} );
-            console.log( this.state.showJury );
         }
     }
 
@@ -131,16 +142,15 @@ export default class App extends Component {
         }
 
         const expando = this.state.isExpanded !== -1 ? ( <ExpandedCard info={this.state.names[this.state.isExpanded] } expandoHandler={this.expandoHandler}>
-            <ExpandedCardContent id={this.state.names[this.state.isExpanded].key} info={this.state.names[this.state.isExpanded]} expandoHandler={this.expandoHandler} names={this.getNames()}/>
+            <ExpandedCardContent id={this.state.names[this.state.isExpanded].key} info={this.state.names[this.state.isExpanded]} fylker={this.state.fylker} expandoHandler={this.expandoHandler} names={this.getNames()}/>
         </ExpandedCard> ) : ( null );
 
         const juryInfo = this.state.showJury ? ( <ExpandedCard info={{'key':1}} expandoHandler={this.expandoHandler} height='auto'>
-            <ExpandedCardJury />
+            <ExpandedCardJury expandoHandler={this.expandoHandler} />
         </ExpandedCard> ) : null;
 
         return (
             <div className="App">
-                <BetaNotice />
                 <IntroText />
                 <FilterBox handleChange={this.handleChange} expandoHandler={this.expandoHandler} handleReset={this.resetHandler}/>
                 {cards}

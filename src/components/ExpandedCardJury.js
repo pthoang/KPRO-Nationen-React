@@ -31,7 +31,8 @@ export class ExpandedCardJury extends React.Component {
         );
         return (
             <div>
-                <div className="juryHeader" style={{'display':'flex', 'justify-content':'center'}}>Om juryen</div>
+                <i className="material-icons closeButton" onClick={() => this.props.expandoHandler( -1 )}>close</i>
+                <div className="juryHeader" style={{'display':'flex', 'justifyContent':'center'}}>Om juryen</div>
                 <div className="juryGrid"> {jury}  <div className="juryText">{juryMembers.slice( -1 )[0].juryText} </div>
                 </div>
             </div>
