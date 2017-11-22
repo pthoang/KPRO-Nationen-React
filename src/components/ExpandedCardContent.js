@@ -13,7 +13,7 @@ import {ScrollOn} from './scrollon.js';
 
 
 // /*global google*/
-let fylkene = [];
+//let fylkene = [];
 // const mapStyle = {
 //     'styles': [{'featureType':'administrative', 'elementType':'all', 'stylers':[{'saturation':'-100'}]},
 //         {'featureType':'administrative.province', 'elementType':'all', 'stylers':[{'visibility':'off'}]},
@@ -63,7 +63,7 @@ export class ExpandedCardContent extends React.Component {
     constructor( props ) {
         super( props );
         this.getMove = this.getMove.bind( this );
-        fylkene = this.props.fylker;
+        //fylkene = this.props.fylker;
     }
 
     makeTweetButton( name, pos ) {
@@ -92,7 +92,7 @@ export class ExpandedCardContent extends React.Component {
 
     componentDidMount() {
         document.getElementById( 'expandedCard' + this.props.id ).focus();
-        this.defer( this.makeTweetButton, this.props.info.firstName, this.props.id );
+        this.defer( this.makeTweetButton, this.props.info.fullName, this.props.id );
 
         const isTouch = 'ontouchstart' in document.documentElement;
         if ( isTouch ) {
@@ -105,7 +105,7 @@ export class ExpandedCardContent extends React.Component {
     }
     componentWillReceiveProps( props ) {
         document.getElementById( 'tweetButton' ).innerHTML = '';
-        this.makeTweetButton( props.info.firstName, props.id );
+        this.makeTweetButton( props.info.fullName, props.id );
     }
 
     getMove() {
@@ -142,8 +142,20 @@ export class ExpandedCardContent extends React.Component {
         //     <NewsItem items={item} key={item.key} />
         // );
         const stocksHelper = ( this.props.info.stocks.length || this.props.info.subsidies.length ) ? ( <section className="infoCardExpandedColumn" style={{'margin':0}}>
-            <ThingHelper helpText = {'Boksene under viser hvilke aksjer og hvilke subsidier ' + this.props.info.firstName + ' eier og mottar' }/><br/>
+            <ThingHelper helpText = {'Boksene under viser hvilke aksjer og hvilke tilskudd ' + this.props.info.fullName + ' eier og mottar' }/><br/>
         </section> ) : null;
+        let nodes = null;
+
+        const politics = this.props.info.politic.politicalParty ? <ParliamentBox info={this.props.info.politic} /> : null;
+        if ( this.props.info.elements.length > 0 ) {
+            nodes = ( ( this.props.info.elements[0].nodes.length < 2 ) ? null :
+                ( <span><hr />
+                    <section className="infoCardExpandedColumn" style={{'margin':0}}>
+                        <ThingHelper helpText = {'Maktkartet viser hvilke koblinger ' + this.props.info.fullName + ' har til andre i landbruket, klikk på en person for å se hva koblingen er'}/>
+                    </section>
+                    <NodeBox elements={this.props.info.elements}/> </span> )
+            );
+        }
 
         return ( <span>
             <ScrollOn />
@@ -152,29 +164,24 @@ export class ExpandedCardContent extends React.Component {
             <button className="btnForward" type="button" onClick={() => this.props.expandoHandler( this.props.id )}>{this.props.names[1]}<i className="material-icons md-36" style={{'verticalAlign':'middle', 'paddingBottom':5}}>arrow_forward</i></button>
 
             <section className="infoCardExpandedColumn" style={{'width':'100%', 'justifyContent':'center'}} >
-                <img src={this.props.info.img} className="bgrImgExpanded" alt={this.props.info.firstName} />
-                <div className = "biographyName">#{this.props.id} - {this.props.info.firstName} {this.getMove()}<br/>
-                    <span className="underText">{this.props.info.profession}</span> <ParliamentBox /> <br/>
-                    <span className="underText">Plassering i fjor: {this.props.info.lastYear}</span><br/>
+                <img src={this.props.info.img} className="bgrImgExpanded" alt={this.props.info.fullName} />
+                <div className = "biographyName">#{this.props.id} - {this.props.info.fullName} {this.getMove()}<br/>
+                    <span className="underText">{this.props.info.profession}</span> {politics} <br/>
+                    <span className="underText">Plassering i fjor: {this.props.info.lastYear !== -1 ? this.props.info.lastYear : 'Ny!'}</span><br/>
                     {this.getTwitter()} <div id="tweetButton" style={{'display':'inline'}}/>
                 </div>
             </section>
             <section className="infoCardExpandedColumn" style={{'justifyContent':'center'}}>
                 <div className="biographyText">{this.props.info.bio} </div>
                 <div className="newsLinkContainer">
-                    Les mer om {this.props.info.firstName}:
+                    Les mer om {this.props.info.fullName}:
                     <div className="linkContainer">
-                        <NewsLink id="pubNationen" name={this.props.info.firstName} publication="Nationen" />
-                        <NewsLink id="pubBondebladet" name={this.props.info.firstName} publication="Bondebladet" />
+                        <NewsLink id="pubNationen" name={this.props.info.fullName} publication="Nationen" />
+                        <NewsLink id="pubBondebladet" name={this.props.info.fullName} publication="Bondebladet" />
                     </div>
                 </div>
             </section>
-
-            <hr />
-            <section className="infoCardExpandedColumn" style={{'margin':0}}>
-                <ThingHelper helpText = {'Nodekartet viser hvilke koblinger ' + this.props.info.firstName + ' har til de 100 mektigste i landbruket, klikk på en person for å se hva koblingen er'}/>
-            </section>
-            <NodeBox elements={this.props.info.elements}/>
+            {nodes}
             <hr />
             {stocksHelper}
             <section className="infoCardExpandedColumn" style={{'justifyContent':'center'}}>

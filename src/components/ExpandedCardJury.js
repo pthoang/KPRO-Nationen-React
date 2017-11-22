@@ -26,14 +26,14 @@ const juryMembers = [{
 
 export class ExpandedCardJury extends React.Component {
     render() {
-        const jury = juryMembers.slice( 0, -1 ).map( person =>
-            <JuryMember key={person.key} info={person} />
+        const jury = this.props.juryInfo.juryMembers.map( person =>
+            <JuryMember key={person.fullName} info={person} />
         );
         return (
             <div>
                 <i className="material-icons closeButton" onClick={() => this.props.expandoHandler( -1 )}>close</i>
                 <div className="juryHeader" style={{'display':'flex', 'justifyContent':'center'}}>Om juryen</div>
-                <div className="juryGrid"> {jury}  <div className="juryText">{juryMembers.slice( -1 )[0].juryText} </div>
+                <div className="juryGrid"> {jury}  <div className="juryText">{this.props.juryInfo.description} </div>
                 </div>
             </div>
 
@@ -46,8 +46,8 @@ class JuryMember extends React.Component {
         return (
             <div className="juryContainer">
                 <img src={this.props.info.img} className="juryImg" alt={this.props.info.name} />
-                <div className="juryName">{this.props.info.name}</div>
-                <div className="juryDesc">{this.props.info.desc}</div>
+                <div className="juryName">{this.props.info.fullName}</div>
+                <div className="juryDesc">{this.props.info.title}</div>
             </div>
         );
     }

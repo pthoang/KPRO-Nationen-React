@@ -20,7 +20,7 @@ $bgColor: $commonGreen;
         @media screen and (max-width:1250px) {
             & {
                 margin:5px;
-                order:3;
+                order:4;
             }
         }
     }
@@ -29,7 +29,7 @@ $bgColor: $commonGreen;
         @media screen and (max-width:1250px) {
             & {
                 margin:5px;
-                order:2;
+                order:3;
             }
         }
     }
@@ -47,7 +47,7 @@ $bgColor: $commonGreen;
         @media screen and (max-width:1250px) {
             & {
                 margin:5px;
-                order:4;
+                order:2;
             }
         }
     }
@@ -94,9 +94,10 @@ $bgColor: $commonGreen;
         &:hover{
             box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
         }
-        @media screen and (max-width:900px) {
+        @media screen and (max-width:1250px) {
             & {
-                width:80%;
+                width:100%;
+                max-width:500px;
                 border-radius:0;
             }
         }

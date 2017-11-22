@@ -5,7 +5,6 @@ const cycola = require( 'cytoscape-cola' );
 cytoscape.use( cycola );
 
 export class NodeBox extends React.Component {
-
     constructor( props ) {
         super( props );
         this.state = {
@@ -28,20 +27,33 @@ export class NodeBox extends React.Component {
             'container': document.getElementById( 'cy' ),
             'boxSelectionEnabled': false,
             'layout':{
-                'name':'circle',
+                'name':'concentric',
+                //'padding':0,
+                'nodeDimensionsIncludeLabels': true,
             },
             'elements': elements,
             'style': cytoscape.stylesheet()
                 .selector( 'node' )
                 .css( {
                     'label': 'data(name)',
-                    'width':'data(size)',
-                    'height':'data(size)',
+                    'width':'50px',
+                    'height':'50px',
                     'border-width':'3',
                     'border-color': '#647075',
                     'background-fit':'cover',
-                    //'background-image': 'data(img)'
-                    'background-image': 'https://www.fylkesmannen.no/Images/Bilder%20FMNO/Landbruk%20bilder/LARAs%20prosjekter,%20konferanser,%20annet%20bilder/jgd.jpg'
+                    'background-image': 'data(img)',
+                    'background-image-crossorigin':'anonymous',
+                    'text-valign' : 'bottom',
+                    'text-halign' : 'center',
+                    //'font-size':'10pt',
+                    'text-background-color':'lightgrey',
+                    'text-background-opacity': .5,
+                    'text-background-shape':'roundrectangle',
+                    'text-background-padding':'3px',
+                    'text-border-opacity':1,
+                    'text-border-width': '1px',
+                    'text-border-style':'solid',
+                    'text-border-color':'grey'
                 } )
                 .selector( 'edge' )
                 .css( {
@@ -69,6 +81,6 @@ export class NodeBox extends React.Component {
         this.createGraph( this.state.elements );
     }
     render() {
-        return <div> <div style ={{'height':300, 'width':'100%', 'margin':0}} id="cy"> </div><h3 id="desc" style={{'textAlign':'center'}}>{this.state.description}</h3></div>;
+        return <div> <div style ={{'height':600, 'width':'100%', 'margin':0}} id="cy"> </div><h3 id="desc" style={{'textAlign':'center'}}>{this.state.description}</h3></div>;
     }
 }
