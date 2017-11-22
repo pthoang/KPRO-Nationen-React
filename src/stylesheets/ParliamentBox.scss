@@ -1,0 +1,50 @@
+$boxColor: #7FB285;
+.parliamentBox{
+  position:relative;
+  display:inline-flex;
+  vertical-align:middle;
+  font-size:14px;
+  .material-icons.md-18 { font-size: 18px; }
+  background:$boxColor;
+  border-radius:5px;
+  color:white;
+  padding:4px;
+  flex-grow:0;
+  flex-shrink:0;
+  span{
+    padding-top:1px;
+    background:$boxColor;
+  }
+
+  .tooltiptext {
+    visibility: hidden;
+    background-color: #DEDEE3;
+    color: #000;
+    border-radius: 6px;
+    padding: 5px 0;
+    /* Position the tooltip */
+    position: absolute;
+    top:40px;
+    left:-2px;
+    padding:5px;
+    z-index: 1;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 100%;
+      left: 50%;
+      margin-left: -5px;
+      border-width: 5px;
+      border-style: solid;
+      border-color: transparent transparent #DEDEE3 transparent;
+    }
+  }
+
+
+  &:hover{
+    .tooltiptext{
+      visibility:visible;
+    }
+  }
+}

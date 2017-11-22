@@ -1,0 +1,23 @@
+.repr{
+  position:relative;
+  display:inline-flex;
+  vertical-align:middle;
+  font-size:13pt;
+  border-radius:5px;
+  border:7px solid #FFBC42;
+  width:50%;
+  background:white;
+  @media (max-width: 900px) {
+    width:100%;
+  }
+  .exclamation{
+    background:#FFBC42;
+    color:white;
+    height:100%;
+    border-bottom-right-radius:5px;
+  }
+  .message{
+    color:black;
+    padding:10px;
+  }
+}

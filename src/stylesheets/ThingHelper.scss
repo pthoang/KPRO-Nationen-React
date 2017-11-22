@@ -1,0 +1,41 @@
+@import "./common.scss";
+
+.thingHelper{
+    position:relative;
+    width:80%;
+    color:$commonGreen;
+    margin:10px;
+    .material-icons.md-48 { font-size: 48px; float:right; }
+
+    .tooltiptext {
+      visibility: hidden;
+      background-color: #DEDEE3;
+      color: #000;
+      border-radius: 6px;
+      padding: 5px 0;
+      /* Position the tooltip */
+      position: absolute;
+      top:50px;
+      right:-2px;
+      padding:5px;
+      z-index: 1;
+      width:200px;
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 100%;
+        right: 20px;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: transparent transparent #DEDEE3 transparent;
+      }
+    }
+
+
+    &:hover{
+      .tooltiptext{
+        visibility:visible;
+      }
+    }
+}

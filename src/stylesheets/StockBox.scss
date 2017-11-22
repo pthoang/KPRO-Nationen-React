@@ -1,0 +1,26 @@
+@import "./common.scss";
+
+table{
+    border-collapse: collapse;
+    margin:10px;
+    font-family: $fontSansSerif;
+    color:$fontCol;
+    thead{
+        color:$commonGreen;
+    }
+    tr{
+        text-align: left;
+        border-bottom: 1px solid black;
+    }
+    td{
+        padding: 5px 5px 5px 5px;
+        border-bottom:solid $commonGreen 1px;
+    }
+    th{
+        padding: 5px 5px 5px 5px;
+        border-bottom:solid $commonGreen 1px;
+    }
+    .rightAlign{
+        text-align: right;
+    }
+}

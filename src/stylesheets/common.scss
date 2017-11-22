@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,900|Roboto:300,400,900');
+
+$fontSerif: 'Playfair Display', serif;
+$fontSansSerif: 'Roboto', sans-serif;
+$darkerGreen: #546D51;
+$fontCol:#686868;
+
+$nationen: true;
+$commonGreen: if($nationen == true, #44af69,  #F3B61F  );
+$lighterGreen: if($nationen == true, #9EE493, #FFD447 );

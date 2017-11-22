@@ -1,0 +1,53 @@
+@import "./common.scss";
+$nationenGreen: #406619;
+$bondebladetYellow: #c93;
+
+.newsLinkContainer{
+    align-self:center;
+    font-size:10pt;
+    font-family: $fontSerif;
+    cursor: pointer;
+    font-weight: bold;
+    margin:5px;
+    padding:5px;
+    background-color: $commonGreen;
+    color:white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    a{
+        text-decoration: none;
+    }
+    .newsLogo{
+        width:80px;
+    }
+    .newsLink{
+        //padding:5px;
+        margin:10px;
+        //width:60px;
+    }
+    .pubNationen{
+        background-color:$nationenGreen;
+        color:white;
+        text-decoration: none;
+        margin-top:5px;
+        img{
+            &:hover{
+                filter: brightness(80%);
+            }
+        }
+    }
+    .pubBondebladet{
+        background-color:$bondebladetYellow;
+        color:white;
+        img{
+            &:hover{
+                filter: brightness(80%);
+            }
+        }
+    }
+
+    .linkContainer{
+        display:flex;
+        align-items:baseline;
+        justify-content: center;
+    }
+}
