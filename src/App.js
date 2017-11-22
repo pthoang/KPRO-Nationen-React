@@ -26,7 +26,7 @@ export default class App extends Component {
         //     expando = query - 1;
         // }
 
-        this.state = {'show':['m', 'f', 'none'],
+        this.state = {'show':['M', 'F', 'O'],
             'nameSearch': '',
             'isExpanded': -1,
             'showJury': false,
@@ -59,6 +59,7 @@ export default class App extends Component {
     }
 
     filterGender( name ) {
+        return true;
         return this.state.show.indexOf( name.gender ) > -1;
     }
 
@@ -66,7 +67,7 @@ export default class App extends Component {
         if ( this.state.nameSearch.length < 1 ) {
             return true;
         } else {
-            if ( name.firstName.toLowerCase().indexOf( this.state.nameSearch.toLowerCase() ) !== -1 ) {
+            if ( name.fullName.toLowerCase().indexOf( this.state.nameSearch.toLowerCase() ) !== -1 ) {
                 return true;
             }
             if ( name.profession.toLowerCase().indexOf( this.state.nameSearch.toLowerCase() ) !== -1 ) {
@@ -81,16 +82,17 @@ export default class App extends Component {
     }
 
     componentDidMount() {
-        fetch( 'https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/people.json' )
+        //fetch( 'https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/people.json' )
+        fetch( 'https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/maktlista.json' )
             .then( response => {
                 return response.json();
             } )
             .then( json => {
                 this.setState( { 'names': json.people } );
-                //this.setState({'names': this.props.names})
+                //this.setState( {'names': this.props.names} );
                 this.setState( {'fylker': json.fylker} );
                 this.setState( {'searchMessage': '🤷 Fant ingen som heter det... ' } );
-
+                console.log( json.people );
                 let query = window.location.search.substring( 1 ).split( '&' );
                 query = Number( query[0].split( '=' )[1] );
                 let expando = -1;
@@ -115,16 +117,15 @@ export default class App extends Component {
         let namePrev = null;
         let nameNxt = null;
         if ( this.state.isExpanded < this.state.names.length - 1 ) {
-            nameNxt = this.state.names[this.state.isExpanded + 1].firstName.substring( 0, 6 ) + '...';
+            nameNxt = this.state.names[this.state.isExpanded + 1].fullName.substring( 0, 6 ) + '...';
         }
         if ( this.state.isExpanded > 0 ) {
-            namePrev = this.state.names[this.state.isExpanded - 1].firstName.substring( 0, 6 ) + '...';
+            namePrev = this.state.names[this.state.isExpanded - 1].fullName.substring( 0, 6 ) + '...';
         }
-        // this.state.isExpaned < this.state.names.length ? nameNxt = this.state.names[this.state.isExpanded + 1].firstName : null;
-        // this.state.isExpaned > 0 ? namePrev = this.state.names[this.state.isExpanded - 1].firstName : null;
+        // this.state.isExpaned < this.state.names.length ? nameNxt = this.state.names[this.state.isExpanded + 1].fullName : null;
+        // this.state.isExpaned > 0 ? namePrev = this.state.names[this.state.isExpanded - 1].fullName : null;
         // console.log(namePrev);
         // return ( namePrev, nameNxt );
-        console.log( nameNxt );
         return [namePrev, nameNxt];
     }
 
