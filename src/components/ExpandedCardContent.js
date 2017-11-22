@@ -13,7 +13,7 @@ import {ScrollOn} from './scrollon.js';
 
 
 // /*global google*/
-let fylkene = [];
+//let fylkene = [];
 // const mapStyle = {
 //     'styles': [{'featureType':'administrative', 'elementType':'all', 'stylers':[{'saturation':'-100'}]},
 //         {'featureType':'administrative.province', 'elementType':'all', 'stylers':[{'visibility':'off'}]},
@@ -63,7 +63,7 @@ export class ExpandedCardContent extends React.Component {
     constructor( props ) {
         super( props );
         this.getMove = this.getMove.bind( this );
-        fylkene = this.props.fylker;
+        //fylkene = this.props.fylker;
     }
 
     makeTweetButton( name, pos ) {
@@ -142,14 +142,16 @@ export class ExpandedCardContent extends React.Component {
         //     <NewsItem items={item} key={item.key} />
         // );
         const stocksHelper = ( this.props.info.stocks.length || this.props.info.subsidies.length ) ? ( <section className="infoCardExpandedColumn" style={{'margin':0}}>
-            <ThingHelper helpText = {'Boksene under viser hvilke aksjer og hvilke subsidier ' + this.props.info.fullName + ' eier og mottar' }/><br/>
+            <ThingHelper helpText = {'Boksene under viser hvilke aksjer og hvilke tilskudd ' + this.props.info.fullName + ' eier og mottar' }/><br/>
         </section> ) : null;
         let nodes = null;
+
+        const politics = this.props.info.politic.politicalParty ? <ParliamentBox info={this.props.info.politic} /> : null;
         if ( this.props.info.elements.length > 0 ) {
             nodes = ( ( this.props.info.elements[0].nodes.length < 2 ) ? null :
                 ( <span><hr />
                     <section className="infoCardExpandedColumn" style={{'margin':0}}>
-                        <ThingHelper helpText = {'Nodekartet viser hvilke koblinger ' + this.props.info.fullName + ' har til de 100 mektigste i landbruket, klikk på en person for å se hva koblingen er'}/>
+                        <ThingHelper helpText = {'Maktkartet viser hvilke koblinger ' + this.props.info.fullName + ' har til andre i landbruket, klikk på en person for å se hva koblingen er'}/>
                     </section>
                     <NodeBox elements={this.props.info.elements}/> </span> )
             );
@@ -164,7 +166,7 @@ export class ExpandedCardContent extends React.Component {
             <section className="infoCardExpandedColumn" style={{'width':'100%', 'justifyContent':'center'}} >
                 <img src={this.props.info.img} className="bgrImgExpanded" alt={this.props.info.fullName} />
                 <div className = "biographyName">#{this.props.id} - {this.props.info.fullName} {this.getMove()}<br/>
-                    <span className="underText">{this.props.info.profession}</span> <ParliamentBox /> <br/>
+                    <span className="underText">{this.props.info.profession}</span> {politics} <br/>
                     <span className="underText">Plassering i fjor: {this.props.info.lastYear !== -1 ? this.props.info.lastYear : 'Ny!'}</span><br/>
                     {this.getTwitter()} <div id="tweetButton" style={{'display':'inline'}}/>
                 </div>
