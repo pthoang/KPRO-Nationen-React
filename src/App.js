@@ -41,11 +41,11 @@ export default class App extends Component {
     handleChange( event ) {
         if ( event.target.name === 'genderBox' ) {
             if ( event.target.value === 'menn' ) {
-                this.setState( {'show':['m']} );
+                this.setState( {'show':['M']} );
             } else if ( event.target.value === 'kvinner' ) {
-                this.setState( {'show':['f']} );
+                this.setState( {'show':['F']} );
             } else {
-                this.setState( {'show':['m', 'f', 'none']} );
+                this.setState( {'show':['M', 'F', 'O']} );
             }
             this.forceUpdate();
         } else if ( event.target.name === 'nameSearch' ) {
@@ -57,12 +57,11 @@ export default class App extends Component {
         document.getElementById( 'filterSearch' ).value = '';
         document.getElementById( 'filterBoxSelect' ).selectedIndex = 0;
 
-        this.setState( {'nameSearch': '', 'show':['m', 'f', 'none']} );
+        this.setState( {'nameSearch': '', 'show':['M', 'F', 'O']} );
     }
 
     filterGender( name ) {
-        return true;
-        //return this.state.show.indexOf( name.gender ) > -1;
+        return this.state.show.indexOf( name.gender ) > -1;
     }
 
     filterName( name ) {
@@ -85,8 +84,8 @@ export default class App extends Component {
 
     componentDidMount() {
         //fetch( 'https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/people.json' )
-        //fetch( 'https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/maktlista.json' )
-        fetch( 'https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/final5.json' )
+        fetch( 'https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/maktlista.json' )
+        //fetch( 'https://s3.us-east-2.amazonaws.com/tunmedia/maktkaring_2017/final5.json' )
             .then( response => {
                 return response.json();
             } )

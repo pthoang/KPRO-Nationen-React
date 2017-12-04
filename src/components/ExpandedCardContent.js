@@ -109,9 +109,9 @@ export class ExpandedCardContent extends React.Component {
     }
 
     getMove() {
-        if ( this.props.id > this.props.info.lastYear ) {
+        if ( ( this.props.id > this.props.info.lastYear ) && ( this.props.info.lastYear !== -1 ) ) {
             return <i className="material-icons listMove" id='trending_down'>trending_down</i>;
-        } else if ( this.props.id < this.props.info.lastYear ) {
+        } else if ( ( this.props.id < this.props.info.lastYear ) && ( this.props.info.lastYear !== -1 ) ) {
             return <i className="material-icons listMove" id='trending_up'>trending_up</i>;
         } else {
             return <i className="material-icons listMove" id='trending_flat'>trending_flat</i>;
