@@ -113,6 +113,13 @@ export default class App extends Component {
         } else {
             this.setState( {'showJury': !this.state.showJury} );
         }
+
+        if ( clicked !== -1 ) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = 'auto';
+        }
+
     }
 
     getNames() {
